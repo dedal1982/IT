@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+h1 {
+  font-family: "Bitter", serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 77.04px;
+  color: #303030;
+}
+h2 {
+  font-family: "Bitter", serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 71.68px;
+  color: #303030;
+}
+h3 {
+  font-family: "Bitter", serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44.16px;
+  color: #303030;
+}
+h4 {
+  font-family: "Bitter", serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 52.2px;
+  color: #303030;
+}
+p {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36.3px;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+.container {
+  max-width: 1152px;
+  width: 100%;
+  padding-left: 144px;
+  padding-right: 144px;
+  box-sizing: border-box;
+}
+.page__content {
+  margin: 0 auto;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}

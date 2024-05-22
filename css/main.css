@@ -111,3 +111,13 @@ button {
 .header__link_blue {
   color: #4584ce;
 }
+/*-----main-thing-----*/
+.main-thing {
+  width: 100%;
+}
+.main-thing__wrapper {
+  display: flex;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  box-sizing: border-box;
+}

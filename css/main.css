@@ -24,35 +24,35 @@ p {
 h1 {
   font-family: "Bitter", serif;
   font-weight: 700;
-  font-size: 72px;
+  font-size: clamp(34px, 5vw, 72px);
   line-height: 77.04px;
   color: #303030;
 }
 h2 {
   font-family: "Bitter", serif;
   font-weight: 700;
-  font-size: 56px;
+  font-size: clamp(28px, 5vw, 56px);
   line-height: 71.68px;
   color: #303030;
 }
 h3 {
   font-family: "Bitter", serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: clamp(28px, 5vw, 32px);
   line-height: 44.16px;
   color: #303030;
 }
 h4 {
   font-family: "Bitter", serif;
   font-weight: 400;
-  font-size: 36px;
+  font-size: clamp(20px, 5vw, 32px);
   line-height: 52.2px;
   color: #303030;
 }
-p {
+h5 {
   font-family: "Roboto Flex", sans-serif;
   font-weight: 400;
-  font-size: 22px;
+  font-size: clamp(18px, 5vw, 22px);
   line-height: 36.3px;
 }
 button {
@@ -60,26 +60,25 @@ button {
   cursor: pointer;
 }
 /*-----link-----*/
-.link {
+.p {
   font-family: "Roboto Flex", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 29.7px;
   color: #303030;
 }
-.link-blue {
-  color: #4584ce;
-}
 .container {
-  max-width: 1152px;
   width: 100%;
   padding-left: 144px;
   padding-right: 144px;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 .page {
   margin: 0 auto;
   padding: 0;
+  max-width: 1440px;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -95,4 +94,20 @@ button {
   display: flex;
   padding-top: 66px;
   box-sizing: border-box;
+}
+.header__link {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29.7px;
+  color: #303030;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: 32px;
+}
+.header__link_blue {
+  color: #4584ce;
 }

@@ -1,0 +1,63 @@
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Maps API</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <button id="button1">Адрес 1</button>
+  <button id="button2">Адрес 2</button>
+
+  <script>
+    var map;
+    var marker;
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 8
+      });
+    }
+
+    document.getElementById('button1').addEventListener('click', function() {
+      if (marker) {
+        marker.setMap(null); // Удаляем предыдущий маркер
+      }
+      marker = new google.maps.Marker({
+        position: {lat: -34.397, lng: 150.644}, // Адрес 1
+        map: map
+      });
+    });
+
+    document.getElementById('button2').addEventListener('click', function() {
+      if (marker) {
+        marker.setMap(null); // Удаляем предыдущий маркер
+      }
+      marker = new google.maps.Marker({
+        position: {lat: -34.397, lng: 150.644}, // Адрес 2
+        map: map
+      });
+    });
+  </script>
+</body>
+</html>
+```
+
+В этом коде:
+
+1. Подключается Google Maps API.
+2. Создается карта.
+3. Добавляются обработчики событий на кнопки. При клике на кнопку создается новый маркер на карте, а предыдущий маркер удаляется.
+
+Обратите внимание, что в примере используется фиктивный API ключ. Вам нужно будет заменить `YOUR_API_KEY` на Ваш собственный ключ API Google Maps.
+
+Также, в примере используются фиктивные адреса. Вам нужно будет заменить `{lat: -34.397, lng: 150.644}` на реальные координаты адресов, которые Вы хотите отобразить.

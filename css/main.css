@@ -95,18 +95,18 @@ button {
   padding-top: 66px;
   box-sizing: border-box;
 }
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: 32px;
+}
 .header__link {
   font-family: "Roboto Flex", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 29.7px;
   color: #303030;
-}
-.header__list {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-left: 32px;
 }
 .header__link_blue {
   color: #4584ce;

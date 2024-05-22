@@ -39,7 +39,7 @@ h3 {
   font-family: "Bitter", serif;
   font-weight: 700;
   font-size: clamp(28px, 5vw, 32px);
-  line-height: 44.16px;
+  line-height: 32px;
   color: #303030;
 }
 h4 {
@@ -68,6 +68,7 @@ button {
   color: #303030;
 }
 .container {
+  max-width: 1440px;
   width: 100%;
   padding-left: 144px;
   padding-right: 144px;
@@ -77,8 +78,6 @@ button {
 .page {
   margin: 0 auto;
   padding: 0;
-  max-width: 1440px;
-  width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -117,7 +116,14 @@ button {
 }
 .main-thing__wrapper {
   display: flex;
+  flex-direction: column;
   padding-top: 64px;
   padding-bottom: 64px;
   box-sizing: border-box;
+}
+/*-----crumbs-----*/
+.crumbs {
+  display: flex;
+  align-items: center;
+  margin-left: 32px;
 }

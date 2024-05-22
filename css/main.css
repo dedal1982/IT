@@ -126,4 +126,9 @@ button {
   display: flex;
   align-items: center;
   margin-left: 32px;
+  margin-bottom: 32px;
+}
+.main-thing__top {
+  padding: 0 32px 0 32px;
+  box-sizing: border-box;
 }

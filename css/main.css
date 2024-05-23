@@ -31,7 +31,7 @@ h1 {
   line-height: 77.04px;
   color: #303030;
 }
-@media (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   h1 {
     font-size: 56px;
     line-height: 59.92px;
@@ -51,7 +51,7 @@ h3 {
   line-height: 32px;
   color: #303030;
 }
-@media (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   h3 {
     font-size: 24px;
     line-height: 33.12px;
@@ -89,10 +89,17 @@ button {
   box-sizing: border-box;
   margin: 0 auto;
 }
-@media (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   .container {
     padding-left: 128px;
     padding-right: 128px;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 640px) and (max-width: 1024px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
     box-sizing: border-box;
   }
 }
@@ -116,7 +123,7 @@ button {
   padding-top: 66px;
   box-sizing: border-box;
 }
-@media (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   .header__wrapper {
     padding-top: 70px;
     box-sizing: border-box;
@@ -138,7 +145,7 @@ button {
 .header__link_blue {
   color: #4584ce;
 }
-@media (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   .header__link {
     font-size: 16px;
     line-height: 25.6px;
@@ -162,7 +169,7 @@ button {
   padding: 0 32px 0 32px;
   box-sizing: border-box;
 }
-@media (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   .main-thing__top {
     max-width: 927px;
     width: 100%;
@@ -176,7 +183,7 @@ button {
   gap: 16px;
   margin-top: 64px;
 }
-@media (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   .main-thing__items {
     margin-top: 48px;
   }
@@ -193,7 +200,7 @@ button {
   padding: 38px 32px;
   box-sizing: border-box;
 }
-@media (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   .main-thing__item {
     width: 504px;
     height: 137px;

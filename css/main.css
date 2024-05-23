@@ -366,6 +366,14 @@ button {
     gap: 40px;
   }
 }
+@media (max-width: 1023px) {
+  .help-companies__wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    gap: 32px;
+  }
+}
 .help-companies__top {
   max-width: 992px;
   width: 100%;
@@ -394,5 +402,11 @@ button {
     width: 330.67px;
     height: 122px;
     border-radius: 32px;
+  }
+}
+@media (max-width: 1023px) {
+  .help-companies__item {
+    width: 224px;
+    height: 180px;
   }
 }

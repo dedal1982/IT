@@ -589,6 +589,10 @@ p {
   box-sizing: border-box;
   margin-top: 16px;
 }
+/* @media (max-width: 1280px) {
+  .approach__centr {
+  }
+} */
 .approach__text {
   max-width: 912px;
   width: 100%;
@@ -596,7 +600,15 @@ p {
 .approach__text h3 {
   line-height: 44.16px;
 }
-.approach__bottom {
+@media (max-width: 1280px) {
+  .approach__text {
+    max-width: 784px;
+  }
+  .approach__text h3 {
+    line-height: 33.12px;
+  }
+}
+.approach__centr-item {
   display: flex;
   align-items: center;
   gap: 16px;

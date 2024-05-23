@@ -31,12 +31,7 @@ h1 {
   line-height: 77.04px;
   color: #303030;
 }
-@media (max-width: 1280px) {
-  h1 {
-    font-size: 56px;
-    line-height: 59.92px;
-  }
-}
+
 h2 {
   font-family: "Bitter", serif;
   font-weight: 700;
@@ -54,6 +49,7 @@ h3 {
 @media (max-width: 1280px) {
   h3 {
     font-size: 24px;
+    line-height: 33.12px;
   }
 }
 h4 {
@@ -95,13 +91,6 @@ button {
     box-sizing: border-box;
   }
 }
-@media (max-width: 1023px) {
-  .container {
-    padding-left: 32px;
-    padding-right: 32px;
-    box-sizing: border-box;
-  }
-}
 .page {
   max-width: 1440px;
   width: 100%;
@@ -122,12 +111,7 @@ button {
   padding-top: 66px;
   box-sizing: border-box;
 }
-@media (max-width: 1280px) {
-  .header__wrapper {
-    padding-top: 70px;
-    box-sizing: border-box;
-  }
-}
+
 .header__list {
   display: flex;
   align-items: center;
@@ -144,12 +128,7 @@ button {
 .header__link_blue {
   color: #4584ce;
 }
-@media (max-width: 1280px) {
-  .header__link {
-    font-size: 16px;
-    line-height: 25.6px;
-  }
-}
+
 /*-----main-thing-----*/
 .main-thing {
   width: 100%;
@@ -161,43 +140,23 @@ button {
   padding-bottom: 64px;
   box-sizing: border-box;
 }
-@media (max-width: 1280px) {
-  .main-thing__wrapper {
-    padding-bottom: 48px;
-    box-sizing: border-box;
-  }
-}
-@media (max-width: 1023px) {
-  .main-thing__wrapper {
-    padding-top: 55.5px;
-    padding-bottom: 40px;
-    box-sizing: border-box;
-  }
-}
+
 .main-thing__top {
   max-width: 833px;
   width: 100%;
   padding: 0 32px 0 32px;
   box-sizing: border-box;
 }
-@media (max-width: 1280px) {
-  .main-thing__top {
-    max-width: 930px;
-  }
-}
+
 .main-thing__items {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 10px;
+  justify-content: center;
+  gap: 16px;
   margin-top: 64px;
 }
-@media (max-width: 1280px) {
-  .main-thing__items {
-    margin-top: 48px;
-  }
-}
+
 .main-thing__item {
   width: 568px;
   height: 164px;
@@ -210,16 +169,7 @@ button {
   padding: 38px 32px;
   box-sizing: border-box;
 }
-@media (max-width: 1280px) {
-  .main-thing__item {
-    width: 504px;
-    height: 137px;
-    border-radius: 32px;
-    gap: 16px;
-    padding: 33px 32px;
-    box-sizing: border-box;
-  }
-}
+
 .main-thing__item:hover {
   box-shadow: none;
 }

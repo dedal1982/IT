@@ -614,6 +614,11 @@ p {
     line-height: 33.12px;
   }
 }
+@media (max-width: 1023px) {
+  .approach__text {
+    max-width: 464px;
+  }
+}
 .approach__centr-item {
   display: flex;
   align-items: center;

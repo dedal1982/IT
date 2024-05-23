@@ -189,7 +189,7 @@ button {
     line-height: 24px;
   }
 }
-/*-----main-thing-----*/
+/*-----------------------------------------------------main-thing---------------------------------------------*/
 .main-thing {
   width: 100%;
 }
@@ -327,4 +327,35 @@ button {
   .crumbs {
     margin-left: 24px;
   }
+}
+/*-------------------------------------------------help-companies--------------------------------------------------------*/
+.help-companies {
+  width: 100%;
+}
+.help-companies__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  box-sizing: border-box;
+}
+.help-companies__top {
+  max-width: 992px;
+  width: 100%;
+  padding: 0 32px 0 32px;
+  box-sizing: border-box;
+}
+.help-companies__items {
+  display: flex;
+  gap: 16px;
+}
+.help-companies__item {
+  width: 373.33px;
+  height: 172px;
+  display: flex;
+  border-radius: 44px;
+  background: #f0efed;
+  padding: 32px;
+  box-sizing: border-box;
 }

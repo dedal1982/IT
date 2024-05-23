@@ -31,7 +31,12 @@ h1 {
   line-height: 77.04px;
   color: #303030;
 }
-
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 56px;
+    line-height: 59.92px;
+  }
+}
 h2 {
   font-family: "Bitter", serif;
   font-weight: 700;
@@ -111,7 +116,12 @@ button {
   padding-top: 66px;
   box-sizing: border-box;
 }
-
+@media (max-width: 1280px) {
+  .header__wrapper {
+    padding-top: 70px;
+    box-sizing: border-box;
+  }
+}
 .header__list {
   display: flex;
   align-items: center;
@@ -128,7 +138,12 @@ button {
 .header__link_blue {
   color: #4584ce;
 }
-
+@media (max-width: 1280px) {
+  .header__link {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+}
 /*-----main-thing-----*/
 .main-thing {
   width: 100%;
@@ -147,7 +162,12 @@ button {
   padding: 0 32px 0 32px;
   box-sizing: border-box;
 }
-
+@media (max-width: 1280px) {
+  .main-thing__top {
+    max-width: 927px;
+    width: 100%;
+  }
+}
 .main-thing__items {
   width: 100%;
   display: flex;

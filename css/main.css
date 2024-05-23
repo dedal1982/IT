@@ -112,6 +112,12 @@ p {
   line-height: 29.7px;
   color: #303030;
 }
+@media (max-width: 1280px) {
+  p {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+}
 .container {
   width: 100%;
   padding-left: 144px;
@@ -614,8 +620,19 @@ p {
   gap: 16px;
   margin-top: 32px;
 }
+@media (max-width: 1280px) {
+  .approach__centr-item {
+    margin-top: 14px;
+  }
+}
 .approach__image {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+}
+@media (max-width: 1280px) {
+  .approach__image {
+    width: 96px;
+    height: 96px;
+  }
 }

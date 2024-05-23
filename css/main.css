@@ -176,7 +176,11 @@ button {
   gap: 16px;
   margin-top: 64px;
 }
-
+@media (max-width: 1280px) {
+  .main-thing__items {
+    margin-top: 48px;
+  }
+}
 .main-thing__item {
   width: 568px;
   height: 164px;

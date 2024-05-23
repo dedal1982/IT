@@ -580,3 +580,23 @@ button {
     height: 164px;
   }
 }
+.approach__centr {
+  display: flex;
+  flex-direction: column;
+  background: #f0efed;
+  border-radius: 44px;
+  padding: 48px;
+  box-sizing: border-box;
+  margin-top: 16px;
+}
+.approach__text {
+  max-width: 912px;
+  width: 100%;
+}
+.approach__text h3 {
+  line-height: 44.16px;
+}
+.approach__bottom {
+  display: flex;
+  gap: 16px;
+}

@@ -675,3 +675,13 @@ p {
     height: 72px;
   }
 }
+.approach__bottom {
+  width: 100%;
+  height: 88px;
+  padding: 32px;
+  box-sizing: border-box;
+  margin-top: 16px;
+}
+.approach__bottom p {
+  color: #4584ce;
+}

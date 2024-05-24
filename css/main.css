@@ -924,3 +924,14 @@ p {
     margin-top: 31px;
   }
 }
+.difference__list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 62px;
+  margin-left: 32px;
+}
+.difference__list h3 {
+  line-height: 44.16px;
+  letter-spacing: 0.03em;
+}

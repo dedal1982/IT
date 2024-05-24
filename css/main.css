@@ -377,8 +377,14 @@ p {
 .crumbs {
   display: flex;
   align-items: center;
+  gap: 16px;
   margin-left: 32px;
   margin-bottom: 32px;
+}
+.crumbs li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 @media (max-width: 1023px) {
   .crumbs {
@@ -388,6 +394,25 @@ p {
 @media (max-width: 767px) {
   .crumbs {
     margin-left: 24px;
+  }
+}
+.crumbs span {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36.3px;
+  color: #303030;
+}
+@media (max-width: 1280px) {
+  .crumbs span {
+    font-size: 18px;
+    line-height: 28.8px;
+  }
+}
+@media (max-width: 767px) {
+  .crumbs span {
+    font-size: 15px;
+    line-height: 24px;
   }
 }
 /*-------------------------------------------------help-companies--------------------------------------------------------*/
@@ -1071,7 +1096,7 @@ p {
     gap: 16px;
   }
 }
-.footer__link_blue {
+.footer__protection-link {
   color: #4584ce;
   margin-left: auto;
 }

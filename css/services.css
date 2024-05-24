@@ -1,0 +1,17 @@
+/*---------------------------------------main-goals-------------------------------------------------------------------*/
+.main-goals {
+  width: 100%;
+}
+.main-goals__wrapper {
+  padding-top: 62px;
+  box-sizing: border-box;
+}
+.main-goals__top {
+  max-width: 1050px;
+  width: 100%;
+}
+.difference__description {
+  max-width: 100%;
+  padding-left: 0;
+  margin-top: 32px;
+}

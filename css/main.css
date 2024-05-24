@@ -804,3 +804,19 @@ p {
     gap: 8px;
   }
 }
+/*----------------------------------------difference-------------------------------------------------------*/
+.difference {
+  width: 100%;
+}
+.difference__wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  padding-left: 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.difference__top {
+  max-width: 864px;
+}

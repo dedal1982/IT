@@ -1018,3 +1018,32 @@ p {
     margin-top: 8px;
   }
 }
+/*----------------------------------------------footer----------------------------------------------*/
+.footer {
+  width: 100%;
+}
+.footer__wrapper {
+  width: 100%;
+  padding-top: 64px;
+  padding-bottom: 128px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__link_blue {
+  color: #4584ce;
+  margin-left: auto;
+}
+.footer__link {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+/* <a class="footer__link_blue" href="#">
+              <p>Политика о защите персональных данных</p>
+            </a> */

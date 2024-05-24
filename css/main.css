@@ -722,3 +722,19 @@ p {
   padding: 0 32px 0 32px;
   box-sizing: border-box;
 }
+.trust-me__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 64px;
+}
+.trust-me__item {
+  width: 373.33px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  background: #f0efed;
+  border-radius: 44px;
+  padding: 38px 32px 32px 32px;
+  box-sizing: border-box;
+}

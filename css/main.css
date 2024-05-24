@@ -822,9 +822,20 @@ p {
     padding-bottom: 48px;
   }
 }
+@media (max-width: 1023px) {
+  .difference__wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
 .difference__top {
   max-width: 864px;
   width: 100%;
+}
+@media (max-width: 1023px) {
+  .difference__top {
+    max-width: 544px;
+  }
 }
 .difference__description {
   max-width: 864px;
@@ -864,10 +875,15 @@ p {
   .difference__button {
     width: 268px;
     height: 64px;
-    margin-top: 40px;
+    margin-top: 39px;
   }
   .difference__button img {
     width: 16px;
     height: 16px;
+  }
+}
+@media (max-width: 1023px) {
+  .difference__button {
+    margin-top: 30px;
   }
 }

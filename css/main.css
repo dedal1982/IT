@@ -809,14 +809,39 @@ p {
   width: 100%;
 }
 .difference__wrapper {
-  padding-top: 64px;
+  padding-top: 66px;
   padding-bottom: 64px;
   padding-left: 32px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 .difference__top {
   max-width: 864px;
+  width: 100%;
+}
+.difference__description {
+  max-width: 864px;
+  width: 100%;
+  margin-top: 16px;
+}
+.difference__button {
+  width: 329px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 44px;
+  background: #303030;
+  margin-top: 64px;
+}
+.difference__button h5 {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.difference__button img {
+  width: 24px;
+  height: 24px;
 }

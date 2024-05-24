@@ -695,3 +695,12 @@ p {
     box-sizing: border-box;
   }
 }
+@media (max-width: 767px) {
+  .approach__bottom {
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 8px;
+    padding: 20px 32px;
+    box-sizing: border-box;
+  }
+}

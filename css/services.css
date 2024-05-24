@@ -6,12 +6,30 @@
   padding-top: 62px;
   box-sizing: border-box;
 }
+@media (max-width: 1280px) {
+  .main-goals__wrapper {
+    padding-top: 64px;
+    box-sizing: border-box;
+  }
+}
 .main-goals__top {
   max-width: 1050px;
   width: 100%;
+}
+@media (max-width: 1280px) {
+  .main-goals__top {
+    max-width: 905px;
+  }
 }
 .difference__description {
   max-width: 100%;
   padding-left: 0;
   margin-top: 32px;
+}
+@media (max-width: 1280px) {
+  .difference__description {
+    font-size: 18px;
+    line-height: 28.8px;
+    margin-top: 24px;
+  }
 }

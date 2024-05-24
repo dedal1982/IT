@@ -504,6 +504,7 @@ p {
   max-width: 992px;
   width: 100%;
   padding: 0 32px 0 32px;
+  box-sizing: border-box;
 }
 @media (max-width: 1280px) {
   .approach__top {
@@ -703,4 +704,21 @@ p {
     padding: 20px 32px;
     box-sizing: border-box;
   }
+}
+/*--------------------------------------------------trust-me------------------------------------------------------------*/
+.trust-me {
+  width: 100%;
+}
+.trust-me__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  box-sizing: border-box;
+}
+.trust-me__top {
+  max-width: 864px;
+  width: 100%;
+  padding: 0 32px 0 32px;
+  box-sizing: border-box;
 }

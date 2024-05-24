@@ -678,10 +678,20 @@ p {
 .approach__bottom {
   width: 100%;
   height: 88px;
-  padding: 32px;
+  padding: 31px 32px;
   box-sizing: border-box;
   margin-top: 16px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29.7px;
 }
-.approach__bottom p {
+.approach__bottom a {
   color: #4584ce;
+}
+@media (max-width: 1280px) {
+  .approach__bottom {
+    padding: 17px 32px;
+    box-sizing: border-box;
+  }
 }

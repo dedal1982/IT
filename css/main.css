@@ -1003,3 +1003,18 @@ p {
     line-height: 33.12px;
   }
 }
+.difference__link-bottom {
+  margin-top: 32px;
+}
+@media (max-width: 1023px) {
+  .difference__link-bottom {
+    margin-top: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .difference__link-bottom {
+    padding-left: 24px;
+    box-sizing: border-box;
+    margin-top: 8px;
+  }
+}

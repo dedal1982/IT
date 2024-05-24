@@ -1026,8 +1026,15 @@ p {
   width: 100%;
   padding-top: 64px;
   padding-bottom: 128px;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 1280px) {
+  .footer__wrapper {
+    padding: 32px 32px 80px 32px;
+    box-sizing: border-box;
+  }
 }
 .footer__link_blue {
   color: #4584ce;

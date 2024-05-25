@@ -131,7 +131,8 @@
   .owner__item {
     width: 504px;
     border-radius: 32px;
-    gap: 8px;
+    padding: 32px 32px;
+    box-sizing: border-box;
   }
 }
 .owner__item:hover {
@@ -149,11 +150,26 @@
   margin-top: 16px;
   color: #303030;
 }
+@media (max-width: 1280px) {
+  .owner__item h5 {
+    margin-top: 8px;
+  }
+}
 .owner__item img {
   width: 24px;
   height: 24px;
   margin-top: 32px;
 }
+@media (max-width: 1280px) {
+  .owner__item img {
+    margin-top: 16px;
+  }
+}
 .owner__item:nth-child(2) img {
   margin-top: 38px;
+}
+@media (max-width: 1280px) {
+  .owner__item:nth-child(2) img {
+    margin-top: 20px;
+  }
 }

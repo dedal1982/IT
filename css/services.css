@@ -296,6 +296,12 @@
   width: 462px;
   height: 184px;
 }
+@media (max-width: 1280px) {
+  .protection__wrapper img {
+    width: 462px;
+    height: 214px;
+  }
+}
 .protection__text {
   width: 690px;
   padding: 36px 48px 32px 32px;
@@ -303,4 +309,21 @@
   display: flex;
   flex-direction: column;
   gap: 23px;
+}
+@media (max-width: 1280px) {
+  .protection__text {
+    padding: 33px 48px 32px 32px;
+    box-sizing: border-box;
+    gap: 16px;
+  }
+}
+@media (max-width: 1280px) {
+  .protection__text h3 {
+    font-size: 32px;
+    line-height: 44.16px;
+  }
+  .protection__text p {
+    font-size: 18px;
+    line-height: 29.7px;
+  }
 }

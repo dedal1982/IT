@@ -204,7 +204,7 @@
 }
 @media (max-width: 700px) {
   .owner__text {
-    width: 90%;
+    width: 92%;
   }
 }
 .owner__icon {
@@ -244,8 +244,19 @@
     margin-top: 20px;
   }
 }
+@media (max-width: 768px) {
+  .owner__icon_four {
+    margin-top: -12px;
+  }
+}
 @media (max-width: 700px) {
   .owner__icon_two {
+    margin-top: 0;
+  }
+  .owner__icon_three {
+    margin-top: 0;
+  }
+  .owner__icon_four {
     margin-top: 0;
   }
 }

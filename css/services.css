@@ -260,3 +260,12 @@
     margin-top: 0;
   }
 }
+/*---------------------------------------------------protection-----------------------------------------------------------*/
+.protection {
+  width: 100%;
+}
+.protection__wrapper {
+  padding-top: 48px;
+  padding-bottom: 32px;
+  display: flex;
+}

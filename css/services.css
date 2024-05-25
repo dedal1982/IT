@@ -227,8 +227,20 @@
 .owner__icon_two {
   margin-top: 38px;
 }
+.owner__icon_three {
+  margin-top: 33px;
+}
+.owner__icon_four {
+  margin-top: 0;
+}
 @media (max-width: 1280px) {
   .owner__icon_two {
+    margin-top: 20px;
+  }
+  .owner__icon_three {
+    margin-top: 49px;
+  }
+  .owner__icon__four {
     margin-top: 20px;
   }
 }
@@ -236,7 +248,4 @@
   .owner__icon_two {
     margin-top: 0;
   }
-}
-.owner__icon_four {
-  margin: 0;
 }

@@ -1,0 +1,11 @@
+/*-------------------------------comprehensive----------------------------------------------------*/
+.comprehensive {
+  width: 100%;
+}
+.comprehensive__wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}

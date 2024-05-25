@@ -88,3 +88,19 @@
     margin-top: 16px;
   }
 }
+/*----------------------------------------------------------owner---------------------------------------------------------*/
+.owner {
+  width: 100%;
+}
+.owner__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  box-sizing: border-box;
+  gap: 64px;
+}
+.owner__top {
+  padding-left: 32px;
+  box-sizing: border-box;
+}

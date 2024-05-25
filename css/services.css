@@ -265,7 +265,29 @@
   width: 100%;
 }
 .protection__wrapper {
-  padding-top: 48px;
-  padding-bottom: 32px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  box-sizing: border-box;
   display: flex;
+}
+@media (max-width: 1280px) {
+  .protection__wrapper {
+    padding-top: 48px;
+    padding-bottom: 64px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 1023px) {
+  .protection__wrapper {
+    padding-top: 40px;
+    padding-bottom: 56px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 767px) {
+  .protection__wrapper {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    box-sizing: border-box;
+  }
 }

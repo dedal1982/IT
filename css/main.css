@@ -394,6 +394,10 @@ p {
 @media (max-width: 767px) {
   .crumbs {
     margin-left: 24px;
+    gap: 8px;
+  }
+  .crumbs li {
+    gap: 8px;
   }
 }
 .crumbs span {

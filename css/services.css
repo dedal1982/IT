@@ -104,3 +104,36 @@
   padding-left: 32px;
   box-sizing: border-box;
 }
+.owner__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.owner__item {
+  width: 568px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 44px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px 0px #00000014;
+  padding: 31px 32px;
+  box-sizing: border-box;
+}
+.owner__item:hover {
+  box-shadow: none;
+}
+.owner__item h3 {
+  line-height: 44.16px;
+}
+.owner__item h5 {
+  color: #303030;
+}
+.owner__item img {
+  width: 24px;
+  height: 24px;
+  margin-top: 16px;
+}
+.owner__item:nth-child(2) img {
+  margin-top: 23px;
+}

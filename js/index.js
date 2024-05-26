@@ -13,19 +13,22 @@ inputField.addEventListener("focus", function () {
 });
 
 //инпут плейсхолдер при фокусе
-const input = document.getElementById("input");
-const label = input.nextElementSibling;
+const inputs = document.querySelectorAll(".communicate__input");
 
-input.addEventListener("focus", function () {
-  label.classList.add("active");
-});
+inputs.forEach((input) => {
+  const label = input.nextElementSibling;
 
-input.addEventListener("blur", function () {
-  if (input.value === "") {
-    label.classList.remove("active");
+  input.addEventListener("focus", function () {
+    label.classList.add("active");
+  });
+
+  input.addEventListener("blur", function () {
+    if (input.value === "") {
+      label.classList.remove("active");
+    }
+  });
+
+  if (input.value !== "") {
+    label.classList.add("active");
   }
 });
-
-if (input.value !== "") {
-  label.classList.add("active");
-}

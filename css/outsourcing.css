@@ -215,6 +215,12 @@
 .communicate__form {
   display: flex;
   flex-direction: column;
+  gap: 16px;
+}
+@media (max-width: 767px) {
+  .communicate__form {
+    gap: 8px;
+  }
 }
 /*************************/
 .communicate__container {
@@ -267,13 +273,13 @@ input {
   input {
     margin-top: 20px;
     height: 29px;
+    font-size: 18px;
+    line-height: 28.8px;
   }
 }
 label {
   position: absolute;
-  top: 50%;
-  left: 13.5%;
-  transform: translate(-50%, -50%);
+  left: 72px;
   font-family: "Roboto Flex", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -285,32 +291,22 @@ label {
   label {
     font-size: 18px;
     line-height: 28.8px;
-    left: 10%;
-  }
-}
-@media (max-width: 1023px) {
-  label {
-    left: 12.5%;
-  }
-}
-@media (max-width: 767px) {
-  label {
-    left: 24.5%;
+    left: 48px;
   }
 }
 input:focus + label,
 input:valid + label {
-  top: 25px;
+  top: 15px;
   font-size: 18px;
   line-height: 29.7px;
   color: #303030;
-  left: 12.5%;
+  left: 70px;
 }
 @media (max-width: 1280px) {
   input:focus + label,
   input:valid + label {
-    top: 15px;
-    left: 9.5%;
+    top: 8px;
+    left: 48px;
     font-size: 16px;
     line-height: 25.6px;
   }
@@ -318,8 +314,6 @@ input:valid + label {
 @media (max-width: 1023px) {
   input:focus + label,
   input:valid + label {
-    top: 15px;
-    left: 11.5%;
     font-size: 15px;
     line-height: 24px;
   }
@@ -327,7 +321,6 @@ input:valid + label {
 @media (max-width: 767px) {
   input:focus + label,
   input:valid + label {
-    top: 15px;
-    left: 23%;
+    top: 5px;
   }
 }

@@ -163,3 +163,41 @@
     line-height: 33.12px;
   }
 }
+/*---------------------------------------------communicate----------------------------------------------*/
+.communicate {
+  width: 100%;
+}
+.communicate__wrapper {
+  padding-top: 69px;
+  padding-bottom: 64px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+@media (max-width: 1280px) {
+  .communicate__wrapper {
+    padding-top: 52px;
+    padding-bottom: 64px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 1023px) {
+  .communicate__wrapper {
+    padding-top: 40px;
+    padding-bottom: 56px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 767px) {
+  .communicate__wrapper {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    box-sizing: border-box;
+  }
+}
+.communicate__top {
+  padding-left: 32px;
+  padding-right: 32px;
+  box-sizing: border-box;
+}

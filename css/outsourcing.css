@@ -225,6 +225,8 @@
 @media (max-width: 767px) {
   .communicate__form {
     gap: 8px;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 }
 /*************************/
@@ -381,6 +383,11 @@ label.active {
   align-items: center;
   gap: 32px;
 }
+@media (max-width: 767px) {
+  .communicate__item {
+    flex-direction: column;
+  }
+}
 .communicate__button {
   width: 208px;
   height: 88px;
@@ -388,18 +395,39 @@ label.active {
   background: #303030;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 16px;
   color: #ffffff;
   font-family: "Roboto Flex", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 36.3px;
+  padding-left: 32px;
+  box-sizing: border-box;
 }
 @media (max-width: 1280px) {
   .communicate__button {
     width: 167px;
     height: 64px;
+    font-size: 18px;
+    line-height: 28.8px;
+    padding-left: 24px;
+    box-sizing: border-box;
+  }
+  .communicate__button img {
+    width: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .communicate__button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 375px) {
+  .communicate__button {
+    padding-left: 120px;
+    box-sizing: border-box;
+    justify-content: flex-start;
   }
 }
 .communicate__text {
@@ -411,4 +439,10 @@ label.active {
 }
 .communicate__text span {
   color: #4584ce;
+}
+@media (max-width: 767px) {
+  .communicate__text {
+    font-size: 15px;
+    line-height: 24px;
+  }
 }

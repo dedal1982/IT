@@ -132,9 +132,26 @@ p {
   border-radius: 44px;
   margin-top: 63px;
 }
+.video-text {
+  position: absolute;
+  top: 56px;
+  left: 64px;
+  width: 270px;
+  font-family: "Bitter", serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44.16px;
+  color: #ffffff;
+  z-index: 10;
+}
 @media (max-width: 1280px) {
   .video-frame {
     margin-top: 48px;
+  }
+  .video-text {
+    width: 182px;
+    font-size: 24px;
+    line-height: 33.12px;
   }
 }
 @media (max-width: 1023px) {
@@ -144,12 +161,24 @@ p {
     border-radius: 32px;
     margin-top: 40px;
   }
+  .video-text {
+    width: 240px;
+    top: 40px;
+    left: 40px;
+  }
 }
 @media (max-width: 767px) {
   .video-frame {
     width: 359px;
     height: 204px;
     margin-top: 32px;
+  }
+  .video-text {
+    width: 150px;
+    top: 31px;
+    left: 26px;
+    font-size: 14px;
+    line-height: 19.32px;
   }
 }
 .video-player,

@@ -175,14 +175,12 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 64px;
 }
 @media (max-width: 1280px) {
   .communicate__wrapper {
     padding-top: 52px;
     padding-bottom: 64px;
     box-sizing: border-box;
-    gap: 40px;
   }
 }
 @media (max-width: 1023px) {
@@ -197,7 +195,6 @@
     padding-top: 34px;
     padding-bottom: 32px;
     box-sizing: border-box;
-    gap: 32px;
   }
 }
 .communicate__top {
@@ -216,6 +213,14 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+@media (max-width: 1280px) {
+  .communicate__form {
+    margin-top: 40px;
+    margin-bottom: 64px;
+  }
 }
 @media (max-width: 767px) {
   .communicate__form {
@@ -390,6 +395,12 @@ label.active {
   font-weight: 400;
   font-size: 22px;
   line-height: 36.3px;
+}
+@media (max-width: 1280px) {
+  .communicate__button {
+    width: 167px;
+    height: 64px;
+  }
 }
 .communicate__text {
   font-family: "Roboto Flex", sans-serif;

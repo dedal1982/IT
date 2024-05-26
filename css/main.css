@@ -144,6 +144,15 @@ p {
   color: #ffffff;
   z-index: 10;
 }
+.video-img {
+  position: absolute;
+  left: 76px;
+  bottom: 62px;
+  width: 36px;
+  height: 44px;
+  z-index: 10;
+  cursor: pointer;
+}
 @media (max-width: 1280px) {
   .video-frame {
     margin-top: 48px;
@@ -166,6 +175,10 @@ p {
     top: 40px;
     left: 40px;
   }
+  .video-img {
+    left: 44px;
+    bottom: 38px;
+  }
 }
 @media (max-width: 767px) {
   .video-frame {
@@ -179,6 +192,12 @@ p {
     left: 26px;
     font-size: 14px;
     line-height: 19.32px;
+  }
+  .video-img {
+    left: 28px;
+    bottom: 26px;
+    width: 21px;
+    height: 21px;
   }
 }
 .video-player,

@@ -345,3 +345,10 @@ textarea {
   outline: none;
   background: transparent;
 }
+textarea:focus + label {
+  top: 10px;
+  font-size: 18px;
+  line-height: 29.7px;
+  color: #303030;
+  left: 70px;
+}

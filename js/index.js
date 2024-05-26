@@ -32,3 +32,21 @@ inputs.forEach((input) => {
     label.classList.add("active");
   }
 });
+
+//текстарея плейсхолдер при фокусе
+// const textarea = document.querySelector(".communicate__textarea");
+// const label = textarea.nextElementSibling;
+
+// textarea.addEventListener("focus", function () {
+//   label.classList.add("active");
+// });
+
+// textarea.addEventListener("blur", function () {
+//   if (textarea.value === "") {
+//     label.classList.remove("active");
+//   }
+// });
+
+// if (textarea.value !== "") {
+//   label.classList.add("active");
+// }

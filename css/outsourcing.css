@@ -118,6 +118,12 @@
     margin-top: 32px;
   }
 }
+@media (max-width: 767px) {
+  .department__items {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
 .department__item {
   width: 373.33px;
   border-radius: 44px;
@@ -129,5 +135,21 @@
   .department__item {
     width: 330.67px;
     border-radius: 32px;
+  }
+}
+@media (max-width: 1023px) {
+  .department__item {
+    width: 224px;
+  }
+}
+@media (max-width: 767px) {
+  .department__item {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .department__item p {
+    font-size: 16px;
+    line-height: 25.6px;
   }
 }

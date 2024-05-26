@@ -71,21 +71,21 @@
 }
 @media (max-width: 1280px) {
   .department__wrapper {
-    padding-top: 48px;
+    padding-top: 49px;
     padding-bottom: 48px;
     box-sizing: border-box;
   }
 }
 @media (max-width: 1023px) {
   .department__wrapper {
-    padding-top: 40px;
+    padding-top: 42px;
     padding-bottom: 40px;
     box-sizing: border-box;
   }
 }
 @media (max-width: 767px) {
   .department__wrapper {
-    padding-top: 32px;
+    padding-top: 31px;
     padding-bottom: 32px;
     box-sizing: border-box;
   }
@@ -130,16 +130,21 @@
   background: #f0efed;
   padding: 32px 32px 32px 32px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 @media (max-width: 1280px) {
   .department__item {
     width: 330.67px;
     border-radius: 32px;
+    gap: 8px;
   }
 }
 @media (max-width: 1023px) {
   .department__item {
     width: 224px;
+    gap: 9px;
   }
 }
 @media (max-width: 767px) {
@@ -152,5 +157,9 @@
   .department__item p {
     font-size: 16px;
     line-height: 25.6px;
+  }
+  .department__item h3 {
+    font-size: 24px;
+    line-height: 33.12px;
   }
 }

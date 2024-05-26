@@ -335,8 +335,14 @@ input:valid + label {
   background: #f0efed;
   border-radius: 44px;
   gap: 16px;
-  padding: 32px;
+  padding: 24px 32px 24px 32px;
   box-sizing: border-box;
+}
+@media (max-width: 1280px) {
+  .communicate__textarea {
+    padding: 16px 32px 24px 32px;
+    box-sizing: border-box;
+  }
 }
 textarea {
   width: 100%;
@@ -344,11 +350,29 @@ textarea {
   border: none;
   outline: none;
   background: transparent;
+  margin-top: 20px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36.3px;
 }
-textarea:focus + label {
+/* @media (max-width: 1280px) {
+  .communicate__label {
+    left: 24px;
+  }
+} */
+.communicate__label {
+  left: 30px;
+}
+label.active {
   top: 10px;
   font-size: 18px;
   line-height: 29.7px;
   color: #303030;
-  left: 70px;
+  left: 30px;
+}
+@media (max-width: 1280px) {
+  .communicate__label {
+    left: 24px;
+  }
 }

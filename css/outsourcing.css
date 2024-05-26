@@ -356,11 +356,6 @@ textarea {
   font-size: 22px;
   line-height: 36.3px;
 }
-/* @media (max-width: 1280px) {
-  .communicate__label {
-    left: 24px;
-  }
-} */
 .communicate__label {
   left: 30px;
 }
@@ -375,4 +370,34 @@ label.active {
   .communicate__label {
     left: 24px;
   }
+}
+.communicate__item {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.communicate__button {
+  width: 208px;
+  height: 88px;
+  border-radius: 44px;
+  background: #303030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #ffffff;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36.3px;
+}
+.communicate__text {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29.7px;
+  color: #303030;
+}
+.communicate__text span {
+  color: #4584ce;
 }

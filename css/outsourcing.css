@@ -201,3 +201,7 @@
   padding-right: 32px;
   box-sizing: border-box;
 }
+.communicate__form {
+  display: flex;
+  flex-direction: column;
+}

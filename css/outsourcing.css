@@ -165,6 +165,10 @@
     line-height: 33.12px;
   }
 }
+.department__item_system p {
+  font-size: 22px;
+  line-height: 36.3px;
+}
 /*---------------------------------------------communicate----------------------------------------------*/
 .communicate {
   width: 100%;

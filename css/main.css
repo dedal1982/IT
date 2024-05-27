@@ -285,6 +285,11 @@ p {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
 }
+@media (max-width: 767px) {
+  .page {
+    padding-bottom: 76px;
+  }
+}
 /*-----header-----*/
 .header {
   width: 100%;

@@ -455,3 +455,40 @@ label.active {
     box-sizing: border-box;
   }
 }
+/*--------------------------------------------------------menu-container-----------------------------------------*/
+.menu-container {
+  display: none;
+}
+@media (max-width: 767px) {
+  .menu-container {
+    position: fixed;
+    bottom: 16px;
+    width: 100%;
+    display: flex;
+    padding: 8px 16px 8px 16px;
+    box-sizing: border-box;
+    background: transparent;
+    gap: 8px;
+    z-index: 555;
+  }
+  .menu-container__button {
+    width: 167.5px;
+    height: 64px;
+    border-radius: 32px;
+    background: #303030;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: #ffffff;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28.8px;
+  }
+  .menu-container__burger {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+}

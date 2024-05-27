@@ -363,6 +363,11 @@ textarea {
   font-size: 22px;
   line-height: 36.3px;
 }
+@media (max-width: 767px) {
+  textarea {
+    margin-top: 50px;
+  }
+}
 .communicate__label {
   left: 30px;
 }
@@ -386,6 +391,7 @@ label.active {
 @media (max-width: 767px) {
   .communicate__item {
     flex-direction: column;
+    gap: 16px;
   }
 }
 .communicate__button {
@@ -444,5 +450,8 @@ label.active {
   .communicate__text {
     font-size: 15px;
     line-height: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
   }
 }

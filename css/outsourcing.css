@@ -165,7 +165,10 @@
     line-height: 33.12px;
   }
 }
-.department__item_system p {
+.department__item_system {
+  width: 568px;
+}
+.department__item_system-p p {
   font-size: 22px;
   line-height: 36.3px;
 }
@@ -174,7 +177,7 @@
   width: 100%;
 }
 .communicate__wrapper {
-  padding-top: 69px;
+  padding-top: 64px;
   padding-bottom: 64px;
   box-sizing: border-box;
   display: flex;

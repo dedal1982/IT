@@ -146,3 +146,20 @@
     justify-content: space-between;
   }
 }
+.certificate-page__button {
+  width: 100%;
+  height: 88px;
+  background: #30303012;
+  border-radius: 44px;
+  margin-top: 16px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36.3px;
+  color: #303030;
+}
+@media (max-width: 1280px) {
+  .certificate-page__button {
+    height: 64px;
+  }
+}

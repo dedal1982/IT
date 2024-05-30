@@ -52,3 +52,34 @@
     line-height: 28.8px;
   }
 }
+/*------------------------------------------------career---------------------------------------------------------------*/
+.career {
+  width: 100%;
+}
+.career__top {
+  padding-left: 32px;
+  padding-right: 32px;
+  box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  .career__top {
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+  }
+}
+.career__inner {
+  display: flex;
+  background: #f0efed;
+  margin-top: 61px;
+}
+@media (max-width: 1280px) {
+  .career__inner {
+    margin-top: 36px;
+  }
+}
+@media (max-width: 1023px) {
+  .career__inner {
+    margin-top: 32px;
+  }
+}

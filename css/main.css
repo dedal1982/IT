@@ -436,6 +436,7 @@ p {
 @media (max-width: 767px) {
   .crumbs ul {
     margin-left: 24px;
+    gap: 8px;
   }
 }
 .crumbs ul li p {

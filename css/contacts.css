@@ -1,25 +1,27 @@
 .contacts {
   width: 100%;
 }
-.contact__wrapper {
+.contacts__wrapper {
   padding-top: 28px;
   padding-bottom: 64px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 1280px) {
-  .contact__wrapper {
+  .contacts__wrapper {
     padding-top: 32px;
     padding-bottom: 48px;
   }
 }
 @media (max-width: 1023px) {
-  .contact__wrapper {
+  .contacts__wrapper {
     padding-top: 24px;
     padding-bottom: 40px;
   }
 }
 @media (max-width: 767px) {
-  .contact__wrapper {
+  .contacts__wrapper {
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -39,10 +41,55 @@
     max-width: 540px;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   .contacts__top {
     padding-left: 24px;
     padding-right: 24px;
     max-width: 340px;
+  }
+}
+/*---------------------------------------------------map--------------------------------------------------------*/
+.map {
+  width: 100%;
+}
+.map__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.map__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
+  box-sizing: border-box;
+}
+.map__button {
+  width: 536px;
+  height: 88px;
+  background: #30303012;
+  box-shadow: 0px 0px 20px 0px #0000001a inset;
+  border-radius: 44px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36.3px;
+}
+@media (max-width: 1280px) {
+  .map__button {
+    width: 476px;
+    height: 64px;
+    font-size: 18px;
+    line-height: 28.8px;
+  }
+}
+@media (max-width: 767px) {
+  .map__button {
+    width: 167.5px;
+  }
+  .map__buttons {
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }

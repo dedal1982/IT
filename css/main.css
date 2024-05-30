@@ -301,6 +301,21 @@ p {
   .video-preview-about {
     border-radius: 44px;
   }
+  .video-player-about {
+    border-radius: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .video-player-about {
+    border-radius: 32px;
+  }
+}
+@media (max-width: 1023px) {
+  .video-preview-about {
+    background-image: url(../images/preview-about-t.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 @media (max-width: 767px) {
   .video-preview-about {

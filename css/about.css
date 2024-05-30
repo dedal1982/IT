@@ -147,6 +147,7 @@
   flex-wrap: wrap;
   gap: 16px;
   margin-top: 32px;
+  margin-bottom: 16px;
 }
 @media (max-width: 1280px) {
   .qualification__items {
@@ -216,6 +217,7 @@
 @media (max-width: 767px) {
   .qualification__items {
     gap: 8px;
+    margin-bottom: 8px;
   }
   .qualification__item {
     width: 100%;

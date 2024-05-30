@@ -161,5 +161,7 @@
 @media (max-width: 1280px) {
   .certificate-page__button {
     height: 64px;
+    font-size: 18px;
+    line-height: 28.8px;
   }
 }

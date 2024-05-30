@@ -1,3 +1,13 @@
+const videoPreviews = document.querySelectorAll(".video-preview");
+const videoPlayers = document.querySelectorAll(".video-player");
+
+videoPreviews.forEach((videoPreview, index) => {
+  videoPreview.addEventListener("click", function () {
+    videoPreview.style.display = "none";
+    videoPlayers[index].play();
+  });
+});
+//////////////////////
 // const videoPreview = document.querySelector(".video-preview");
 // const videoPlayer = document.querySelector(".video-player");
 
@@ -50,6 +60,7 @@
 // if (textarea.value !== "") {
 //   label.classList.add("active");
 // }
+///////////////////////////////////////////////////////
 const textarea = document.querySelector(".communicate__textarea");
 const label = document.querySelector(".communicate__label");
 
@@ -61,3 +72,14 @@ textarea.addEventListener("blur", function () {
     label.classList.remove("active");
   }
 });
+///////////////////////////
+// document.querySelectorAll("input, textarea").forEach((input) => {
+//   input.addEventListener("focus", () => {
+//     input.style.fontSize = "14px";
+//     input.style.paddingTop = "20px";
+//   });
+//   input.addEventListener("blur", () => {
+//     input.style.fontSize = "16px";
+//     input.style.paddingTop = "10px";
+//   });
+// });

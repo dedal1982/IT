@@ -10,7 +10,7 @@
     <div class="page">
       <header class="header">
         <div class="container">
-          <div class="header__wrapper services-wrapper">
+          <div class="header__wrapper header__wrapper_services">
             <ul class="header__list">
               <li>
                 <a class="header__link" href="#">рус</a>
@@ -22,165 +22,152 @@
           </div>
         </div>
       </header>
+      <!--мобильное меню-->
+      <div class="menu-container">
+        <div class="menu-container__wrapper">
+          <button class="menu-container__button">Заявка</button>
+          <button class="menu-container__button">
+            Меню
+            <img
+              class="menu-container__burger"
+              src="./icons/menu.png"
+              alt="меню"
+            />
+          </button>
+        </div>
+      </div>
+      <!--хлебные крошки-->
+      <div class="crumbs">
+        <div class="container">
+          <ul>
+            <li>
+              <p>Департамент ИТ</p>
+            </li>
+            <li>
+              <img src="./icons/slash-l.png" alt="слеш" />
+              <a href="#">
+                <span>Услуги</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <main>
-        <section class="main-goals">
+        <section class="hero">
           <div class="container">
-            <div class="main-goals__wrapper">
-              <ul class="crumbs">
-                <li>
-                  <h3>Департамент ИТ</h3>
-                  <img src="./icons/slash-l.png" alt="слеш" />
-                </li>
-                <li>
-                  <a href="#">
-                    <span>Услуги</span>
-                  </a>
-                </li>
-              </ul>
-              <div class="main-goals__top">
+            <div class="wrapper">
+              <div class="hero__top hero__top_services">
                 <h1>
                   Наши главные цели: выстроить надёжные доверительные
                   отношения<br />
                   и принести пользу бизнесу
                 </h1>
-                <div class="main-goals__description">
-                  Мы всегда открыты новым клиентам и задачам, если вы не нашли
-                  ответ на нашем сайте <a href="#">свяжитесь с нами</a> — нам
-                  будет интересно пообщаться!
+              </div>
+              <div class="hero__top-text">
+                Мы всегда открыты новым клиентам и задачам, если вы не нашли
+                ответ на нашем сайте <a href="#">свяжитесь с нами</a> — нам
+                будет интересно пообщаться!
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="services-block">
+          <div class="container services-block__container">
+            <div class="all-wrapper">
+              <div class="services-block__top">
+                <h2>Собственнику бизнеса</h2>
+              </div>
+              <div class="services-block__items">
+                <div class="services-block__item">
+                  <div class="services-block__item-top">
+                    <h3>
+                      Комплексное<br />
+                      ИТ-⁠обслуживание
+                    </h3>
+                    <span>Становимся вашим штатный ИТ-отделом</span>
+                  </div>
+                  <img src="./icons/arrow-m.png" alt="стрелка" />
+                </div>
+                <div class="services-block__item">
+                  <div class="services-block__item-top">
+                    <h3>Аудит ИТ-⁠службы</h3>
+                    <span
+                      >Приводим ИТ-⁠службу и ИТ-⁠процессы в соответствие
+                      с требованиями бизнеса</span
+                    >
+                  </div>
+                  <img src="./icons/arrow-m.png" alt="стрелка" />
+                </div>
+                <div class="services-block__item">
+                  <div class="services-block__item-top">
+                    <h3>Аудит ИТ и ИБ⁠-⁠рисков</h3>
+                    <span
+                      >Определяем риски потерь, компрометации данных,
+                      несанкционированного доступа, простоя ИТ-⁠систем</span
+                    >
+                  </div>
+                  <img src="./icons/arrow-m.png" alt="стрелка" />
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="owner">
-          <div class="container owner__container">
-            <div class="owner__wrapper">
-              <div class="owner__top">
-                <h2>Собственнику бизнеса</h2>
-              </div>
-              <div class="owner__items">
-                <a class="owner__item" href="#">
-                  <div class="owner__text">
-                    <h3>
-                      Комплексное<br />
-                      ИТ-⁠обслуживание
-                    </h3>
-                    <h5>Становимся вашим штатный ИТ-отделом</h5>
-                  </div>
-                  <img
-                    class="owner__icon"
-                    src="./icons/arrow.svg"
-                    alt="стрелка"
-                  />
-                </a>
-                <a class="owner__item" href="#">
-                  <div class="owner__text">
-                    <h3>Аудит ИТ-⁠службы</h3>
-                    <h5>
-                      Приводим ИТ-⁠службу и ИТ-⁠процессы в соответствие
-                      с требованиями бизнеса
-                    </h5>
-                  </div>
-                  <img
-                    class="owner__icon owner__icon_two"
-                    src="./icons/arrow.svg"
-                    alt="стрелка"
-                  />
-                </a>
-                <a class="owner__item" href="#">
-                  <div class="owner__text">
-                    <h3>Аудит ИТ и ИБ⁠-⁠рисков</h3>
-                    <h5>
-                      Определяем риски потерь, компрометации данных,
-                      несанкционированного доступа, простоя ИТ-⁠систем
-                    </h5>
-                  </div>
-                  <img
-                    class="owner__icon"
-                    src="./icons/arrow.svg"
-                    alt="стрелка"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="owner director">
-          <div class="container owner__container">
-            <div class="owner__wrapper">
-              <div class="owner__top">
+        <section class="services-block">
+          <div class="container services-block__container">
+            <div class="all-wrapper">
+              <div class="services-block__top">
                 <h2>ИТ-директору</h2>
               </div>
-              <div class="owner__items">
-                <a class="owner__item" href="#">
-                  <div class="owner__text">
+              <div class="services-block__items">
+                <div class="services-block__item">
+                  <div class="services-block__item-top">
                     <h3>Аутсорсинг службы технической поддержки</h3>
-                    <h5>Уверенность бизнеса в технической поддержке</h5>
+                    <span>Уверенность бизнеса в технической поддержке</span>
                   </div>
-                  <img
-                    class="owner__icon"
-                    src="./icons/arrow.svg"
-                    alt="стрелка"
-                  />
-                </a>
-                <a class="owner__item" href="#">
-                  <div class="owner__text">
+                  <img src="./icons/arrow-m.png" alt="стрелка" />
+                </div>
+                <div class="services-block__item services-block__item_two">
+                  <div class="services-block__item-top">
                     <h3>Системное администрирование</h3>
-                    <h5>Отвечаем за серверную инфраструктуру</h5>
+                    <span>Отвечаем за серверную инфраструктуру</span>
                   </div>
-                  <img
-                    class="owner__icon owner__icon_three"
-                    src="./icons/arrow.svg"
-                    alt="стрелка"
-                  />
-                </a>
-                <a class="owner__item" href="#">
-                  <div class="owner__text">
+                  <img src="./icons/arrow-m.png" alt="стрелка" />
+                </div>
+                <div class="services-block__item">
+                  <div class="services-block__item-top">
                     <h3>Поддержка сетевой инфраструктуры</h3>
-                    <h5>Отвечаем за работу сети вашей компании</h5>
+                    <span>Отвечаем за работу сети вашей компании</span>
                   </div>
-                  <img
-                    class="owner__icon"
-                    src="./icons/arrow.svg"
-                    alt="стрелка"
-                  />
-                </a>
-                <a class="owner__item" href="#">
-                  <div class="owner__text">
+                  <img src="./icons/arrow-m.png" alt="стрелка" />
+                </div>
+                <div class="services-block__item services-block__item_one">
+                  <div class="services-block__item-top">
                     <h3>Модернизация ИТ⁠-⁠инфраструктуры</h3>
-                    <h5>
-                      Помогаем понять, сколько денег нужно на ИТ, и почему
-                      требуется именно столько
-                    </h5>
+                    <span
+                      >Помогаем понять, сколько денег нужно на ИТ, и почему
+                      требуется именно столько</span
+                    >
                   </div>
-                  <img
-                    class="owner__icon owner__icon_four"
-                    src="./icons/arrow.svg"
-                    alt="стрелка"
-                  />
-                </a>
-                <a class="owner__item" href="#">
-                  <div class="owner__text">
+                  <img src="./icons/arrow-m.png" alt="стрелка" />
+                </div>
+                <div class="services-block__item">
+                  <div class="services-block__item-top">
                     <h3>Проектирование ИТ⁠-⁠инфраструктуры</h3>
-                    <h5>
-                      Проектируем, рассчитываем и настраиваем инфраструктуру или
-                      помогаем штатным ИТ-⁠специалистам настроить ее с первого
-                      раза и на 8-10 лет
-                    </h5>
+                    <span
+                      >Проектируем, рассчитываем и настраиваем инфраструктуру
+                      или помогаем штатным ИТ-⁠специалистам настроить
+                      ее с первого раза и на 8-10 лет</span
+                    >
                   </div>
-                  <img
-                    class="owner__icon"
-                    src="./icons/arrow.svg"
-                    alt="стрелка"
-                  />
-                </a>
+                  <img src="./icons/arrow-m.png" alt="стрелка" />
+                </div>
               </div>
             </div>
           </div>
         </section>
         <section class="protection">
           <div class="container">
-            <div class="protection__wrapper">
+            <div class="all-wrapper protection__wrapper">
               <div class="protection__inner">
                 <div class="protection__image"></div>
                 <div class="protection__text">

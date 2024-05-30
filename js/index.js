@@ -1,12 +1,15 @@
 const videoPreviews = document.querySelectorAll(".video-preview");
 const videoPlayers = document.querySelectorAll(".video-player");
+const videoImages = document.querySelectorAll(".video-img");
 
 videoPreviews.forEach((videoPreview, index) => {
   videoPreview.addEventListener("click", function () {
     videoPreview.style.display = "none";
+    videoImages[index].style.display = "none";
     videoPlayers[index].play();
   });
 });
+
 //////////////////////
 // const videoPreview = document.querySelector(".video-preview");
 // const videoPlayer = document.querySelector(".video-player");

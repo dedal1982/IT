@@ -310,7 +310,14 @@ p {
     border-radius: 32px;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 1390px) {
+  .video-preview-about {
+    background-image: url(../images/Media-tt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (max-width: 1024px) {
   .video-preview-about {
     background-image: url(../images/preview-about-t.png);
     background-repeat: no-repeat;

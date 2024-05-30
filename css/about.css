@@ -98,7 +98,7 @@
   padding: 32px;
   box-sizing: border-box;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .career__text {
     max-width: 380px;
   }
@@ -124,5 +124,107 @@
 @media (max-width: 1023px) {
   .career__text h3 {
     margin-top: 0;
+  }
+}
+/*------------------------------------------------------qualification-----------------------------------------------------------*/
+.qualification {
+  width: 100%;
+}
+.qualification__top {
+  padding-left: 32px;
+  padding-right: 32px;
+  box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  .qualification__top {
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+  }
+}
+.qualification__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 32px;
+}
+@media (max-width: 1280px) {
+  .qualification__items {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 1023px) {
+  .qualification__items {
+    margin-top: 32px;
+  }
+}
+.qualification__item {
+  width: 373.33px;
+  border-radius: 44px;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  box-sizing: border-box;
+  background: #f0efed;
+  gap: 78px;
+}
+.qualification__text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.qualification__author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: auto;
+}
+.qualification__author img {
+  width: 80px;
+  height: 80px;
+}
+
+@media (max-width: 1280px) and (min-width: 1023px) {
+  .qualification__text h5 {
+    font-size: 22px;
+    line-height: 36.3px;
+  }
+  .qualification__text p {
+    font-size: 18px;
+    line-height: 29.7px;
+  }
+}
+@media (max-width: 1280px) {
+  .qualification__item {
+    width: 330.67px;
+  }
+}
+@media (max-width: 1023px) {
+  .qualification__item {
+    width: 344px;
+    border-radius: 32px;
+    gap: 16px;
+  }
+  .qualification__author img {
+    width: 64px;
+    height: 64px;
+  }
+  .qualification__text p {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .qualification__items {
+    gap: 8px;
+  }
+  .qualification__item {
+    width: 100%;
+    padding: 24px;
+    gap: 8px;
+  }
+  .qualification__author {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 27px;
   }
 }

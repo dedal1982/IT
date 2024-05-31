@@ -123,6 +123,7 @@
   padding-left: 32px;
   padding-right: 32px;
   box-sizing: border-box;
+  max-width: 920px;
 }
 .data-page__text h4 {
   font-family: "Bitter", serif;
@@ -139,6 +140,7 @@
   .data-page__text {
     padding-left: 24px;
     padding-right: 24px;
+    gap: 17px;
   }
   .data-page__text h4 {
     font-size: 20px;
@@ -149,8 +151,11 @@
   display: flex;
   flex-direction: column;
   list-style-type: disc;
-  gap: 8px;
+  gap: 9px;
   max-width: 864px;
+}
+.data-page__list_decimal {
+  list-style-type: decimal;
 }
 .data-page__list li {
   font-family: "Roboto Flex", sans-serif;
@@ -158,4 +163,19 @@
   font-size: 18px;
   line-height: 28.8px;
   margin-left: 28px;
+}
+@media (max-width: 767px) {
+  .data-page__list li {
+    margin-left: 0;
+  }
+  .data-page__list {
+    gap: 1px;
+  }
+}
+.data-page__paragraph {
+  margin-top: -10px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28.8px;
 }

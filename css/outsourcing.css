@@ -446,12 +446,13 @@ label {
     left: 48px;
   }
 }
+@media (max-width: 767px) {
+  label {
+    line-height: 18.8px;
+  }
+}
 input:focus + label,
 input:valid + label {
-  top: 10px;
-  font-size: 18px;
-  line-height: 29.7px;
-  color: #303030;
   left: 70px;
 }
 @media (max-width: 1280px) {
@@ -513,13 +514,6 @@ textarea {
   }
 }
 .communicate__label {
-  left: 30px;
-}
-label.active {
-  top: 10px;
-  font-size: 18px;
-  line-height: 29.7px;
-  color: #303030;
   left: 30px;
 }
 @media (max-width: 1280px) {
@@ -669,5 +663,25 @@ label.active {
     padding-left: 24px;
     padding-right: 24px;
     box-sizing: border-box;
+  }
+}
+/***********/
+.communicate__input:focus + label,
+.communicate__textarea textarea:focus + label {
+  transform: translateY(-20px);
+  font-size: 17px;
+  color: #303030;
+}
+@media (max-width: 1280px) {
+  .communicate__input:focus + label,
+  .communicate__textarea textarea:focus + label {
+    transform: translateY(-5px);
+  }
+}
+@media (max-width: 767px) {
+  .communicate__input:focus + label,
+  .communicate__textarea textarea:focus + label {
+    transform: translateY(0);
+    font-size: 14px;
   }
 }

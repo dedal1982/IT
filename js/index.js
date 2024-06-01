@@ -64,17 +64,17 @@ videoPreviews.forEach((videoPreview, index) => {
 //   label.classList.add("active");
 // }
 ///////////////////////////////////////////////////////
-const textarea = document.querySelector(".communicate__textarea");
-const label = document.querySelector(".communicate__label");
+// const textarea = document.querySelector(".communicate__textarea");
+// const label = document.querySelector(".communicate__label");
 
-textarea.addEventListener("click", () => {
-  label.classList.add("active");
-});
-textarea.addEventListener("blur", function () {
-  if (textarea.value === "") {
-    label.classList.remove("active");
-  }
-});
+// textarea.addEventListener("click", () => {
+//   label.classList.add("active");
+// });
+// textarea.addEventListener("blur", function () {
+//   if (textarea.value === "") {
+//     label.classList.remove("active");
+//   }
+// });
 ///////////////////////////
 // document.querySelectorAll("input, textarea").forEach((input) => {
 //   input.addEventListener("focus", () => {
@@ -84,5 +84,26 @@ textarea.addEventListener("blur", function () {
 //   input.addEventListener("blur", () => {
 //     input.style.fontSize = "16px";
 //     input.style.paddingTop = "10px";
+//   });
+// });
+////////////////////////
+//при нажатии на инпут лэйбл уходит вверх
+// const inputs = document.querySelectorAll(
+//   ".communicate__input, .communicate__textarea textarea"
+// );
+
+// inputs.forEach((input) => {
+//   input.addEventListener("focus", () => {
+//     input.nextElementSibling.style.transform = "translateY(-15px)";
+//     input.nextElementSibling.style.fontSize = "17px";
+//     input.nextElementSibling.style.color = "##303030";
+//   });
+
+//   input.addEventListener("blur", () => {
+//     if (!input.value) {
+//       input.nextElementSibling.style.transform = "";
+//       input.nextElementSibling.style.fontSize = "";
+//       input.nextElementSibling.style.color = "";
+//     }
 //   });
 // });

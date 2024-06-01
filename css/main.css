@@ -108,8 +108,8 @@ button {
 p {
   font-family: "Roboto Flex", sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 29.7px;
+  font-size: 22px;
+  line-height: 36.3px;
   color: #303030;
 }
 @media (max-width: 1280px) {
@@ -558,7 +558,28 @@ p {
   height: 24px;
   cursor: pointer;
 }
-/* } */
+.menu-container__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  height: 100%;
+  padding: 0;
+}
+.menu-container__list li {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36.3px;
+  color: #ffffff;
+  padding-left: 32px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 56px;
+}
+
 /*-----header-----*/
 .header {
   width: 100%;

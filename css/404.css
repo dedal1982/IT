@@ -8,6 +8,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  gap: 32px;
 }
 @media (max-width: 1280px) {
   .mistake__wrapper {
@@ -26,6 +27,7 @@
     padding-top: 32px;
     padding-bottom: 63px;
     padding-left: 24px;
+    gap: 16px;
   }
 }
 .mistake__image {
@@ -52,5 +54,42 @@
     width: 311px;
     height: 256px;
     background-image: url(../images/404-m.png);
+  }
+}
+.mistake__wrapper h5 {
+  max-width: 864px;
+  width: 100%;
+}
+@media (max-width: 1280px) {
+  .mistake__wrapper h5 {
+    max-width: 736px;
+  }
+}
+@media (max-width: 767px) {
+  .mistake__wrapper h5 {
+    max-width: 311px;
+  }
+}
+.mistake__button {
+  width: 263px;
+  height: 88px;
+  border-radius: 88px;
+  background: #303030;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36.3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+@media (max-width: 1280px) {
+  .mistake__button {
+    width: 214px;
+    height: 64px;
+    border-radius: 32px;
+    font-size: 18px;
+    line-height: 28.8px;
   }
 }

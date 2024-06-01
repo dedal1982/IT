@@ -507,6 +507,9 @@ p {
 @media (max-width: 767px) {
   .menu-container__wrapper {
     position: fixed;
+    display: flex;
+    justify-content: center;
+    left: 0;
     bottom: 16px;
     width: 100%;
     display: flex;
@@ -519,7 +522,7 @@ p {
     box-shadow: 0px 0px 40px 0px #00000008;
   }
   .menu-container__button {
-    width: 167.5px;
+    flex-basis: 47%;
     height: 64px;
     border-radius: 32px;
     background: #303030;

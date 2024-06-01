@@ -87,23 +87,3 @@ videoPreviews.forEach((videoPreview, index) => {
 //   });
 // });
 ////////////////////////
-//при нажатии на инпут лэйбл уходит вверх
-// const inputs = document.querySelectorAll(
-//   ".communicate__input, .communicate__textarea textarea"
-// );
-
-// inputs.forEach((input) => {
-//   input.addEventListener("focus", () => {
-//     input.nextElementSibling.style.transform = "translateY(-15px)";
-//     input.nextElementSibling.style.fontSize = "17px";
-//     input.nextElementSibling.style.color = "##303030";
-//   });
-
-//   input.addEventListener("blur", () => {
-//     if (!input.value) {
-//       input.nextElementSibling.style.transform = "";
-//       input.nextElementSibling.style.fontSize = "";
-//       input.nextElementSibling.style.color = "";
-//     }
-//   });
-// });

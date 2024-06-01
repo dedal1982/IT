@@ -89,8 +89,14 @@ videoPreviews.forEach((videoPreview, index) => {
 ////////////////////////
 const menuBurger = document.querySelector(".menu-container__burger");
 const menuDesc = document.querySelector(".menu-container__button_desc");
+const menuClose = document.querySelector(".menu-container__close");
 
 menuBurger.addEventListener("click", () => {
   menuDesc.classList.add("active");
   menuBurger.classList.add("active");
+});
+
+menuClose.addEventListener("click", () => {
+  menuDesc.classList.remove("active");
+  menuBurger.classList.remove("active");
 });

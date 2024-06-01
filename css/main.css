@@ -589,6 +589,7 @@ p {
   color: #ffffff;
 }
 .menu-container__social {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 32px;
@@ -598,6 +599,8 @@ p {
   margin-top: 32px;
 }
 .menu-container__close {
+  position: absolute;
+  right: 32px;
   width: 24px;
   height: 24px;
   background: #303030;

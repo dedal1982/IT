@@ -554,18 +554,26 @@ p {
   box-sizing: border-box;
 }
 .menu-container__burger {
+  display: block;
   width: 24px;
   height: 24px;
   cursor: pointer;
 }
+.menu-container__burger.active {
+  display: none;
+}
 .menu-container__list {
+  position: relative;
   width: 100%;
   display: none;
   flex-direction: column;
   height: 100%;
   padding: 0;
 }
-.menu-container__list li {
+.menu-container__button_desc.active .menu-container__list {
+  display: flex;
+}
+.menu-container__list li:not(:last-child) {
   padding-left: 32px;
   box-sizing: border-box;
   display: flex;
@@ -573,13 +581,28 @@ p {
   justify-content: flex-start;
   height: 56px;
 }
-.menu-container__list li a {
+.menu-container__link {
   font-family: "Roboto Flex", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 36.3px;
   color: #ffffff;
 }
+.menu-container__social {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding-left: 32px;
+  padding-left: 32px;
+  box-sizing: border-box;
+  margin-top: 32px;
+}
+.menu-container__close {
+  width: 24px;
+  height: 24px;
+  background: #303030;
+}
+
 /*-----header-----*/
 .header {
   width: 100%;

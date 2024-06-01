@@ -1,11 +1,13 @@
 const videoPreviews = document.querySelectorAll(".video-preview");
 const videoPlayers = document.querySelectorAll(".video-player");
 const videoImages = document.querySelectorAll(".video-img");
+const videoText = document.querySelectorAll(".video-text");
 
 videoPreviews.forEach((videoPreview, index) => {
   videoPreview.addEventListener("click", function () {
     videoPreview.style.display = "none";
     videoImages[index].style.display = "none";
+    videoText[index].style.display = "none";
     videoPlayers[index].play();
   });
 });
@@ -107,3 +109,26 @@ menuClose.addEventListener("click", () => {
   menuDesc.classList.remove("active");
   menuBurger.classList.remove("active");
 });
+
+// window.addEventListener("load", function () {
+//   const servicesBlock = document.getElementById("businessOwner");
+//   if (servicesBlock) {
+//     servicesBlock.scrollIntoView({ behavior: "smooth" });
+//   }
+// });
+
+// window.addEventListener("load", function () {
+//   const servicesBlock = document.getElementById("itDirector");
+//   if (servicesBlock) {
+//     servicesBlock.scrollIntoView({ behavior: "smooth" });
+//   }
+// });
+// function scrollToElement(elementId, scrollBehavior = "smooth") {
+//   const element = document.getElementById(elementId);
+//   if (element) {
+//     element.scrollIntoView({ behavior: scrollBehavior });
+//   }
+// }
+// window.addEventListener("load", function () {
+//   scrollToElement("businessOwner");
+// });

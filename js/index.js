@@ -87,3 +87,10 @@ videoPreviews.forEach((videoPreview, index) => {
 //   });
 // });
 ////////////////////////
+const buttonMenuDesc = document.querySelector(".menu-container__button_desc");
+const menuBurger = document.querySelector(".menu-container__burger");
+
+buttonMenuDesc.addEventListener("click", () => {
+  buttonMenuDesc.classList.add("active");
+  menuBurger.style.display = "none";
+});

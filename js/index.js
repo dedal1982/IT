@@ -89,8 +89,10 @@ videoPreviews.forEach((videoPreview, index) => {
 ////////////////////////
 const buttonMenuDesc = document.querySelector(".menu-container__button_desc");
 const menuBurger = document.querySelector(".menu-container__burger");
+const menuList = document.querySelector(".menu-container__list");
 
 buttonMenuDesc.addEventListener("click", () => {
   buttonMenuDesc.classList.add("active");
   menuBurger.style.display = "none";
+  menuList.style.display = "flex";
 });

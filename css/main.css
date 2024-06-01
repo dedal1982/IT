@@ -560,18 +560,12 @@ p {
 }
 .menu-container__list {
   width: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
-  /* justify-content: space-between; */
   height: 100%;
   padding: 0;
 }
 .menu-container__list li {
-  font-family: "Roboto Flex", sans-serif;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 36.3px;
-  color: #ffffff;
   padding-left: 32px;
   box-sizing: border-box;
   display: flex;
@@ -579,7 +573,13 @@ p {
   justify-content: flex-start;
   height: 56px;
 }
-
+.menu-container__list li a {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36.3px;
+  color: #ffffff;
+}
 /*-----header-----*/
 .header {
   width: 100%;

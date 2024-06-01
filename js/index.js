@@ -9,6 +9,13 @@ videoPreviews.forEach((videoPreview, index) => {
     videoPlayers[index].play();
   });
 });
+window.onload = function () {
+  window.scrollTo(0, 0);
+};
+document.addEventListener("DOMContentLoaded", function () {
+  const textarea = document.querySelector("textarea");
+  textarea.blur();
+});
 
 //////////////////////
 // const videoPreview = document.querySelector(".video-preview");

@@ -108,19 +108,19 @@
     padding-right: 8px;
   }
 }
-.map__container {
+#map {
   height: 537px;
   box-shadow: 0px 0px 40px 0px #00000014;
   border-radius: 32px;
 }
 @media (max-width: 1023px) {
-  .map__container {
+  #map {
     margin-left: 32px;
     margin-right: 32px;
   }
 }
 @media (max-width: 767px) {
-  .map__container {
+  #map {
     height: 371px;
     border-radius: 16px;
     margin-left: 8px;

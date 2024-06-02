@@ -174,13 +174,21 @@
   flex-direction: column;
   gap: 16px;
 }
-.qualification-author {
+.qualification__text p {
+  font-size: 18px;
+  line-height: 29.7px;
+}
+.qualification__author {
   display: flex;
   align-items: center;
   gap: 16px;
   margin-top: auto;
 }
-.qualification-author img {
+.qualification__author p {
+  font-size: 18px;
+  line-height: 29.7px;
+}
+.qualification__author img {
   width: 80px;
   height: 80px;
 }
@@ -206,7 +214,7 @@
     border-radius: 32px;
     gap: 16px;
   }
-  .qualification-author img {
+  .qualification__author img {
     width: 64px;
     height: 64px;
   }
@@ -227,7 +235,7 @@
     padding: 24px;
     gap: 8px;
   }
-  .qualification-author {
+  .qualification__author {
     flex-direction: column-reverse;
     align-items: flex-start;
     gap: 27px;

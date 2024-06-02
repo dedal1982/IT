@@ -269,6 +269,16 @@
     padding-bottom: 0;
   }
 }
+.department__item p {
+  font-size: 18px;
+  line-height: 29.7px;
+}
+@media (max-width: 1280px) {
+  .department__item p {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+}
 @media (max-width: 767px) {
   .department__item p {
     font-size: 16px;
@@ -319,9 +329,6 @@
   }
   .communicate__wrapper_it {
     padding-top: 113px;
-  }
-  .footer__wrapper_one {
-    padding-top: 46px;
   }
 }
 @media (max-width: 1023px) {

@@ -167,3 +167,19 @@ input:valid + label {
     margin-top: 36px;
   }
 }
+/*-------------------------------------------------intro----------------------------------------*/
+.intro {
+  width: 100%;
+}
+.intro__wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  box-sizing: border-box;
+}
+.intro__slider {
+  width: 1152px;
+  height: 570px;
+  border-radius: 44px;
+  background: #ffffff;
+  display: flex;
+}

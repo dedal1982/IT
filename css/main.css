@@ -605,7 +605,12 @@ p {
   height: 24px;
   background: #303030;
 }
-
+.up-button {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: #303030;
+}
 /*-----header-----*/
 .header {
   width: 100%;

@@ -843,6 +843,9 @@ p {
   .footer__wrapper_one {
     padding-top: 32px;
   }
+  .wrapper_services {
+    padding-top: 0;
+  }
 }
 .footer__protection-link {
   color: #4584ce;

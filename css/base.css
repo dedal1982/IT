@@ -188,7 +188,47 @@ input:valid + label {
   height: 570px;
 }
 .intro__stack {
-  width: 574px;
+  width: 702px;
   height: 570px;
-  padding: 77px 128px 77px 56px;
+  padding: 63px 128px 65px 56px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.intro__text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.intro__description {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36.3px;
+}
+.intro__buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+}
+.intro__link {
+  width: 174px;
+  height: 88px;
+  border-radius: 44px;
+  background: #303030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36.3px;
+}
+.intro__btn {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: #30303012;
 }

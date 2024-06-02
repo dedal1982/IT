@@ -66,6 +66,8 @@
 .data-protection__top p {
   max-width: 992px;
   width: 100%;
+  font-size: 18px;
+  line-height: 28.8px;
 }
 @media (max-width: 1280px) {
   .data-protection__top p {
@@ -126,6 +128,10 @@
   padding-right: 32px;
   box-sizing: border-box;
   max-width: 920px;
+}
+.data-page__text p {
+  font-size: 18px;
+  line-height: 28.8px;
 }
 .data-page__text h4 {
   font-family: "Bitter", serif;
@@ -196,5 +202,23 @@
   }
   .data-page__text_mobile {
     gap: 33px;
+  }
+}
+.footer__wrapper_data {
+  padding-top: 70px;
+}
+@media (max-width: 1280px) {
+  .footer__wrapper_data {
+    padding-top: 64px;
+  }
+}
+@media (max-width: 1023px) {
+  .footer__wrapper_data {
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .footer__wrapper_data {
+    padding-top: 32px;
   }
 }

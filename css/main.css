@@ -677,6 +677,34 @@ p {
     line-height: 24px;
   }
 }
+.menu-container__button_mobile {
+  display: none;
+}
+@media (max-width: 767px) {
+  .menu-container__button_mobile {
+    display: flex;
+  }
+  .menu-container__wrapper_mobile {
+    padding: 8px;
+    box-sizing: border-box;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    gap: 8px;
+  }
+  .menu-container__button {
+    width: 167.5px;
+    height: 64px;
+    border-radius: 32px;
+  }
+  .menu-container__button_desc {
+    display: none;
+  }
+  .menu-container__mobile {
+    width: 16px;
+    height: 16px;
+  }
+}
 /*---------------------------------------------------------hero-----------------------------------------------------------*/
 .hero {
   width: 100%;

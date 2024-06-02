@@ -302,6 +302,10 @@
   font-size: 18px;
   line-height: 29.7px;
 }
+.department__item_support p {
+  font-size: 22px;
+  line-height: 36.3px;
+}
 @media (max-width: 1280px) {
   .department__item p {
     font-size: 16px;

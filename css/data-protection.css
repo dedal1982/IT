@@ -222,36 +222,3 @@
     padding-top: 32px;
   }
 }
-.projects__items {
-  margin-top: 64px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-.projects__item {
-  width: 373.33px;
-  background: #f0efed;
-  border-radius: 44px;
-  padding: 32px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 32px;
-}
-.projects__author {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-.projects__author img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-}
-.projects__author p {
-  font-family: "Roboto Flex", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 29.7px;
-}

@@ -112,6 +112,7 @@
   height: 537px;
   box-shadow: 0px 0px 40px 0px #00000014;
   border-radius: 32px;
+  filter: grayscale(100%);
 }
 @media (max-width: 1023px) {
   #map {

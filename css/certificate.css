@@ -171,6 +171,10 @@
     height: 100%;
     justify-content: space-between;
   }
+  .certificate-page__author p {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 .certificate-page__button {
   width: 100%;
@@ -197,6 +201,9 @@
 }
 @media (max-width: 767px) {
   .certificate-page__items_hidden {
+    margin-top: 8px;
+  }
+  .certificate-page__button {
     margin-top: 8px;
   }
 }

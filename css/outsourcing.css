@@ -371,6 +371,9 @@
   display: flex;
   flex-direction: column;
 }
+.communicate__wrapper_modern {
+  padding-top: 64px;
+}
 .communicate__wrapper_admin {
   padding-top: 64px;
 }

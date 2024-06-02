@@ -56,6 +56,29 @@
 .career {
   width: 100%;
 }
+.career__wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  box-sizing: border-box;
+}
+@media (max-width: 1280px) {
+  .career__wrapper {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+@media (max-width: 1023px) {
+  .career__wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .career__wrapper {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 .career__top {
   padding-left: 32px;
   padding-right: 32px;
@@ -98,6 +121,16 @@
   padding: 32px;
   box-sizing: border-box;
 }
+.career__text p {
+  font-size: 18px;
+  line-height: 29.7px;
+}
+@media (max-width: 1280px) {
+  .career__text p {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+}
 @media (max-width: 1024px) {
   .career__text {
     max-width: 380px;
@@ -129,6 +162,29 @@
 /*------------------------------------------------------qualification-----------------------------------------------------------*/
 .qualification {
   width: 100%;
+}
+.qualification__wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  box-sizing: border-box;
+}
+@media (max-width: 1280px) {
+  .qualification__wrapper {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+@media (max-width: 1023px) {
+  .qualification__wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .qualification__wrapper {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .qualification__top {
   padding-left: 32px;
@@ -192,7 +248,18 @@
   width: 80px;
   height: 80px;
 }
-
+@media (max-width: 1023px) {
+  .qualification__author p {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+}
+@media (max-width: 767px) {
+  .qualification__author p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
 @media (max-width: 1280px) and (min-width: 1023px) {
   .qualification__text h5 {
     font-size: 22px;
@@ -206,6 +273,9 @@
 @media (max-width: 1280px) {
   .qualification__item {
     width: 330.67px;
+  }
+  .difference__text_about {
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 1023px) {
@@ -223,6 +293,7 @@
   }
   .difference__text_about {
     max-width: 660px;
+    margin-bottom: 34px;
   }
 }
 @media (max-width: 767px) {

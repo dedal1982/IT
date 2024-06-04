@@ -150,6 +150,41 @@
 .base-this {
   width: 100%;
 }
+.base-this__container {
+  width: 100%;
+  padding-left: 144px;
+  padding-right: 144px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .base-this__container {
+    padding-left: 128px;
+    padding-right: 128px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 1024px) {
+  .base-this__container {
+    padding-left: 64px;
+    padding-right: 64px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 1023px) {
+  .base-this__container {
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 767px) {
+  .base-this__container {
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+}
 .base-this__wrapper {
   padding-top: 62px;
   padding-bottom: 64px;
@@ -158,10 +193,22 @@
   flex-direction: column;
   gap: 8px;
 }
+@media (max-width: 1280px) {
+  .base-this__wrapper {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+@media (max-width: 1024px) {
+  .base-this__wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
 .base-this__top,
 .base-this__centr,
 .base-this__bottom {
-  width: 1152px;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   gap: 8px;
@@ -170,9 +217,20 @@
   font-size: 18px;
   line-height: 29.7px;
 }
-.base-this__top-item {
+.base-this__top-item,
+.base-this__centr-item,
+.base-this__bottom-item {
   width: 378.67px;
-  height: 62px;
+}
+@media (max-width: 1280px) {
+  .base-this__top-item,
+  .base-this__centr-item,
+  .base-this__bottom-item {
+    width: 336px;
+  }
+}
+.base-this__top-item {
+  min-height: 62px;
   padding: 16px;
   box-sizing: border-box;
   background: #f0efed;
@@ -185,20 +243,23 @@
   border-radius: 16px 32px 16px 16px;
 }
 .base-this__centr-item {
-  width: 378.67px;
-  height: 122px;
+  min-height: 122px;
   padding: 16px;
   box-sizing: border-box;
   background: #f0efed;
   border-radius: 16px 16px 16px 16px;
 }
 .base-this__bottom-item {
-  width: 378.67px;
-  height: 92px;
+  min-height: 92px;
   padding: 16px;
   box-sizing: border-box;
   background: #f0efed;
   border-radius: 16px 16px 16px 16px;
+}
+@media (max-width: 1280px) {
+  .base-this__bottom-item {
+    min-height: 122px;
+  }
 }
 .base-this__bottom-item_left {
   border-radius: 16px 16px 16px 32px;

@@ -292,6 +292,12 @@ input:valid + label {
     flex-direction: column;
   }
 }
+@media (max-width: 479px) {
+  .intro__slider {
+    width: 328px;
+    flex-direction: column;
+  }
+}
 .intro__stack {
   width: 702px;
   display: flex;
@@ -405,6 +411,12 @@ input:valid + label {
 @media (max-width: 639px) {
   .swiper {
     width: 464px;
+    height: 716px;
+  }
+}
+@media (max-width: 479px) {
+  .swiper {
+    width: 359px;
     height: 716px;
   }
 }

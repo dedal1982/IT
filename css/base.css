@@ -372,7 +372,7 @@ input:valid + label {
   }
 }
 .base-list__wrapper {
-  padding-top: 64px;
+  padding-top: 63px;
   padding-bottom: 64px;
   box-sizing: border-box;
   display: flex;
@@ -381,13 +381,13 @@ input:valid + label {
 }
 @media (max-width: 1280px) {
   .base-list__wrapper {
-    padding-top: 48px;
+    padding-top: 49px;
     padding-bottom: 48px;
   }
 }
 @media (max-width: 1024px) {
   .base-list__wrapper {
-    padding-top: 40px;
+    padding-top: 41px;
     padding-bottom: 40px;
   }
 }
@@ -444,7 +444,78 @@ input:valid + label {
     line-height: 28.8px;
   }
 }
-/*--------------swiper-----------------------*/
+/*----------------------------------------------------synthetic---------------------------------------*/
+.synthetic {
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .synthetic__container {
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 767px) {
+  .synthetic__container {
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+}
+.synthetic__wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  box-sizing: border-box;
+}
+@media (max-width: 1280px) {
+  .synthetic__wrapper {
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+}
+@media (max-width: 1024px) {
+  .synthetic__wrapper {
+    padding-top: 40px;
+    padding-bottom: 56px;
+  }
+}
+@media (max-width: 767px) {
+  .synthetic__wrapper {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+.synthetic__inner {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background: #f0efed;
+  border-radius: 44px;
+  padding-left: 32px;
+  padding-right: 32px;
+  box-sizing: border-box;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36.3px;
+}
+@media (max-width: 1280px) {
+  .synthetic__inner {
+    height: 93px;
+    font-size: 18px;
+    line-height: 28.8px;
+    border-radius: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .synthetic__inner {
+    height: 77px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+/*-----------------------------------------------------swiper-----------------------------------------------*/
 .swiper {
   max-width: 1152px;
   width: 100%;

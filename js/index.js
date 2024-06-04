@@ -132,3 +132,42 @@ menuClose.addEventListener("click", () => {
 // window.addEventListener("load", function () {
 //   scrollToElement("businessOwner");
 // });
+// // Получаем все инпуты и текстарею
+// const inputs = document.querySelectorAll(".communicate__input");
+// const textarea = document.querySelector(".communicate__textarea textarea");
+
+// // Создаем функцию для обработчика события при фокусировке на инпуте
+// function handleInputFocus(event) {
+//   // Получаем текущий инпут
+//   const currentInput = event.target;
+
+//   // Перебираем все инпуты
+//   inputs.forEach((input) => {
+//     // Если текущий инпут не равен перебираемому и лейбл у перебираемого инпута сдвинут вверх
+//     if (currentInput !== input && input.value !== "") {
+//       // Устанавливаем стиль лейбла обратно
+//       input.nextElementSibling.style.transform = "translateY(-20px)";
+//       input.nextElementSibling.style.fontSize = "17px";
+//       input.nextElementSibling.style.color = "#303030";
+//     }
+//   });
+// }
+
+// // Добавляем обработчик события при фокусировке на каждом инпуте
+// inputs.forEach((input) => {
+//   input.addEventListener("focus", handleInputFocus);
+// });
+
+// // Создаем функцию для обработчика события при фокусировке на текстареи
+// function handleTextareaFocus() {
+//   // Перебираем все инпуты
+//   inputs.forEach((input) => {
+//     // Устанавливаем стиль лейбла обратно
+//     input.nextElementSibling.style.transform = "translateY(-20px)";
+//     input.nextElementSibling.style.fontSize = "17px";
+//     input.nextElementSibling.style.color = "#303030";
+//   });
+// }
+
+// // Добавляем обработчик события при фокусировке на текстареи
+// textarea.addEventListener("focus", handleTextareaFocus);

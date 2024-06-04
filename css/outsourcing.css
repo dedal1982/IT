@@ -514,7 +514,7 @@ label {
     line-height: 18.8px;
   }
 }
-input:focus + label,
+/* input:focus + label,
 input:valid + label {
   left: 70px;
 }
@@ -539,7 +539,7 @@ input:valid + label {
   input:valid + label {
     top: 5px;
   }
-}
+} */
 .communicate__textarea {
   position: relative;
   max-width: 880px;
@@ -584,6 +584,7 @@ textarea {
     left: 24px;
   }
 }
+
 .communicate__input:focus + label,
 .communicate__textarea textarea:focus + label {
   transform: translateY(-20px);

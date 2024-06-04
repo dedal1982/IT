@@ -270,6 +270,16 @@ input:valid + label {
   background: #ffffff;
   border-radius: 44px;
 }
+@media (max-width: 1280px) {
+  .intro__slider {
+    width: 1024px;
+  }
+}
+@media (max-width: 1024px) {
+  .intro__slider {
+    width: 960px;
+  }
+}
 @media (max-width: 1023px) {
   .intro__slider {
     flex-direction: column;
@@ -362,15 +372,16 @@ input:valid + label {
 }
 /*--------------swiper-----------------------*/
 .swiper {
-  width: 1152px;
+  max-width: 1152px;
+  width: 100%;
   height: 570px;
 }
-@media (max-width: 1023px) {
+/* @media (max-width: 1023px) {
   .swiper {
     width: 736px;
     height: 721px;
   }
-}
+} */
 .intro-button-prev,
 .intro-button-next {
   width: 88px;

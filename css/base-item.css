@@ -194,7 +194,7 @@
 }
 @media (max-width: 1280px) {
   .base-this__wrapper {
-    padding-top: 48px;
+    padding-top: 45px;
     padding-bottom: 48px;
   }
 }
@@ -374,4 +374,108 @@
 }
 .base-this__bottom-item_right {
   border-radius: 16px 16px 32px 16px;
+}
+/*-----------------------------------------------------tools----------------------------------------------------------*/
+.tools {
+  width: 100%;
+}
+.tools__container {
+  width: 100%;
+  padding-left: 144px;
+  padding-right: 144px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .tools__container {
+    padding-left: 128px;
+    padding-right: 128px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 1024px) {
+  .tools__container {
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 1023px) {
+  .tools__container {
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 767px) {
+  .tools__container {
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+}
+.tools__wrapper {
+  padding-top: 62px;
+  padding-left: 64px;
+  padding-left: 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media (max-width: 1280px) {
+  .tools__wrapper {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+@media (max-width: 1024px) {
+  .tools__wrapper {
+    padding-top: 42px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 1023px) {
+  .tools__wrapper {
+    padding-left: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .tools__wrapper {
+    padding-top: 34px;
+    padding-bottom: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .tools__wrapper {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+.tools__wrapper h3 {
+  max-width: 864px;
+  width: 100%;
+}
+@media (max-width: 1280px) {
+  .tools__wrapper h3 {
+    font-size: 32px;
+    line-height: 44.16px;
+  }
+}
+@media (max-width: 1024px) {
+  .tools__wrapper h3 {
+    font-size: 24px;
+    line-height: 33.12px;
+  }
+}
+@media (max-width: 1023px) {
+  .tools__wrapper h3 {
+    max-width: 656px;
+  }
+}
+@media (max-width: 767px) {
+  .tools__wrapper h3 {
+    font-size: 20px;
+    line-height: 27.6px;
+  }
 }

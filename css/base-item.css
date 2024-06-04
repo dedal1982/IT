@@ -116,3 +116,33 @@
     max-width: 311px;
   }
 }
+.base-item__button {
+  width: 221px;
+  height: 88px;
+  border-radius: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: #30303012;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36.3px;
+  color: #303030;
+}
+.base-item__button img {
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 1023px) {
+  .base-item__button {
+    width: 197px;
+    height: 64px;
+    border-radius: 32px;
+  }
+  .base-item__button img {
+    width: 16px;
+    height: 16px;
+  }
+}

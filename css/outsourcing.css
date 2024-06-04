@@ -663,7 +663,7 @@ textarea {
   line-height: 29.7px;
   color: #303030;
 }
-.communicate__text span {
+.communicate__text a {
   color: #4584ce;
 }
 @media (max-width: 767px) {

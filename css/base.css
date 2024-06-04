@@ -23,7 +23,7 @@
 }
 @media (max-width: 767px) {
   .intro-container {
-    padding-left: 0;
+    padding-left: 16px;
     padding-right: 0;
   }
 }
@@ -286,6 +286,12 @@ input:valid + label {
     flex-direction: column;
   }
 }
+@media (max-width: 767px) {
+  .intro__slider {
+    width: 320px;
+    flex-direction: column;
+  }
+}
 .intro__stack {
   width: 702px;
   display: flex;
@@ -307,6 +313,13 @@ input:valid + label {
 @media (max-width: 1023px) {
   .intro__stack {
     width: 400px;
+    padding: 20px 24px 24px 24px;
+    gap: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .intro__stack {
+    width: 320px;
     padding: 20px 24px 24px 24px;
     gap: 16px;
   }
@@ -381,6 +394,12 @@ input:valid + label {
   .swiper {
     width: 736px;
     height: 721px;
+  }
+}
+@media (max-width: 767px) {
+  .swiper {
+    width: 647px;
+    height: 716px;
   }
 }
 .intro-button-prev,

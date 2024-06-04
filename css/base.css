@@ -402,6 +402,12 @@ input:valid + label {
     height: 716px;
   }
 }
+@media (max-width: 639px) {
+  .swiper {
+    width: 464px;
+    height: 716px;
+  }
+}
 .intro-button-prev,
 .intro-button-next {
   position: relative;

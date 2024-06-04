@@ -364,7 +364,7 @@ input:valid + label {
 .base-list {
   width: 100%;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .base-list__container {
     padding-left: 32px;
     padding-right: 32px;
@@ -398,7 +398,7 @@ input:valid + label {
 }
 @media (max-width: 767px) {
   .base-list__wrapper {
-    padding-top: 32px;
+    padding-top: 34px;
     padding-bottom: 32px;
   }
 }

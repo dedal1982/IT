@@ -76,6 +76,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 16px;
   padding-left: 32px;
   padding-right: 32px;
   box-sizing: border-box;
@@ -101,7 +102,7 @@
 }
 @media (max-width: 767px) {
   .map__button {
-    width: 167.5px;
+    width: 50%;
   }
   .map__buttons {
     padding-left: 8px;

@@ -688,9 +688,10 @@ p {
     padding: 8px;
     box-sizing: border-box;
     left: 0;
-    width: 100%;
+    width: fit-content;
     background: #ffffff;
     gap: 8px;
+    margin: 0 8px 0 auto;
   }
   .menu-container__button {
     width: 167.5px;

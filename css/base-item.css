@@ -229,7 +229,6 @@
 .base-this__items {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   gap: 8px;
 }
 @media (max-width: 1023px) {
@@ -695,7 +694,6 @@
 .base-example__items {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   gap: 8px;
 }
 @media (max-width: 1023px) {

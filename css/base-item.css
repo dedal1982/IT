@@ -767,5 +767,7 @@
 @media (max-width: 420px) {
   .base-example__item {
     width: 193.6px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }

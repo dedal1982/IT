@@ -775,6 +775,11 @@
     flex-wrap: nowrap;
   }
 }
+@media (max-width: 420px) {
+  .base-example__items {
+    width: 1000px;
+  }
+}
 .base-example__item {
   width: 224px;
   background: #f0efed;
@@ -822,5 +827,10 @@
     width: 173.6px;
     font-size: 18px;
     line-height: 29.7px;
+  }
+}
+@media (max-width: 420px) {
+  .base-example__item {
+    width: 193.6px;
   }
 }

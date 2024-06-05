@@ -800,8 +800,14 @@
 .base-example__item_left {
   border-radius: 32px 20px 20px 20px;
 }
+.base-example__item_left-bottom {
+  border-radius: 20px 20px 20px 32px;
+}
 .base-example__item_right {
   border-radius: 20px 32px 20px 20px;
+}
+.base-example__item_right-bottom {
+  border-radius: 20px 20px 32px 20px;
 }
 @media (max-width: 1024px) {
   .base-example__item {

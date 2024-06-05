@@ -639,3 +639,101 @@
     max-width: 311px;
   }
 }
+/*---------------------------------------------------base-example------------------------------------------------------------*/
+.base-example {
+  width: 100%;
+}
+.base-example__container {
+  width: 100%;
+  padding-left: 144px;
+  padding-right: 144px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .base-example__container {
+    padding-left: 128px;
+    padding-right: 128px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 1024px) {
+  .base-example__container {
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 1023px) {
+  .base-example__container {
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 767px) {
+  .base-example__container {
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+}
+.base-example__wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media (max-width: 1280px) {
+  .base-example__wrapper {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+@media (max-width: 1024px) {
+  .base-example__wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .base-example__wrapper {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+.base-example__wrapper h3 {
+  max-width: 870px;
+  width: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
+  box-sizing: border-box;
+}
+@media (max-width: 1280px) {
+  .base-example__wrapper h3 {
+    font-size: 32px;
+    line-height: 44.16px;
+  }
+}
+@media (max-width: 1024px) {
+  .base-example__wrapper h3 {
+    font-size: 24px;
+    line-height: 33.12px;
+  }
+}
+@media (max-width: 768px) {
+  .base-example__wrapper h3 {
+    font-size: 24px;
+    line-height: 33.12px;
+  }
+}
+@media (max-width: 640px) {
+  .base-example__wrapper h3 {
+    font-size: 20px;
+    line-height: 27.6px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

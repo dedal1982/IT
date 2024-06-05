@@ -753,6 +753,12 @@
   font-size: 18px;
   line-height: 29.7px;
   border-radius: 20px;
+  word-break: break-word;
+}
+@media (max-width: 1280px) {
+  .base-example__item {
+    width: 198.4px;
+  }
 }
 .base-example__item_left {
   border-radius: 32px 20px 20px 20px;

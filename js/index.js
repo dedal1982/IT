@@ -24,15 +24,18 @@ const menuBurger = document.querySelector(".menu-container__burger");
 const menuDesc = document.querySelector(".menu-container__button_desc");
 const menuClose = document.querySelector(".menu-container__close");
 
-menuBurger.addEventListener("click", () => {
-  menuDesc.classList.add("active");
-  menuBurger.classList.add("active");
-});
+menuBurger.addEventListener("click", toggleMenu);
+menuClose.addEventListener("click", toggleMenu);
+menuDesc.addEventListener("mouseleave", clickleMenu);
 
-menuClose.addEventListener("click", () => {
+function toggleMenu() {
+  menuDesc.classList.toggle("active");
+  menuBurger.classList.toggle("active");
+}
+function clickleMenu() {
   menuDesc.classList.remove("active");
   menuBurger.classList.remove("active");
-});
+}
 
 const menuBurgerMobile = document.querySelector(
   ".menu-container__burger-mobile"
@@ -51,3 +54,13 @@ menuCloseMobile.addEventListener("click", () => {
   menuBurgerMobile.classList.remove("active");
   menuCloseMobile.classList.remove("active");
 });
+
+//появление кнопки "ВВЕРХ"
+window.onscroll = function () {
+  var button = document.querySelector(".button-up");
+  if (document.documentElement.scrollTop > 1580) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+};

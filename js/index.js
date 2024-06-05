@@ -24,15 +24,15 @@ const menuBurger = document.querySelector(".menu-container__burger");
 const menuDesc = document.querySelector(".menu-container__button_desc");
 const menuClose = document.querySelector(".menu-container__close");
 
-menuBurger.addEventListener("click", toggleMenu);
-menuClose.addEventListener("click", toggleMenu);
-menuDesc.addEventListener("mouseleave", clickleMenu);
+menuBurger.addEventListener("click", openMenu);
+menuClose.addEventListener("click", closeMenu);
+menuDesc.addEventListener("mouseleave", closeMenu);
 
-function toggleMenu() {
-  menuDesc.classList.toggle("active");
-  menuBurger.classList.toggle("active");
+function openMenu() {
+  menuDesc.classList.add("active");
+  menuBurger.classList.add("active");
 }
-function clickleMenu() {
+function closeMenu() {
   menuDesc.classList.remove("active");
   menuBurger.classList.remove("active");
 }

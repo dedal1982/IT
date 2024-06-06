@@ -123,3 +123,16 @@ if (textareaContainer) {
     label.classList.add("active");
   });
 }
+
+// открытие - закрытие формы десктоп
+const popupOverlay = document.querySelector(".popup-overlay");
+const popupOpenButton = document.querySelector(".menu-container__button");
+const popupCloseButton = document.querySelector(".popup-overlay__close");
+
+popupOpenButton.addEventListener("click", () => {
+  popupOverlay.style.display = "flex";
+});
+
+popupCloseButton.addEventListener("click", () => {
+  popupOverlay.style.display = "none";
+});

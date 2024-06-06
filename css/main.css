@@ -535,9 +535,9 @@ p {
   .button-up {
     width: 64px;
     height: 64px;
-    bottom: 96px;
+    bottom: 105px;
     right: 8px;
-    z-index: 888;
+    z-index: 5;
   }
 }
 .button-up__inner {
@@ -669,8 +669,10 @@ p {
   padding: 16px 0 8px 0;
   box-sizing: border-box;
 }
-.menu-container__mobile-wrapper.active {
-  display: flex;
+@media (max-width: 767px) {
+  .menu-container__mobile-wrapper.active {
+    display: flex;
+  }
 }
 .menu-container__mobile-list {
   width: 100%;
@@ -721,6 +723,7 @@ p {
 }
 @media (max-width: 767px) {
   .menu-form {
+    z-index: 99;
     display: none;
     position: absolute;
     bottom: 80px;

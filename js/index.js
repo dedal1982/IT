@@ -58,7 +58,7 @@ menuCloseMobile.addEventListener("click", () => {
 //появление кнопки "ВВЕРХ"
 window.onscroll = function () {
   var button = document.querySelector(".button-up");
-  if (document.documentElement.scrollTop > 1580) {
+  if (document.documentElement.scrollTop > 500) {
     button.style.display = "block";
   } else {
     button.style.display = "none";

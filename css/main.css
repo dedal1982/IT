@@ -762,7 +762,7 @@ p {
     width: fit-content;
     background: #ffffff;
     gap: 8px;
-    margin-left: auto;
+    margin: 0 auto;
   }
   .menu-container__button {
     width: 175.5px;

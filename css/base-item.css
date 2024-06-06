@@ -775,7 +775,7 @@
     padding-bottom: 64px;
     box-sizing: border-box;
   }
-  .communicate__wrapper_base h2 {
+  .communicate__top_base h2 {
     font-size: 56px;
     line-height: 71.68px;
   }
@@ -824,8 +824,18 @@
     transform: translateY(-20px);
     transform: translateX(0);
   }
+  .communicate__button_base {
+    width: 208px;
+    height: 88px;
+    font-size: 22px;
+    line-height: 36.3px;
+    padding-left: 32px;
+    box-sizing: border-box;
+  }
 }
-
+@media (max-width: 1024px) {
+  .communicate__wrapper_base;
+}
 /*-------------------------------------------------opinion----------------------------------------------------*/
 .opinion {
   width: 100%;

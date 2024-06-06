@@ -594,7 +594,8 @@ label.active {
   }
 }
 @media (max-width: 767px) {
-  label.active {
+  label.active,
+  .menu-form__label.active {
     transform: translateY(0);
     font-size: 14px;
   }

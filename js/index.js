@@ -140,8 +140,10 @@ window.onscroll = function () {
 };
 
 //эффект при клике на инпут + textarea
-const inputContainers = document.querySelectorAll(".communicate__container");
-const inputField = document.querySelectorAll(".communicate__input");
+const inputContainers = document.querySelectorAll(
+  ".communicate__container,.menu-form__container"
+);
+const inputField = document.querySelectorAll(".menu-input");
 
 inputContainers.forEach((container) => {
   container.addEventListener("click", () => {

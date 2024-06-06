@@ -109,6 +109,10 @@ function initFormEvents() {
         mobileForm.classList.add("active");
         btnAppl.classList.add("active");
         buttonUp.style.visibility = "hidden";
+        window.scrollTo({
+          top: document.body.scrollHeight,
+          behavior: "smooth",
+        });
       } else {
         descForm.classList.add("active");
       }

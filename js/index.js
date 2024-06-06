@@ -95,15 +95,18 @@ menuCloseMobile.addEventListener("click", () => {
 const btnFormOpen = document.querySelector(".menu-container__button span");
 const btnFormClose = document.querySelector(".menu-container__close-form");
 const mobileForm = document.querySelector(".menu-container__form-wrapper");
+const buttonUp = document.querySelector(".button-up");
 
 btnFormOpen.addEventListener("click", () => {
   mobileForm.classList.add("active");
   btnFormClose.classList.add("active");
+  buttonUp.style.display = "none";
 });
 
 btnFormClose.addEventListener("click", () => {
   mobileForm.classList.remove("active");
   btnFormClose.classList.remove("active");
+  buttonUp.style.display = "block";
 });
 
 //появление кнопки "ВВЕРХ"

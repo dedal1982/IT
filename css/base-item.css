@@ -873,6 +873,27 @@
     line-height: 28.8px;
     left: 22px;
   }
+  .communicate__label-base.active {
+    transform: translate(5px, -5px);
+    font-size: 17px;
+  }
+  .communicate__input_base {
+    margin-top: 20px;
+  }
+  label.active {
+    transform: translateY(-6px);
+  }
+  .communicate__button_base {
+    width: 167px;
+    height: 64px;
+    font-size: 18px;
+    line-height: 28.8px;
+    padding: 24px;
+  }
+  .communicate__button_base img {
+    width: 16px;
+    height: 16px;
+  }
 }
 /*-------------------------------------------------opinion----------------------------------------------------*/
 .opinion {

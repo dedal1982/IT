@@ -14,10 +14,10 @@ videoPreviews.forEach((videoPreview, index) => {
 window.onload = function () {
   window.scrollTo(0, 0);
 };
-document.addEventListener("DOMContentLoaded", function () {
-  const textarea = document.querySelector("textarea");
-  textarea.blur();
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   const textarea = document.querySelector("textarea");
+//   textarea.blur();
+// });
 
 //открытие-закрытие меню
 const menuBurger = document.querySelector(".menu-container__burger");
@@ -55,6 +55,20 @@ menuCloseMobile.addEventListener("click", () => {
   menuCloseMobile.classList.remove("active");
 });
 
+const btnFormOpen = document.querySelector(".menu-container__button");
+const btnFormClose = document.querySelector(".menu-container__close-form");
+const mobileForm = document.querySelector(".menu-container__form-wrapper");
+
+btnFormOpen.addEventListener("click", () => {
+  mobileForm.classList.add("active");
+  btnFormClose.classList.add("active");
+});
+
+btnFormClose.addEventListener("click", () => {
+  mobileForm.classList.remove("active");
+  btnFormClose.classList.remove("active");
+});
+
 //появление кнопки "ВВЕРХ"
 window.onscroll = function () {
   var button = document.querySelector(".button-up");
@@ -82,10 +96,11 @@ inputContainers.forEach((container) => {
 // Получаем элемент с классом "communicate__textarea"
 const textareaContainer = document.querySelector(".communicate__textarea");
 
-// Добавляем обработчик события click на него
-textareaContainer.addEventListener("click", () => {
-  // Находим дочерний элемент label внутри контейнера
-  const label = textareaContainer.querySelector("label");
-  // Добавляем класс "active" к label
-  label.classList.add("active");
-});
+if (textareaContainer) {
+  textareaContainer.addEventListener("click", () => {
+    // Находим дочерний элемент label внутри контейнера
+    const label = textareaContainer.querySelector("label");
+    // Добавляем класс "active" к label
+    label.classList.add("active");
+  });
+}

@@ -797,6 +797,8 @@ p {
   .menu-form__item {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 16px;
   }
   .menu-form__button {
@@ -817,6 +819,18 @@ p {
   .menu-form__button img {
     width: 16px;
     height: 16px;
+  }
+  .menu-form__text {
+    max-width: 295px;
+    width: 100%;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #303030;
+  }
+  .menu-form__text a {
+    color: #4584ce;
   }
 }
 /*----------------------------------------------------------------header----------------------------------------------------------*/

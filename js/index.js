@@ -31,10 +31,12 @@ menuDesc.addEventListener("mouseleave", closeMenu);
 function openMenu() {
   menuDesc.classList.add("active");
   menuBurger.classList.add("active");
+  buttonUp.style.display = "none";
 }
 function closeMenu() {
   menuDesc.classList.remove("active");
   menuBurger.classList.remove("active");
+  buttonUp.style.display = "block";
 }
 // const menuBurgerMobile = {
 //   element: document.querySelector(".menu-container__burger-mobile"),
@@ -106,6 +108,7 @@ function initFormEvents() {
       if (window.innerWidth < 768) {
         mobileForm.classList.add("active");
         btnAppl.classList.add("active");
+        buttonUp.style.visibility = "hidden";
       } else {
         descForm.classList.add("active");
       }
@@ -119,6 +122,7 @@ function initFormEvents() {
       mobileForm.classList.remove("active");
       btnFormClose.classList.remove("active");
       buttonUp.style.display = "block";
+      buttonUp.style.visibility = "visible";
     });
   }
 }

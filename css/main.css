@@ -6,6 +6,7 @@
 }
 body {
   background: #faf9f8;
+  position: relative;
 }
 a {
   text-decoration: none;

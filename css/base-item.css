@@ -895,6 +895,58 @@
     height: 16px;
   }
 }
+@media (max-width: 1023px) {
+  .communicate__top_base {
+    max-width: 416px;
+  }
+  .communicate__top_base h2 {
+    font-size: 56px;
+    line-height: 71.68px;
+  }
+  .communicate__wrapper_base {
+    padding-top: 50px;
+  }
+  .communicate__container_base {
+    max-width: 432px;
+    height: 88px;
+    padding: 32px;
+  }
+  .communicate__form_base {
+    margin-top: 64px;
+  }
+  .communicate__icon_base {
+    width: 24px;
+    height: 24px;
+  }
+  .communicate__input_base + label {
+    left: 72px;
+    font-size: 22px;
+    line-height: 36.3px;
+  }
+  .communicate__label-base.active {
+    transform: translate(20px, 0px);
+    font-size: 17px;
+  }
+  label.active {
+    transform: translateY(-3px, 0px);
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .communicate__label-textarea {
+    max-width: 360px;
+    width: 100%;
+    font-size: 22px;
+    line-height: 36.3px;
+    left: 31px;
+  }
+  .communicate__textarea_bade {
+    max-width: 432px;
+    padding: 24px 32px;
+  }
+  .communicate__textarea_bade textarea {
+    margin-top: 35px;
+  }
+}
 /*-------------------------------------------------opinion----------------------------------------------------*/
 .opinion {
   width: 100%;

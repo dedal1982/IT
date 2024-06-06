@@ -818,6 +818,10 @@ p {
   }
   .menu-form__button_green {
     background: #78ce5a;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+    justify-content: space-between;
   }
   .menu-form__button img {
     width: 16px;

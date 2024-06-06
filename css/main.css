@@ -713,6 +713,12 @@ p {
   display: block;
 }
 /*----------------------------------------------мобильная форма--------------------------------------------------*/
+.menu-form {
+  display: none;
+}
+.menu-container__close-form {
+  display: none;
+}
 @media (max-width: 767px) {
   .menu-form {
     display: none;

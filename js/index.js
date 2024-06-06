@@ -92,30 +92,38 @@ menuCloseMobile.addEventListener("click", () => {
   menuCloseMobile.classList.remove("active");
 });
 
-const btnFormOpen = document.querySelector(".form-mobile");
-const btnFormClose = document.querySelector(".menu-container__close-form");
-const descForm = document.querySelector(".menu-container__form-wrapper-desc");
-const mobileForm = document.querySelector(".menu-container__form-wrapper");
-const buttonUp = document.querySelector(".button-up");
-const btnAppl = document.querySelector(".menu-container__button");
+//открытие-закрытие форм заявки
+function initFormEvents() {
+  const btnFormOpen = document.querySelector(".form-mobile");
+  const btnFormClose = document.querySelector(".menu-container__close-form");
+  const descForm = document.querySelector(".menu-container__form-wrapper-desc");
+  const mobileForm = document.querySelector(".menu-container__form-wrapper");
+  const buttonUp = document.querySelector(".button-up");
+  const btnAppl = document.querySelector(".menu-container__button");
 
-btnFormOpen.addEventListener("click", () => {
-  if (window.innerWidth < 768) {
-    mobileForm.classList.add("active");
-    btnAppl.classList.add("active");
-  } else {
-    descForm.classList.add("active");
+  if (btnFormOpen) {
+    btnFormOpen.addEventListener("click", () => {
+      if (window.innerWidth < 768) {
+        mobileForm.classList.add("active");
+        btnAppl.classList.add("active");
+      } else {
+        descForm.classList.add("active");
+      }
+      btnFormClose.classList.add("active");
+      buttonUp.style.display = "none";
+    });
   }
-  // mobileForm.classList.add("active");
-  btnFormClose.classList.add("active");
-  buttonUp.style.display = "none";
-});
 
-btnFormClose.addEventListener("click", () => {
-  mobileForm.classList.remove("active");
-  btnFormClose.classList.remove("active");
-  buttonUp.style.display = "block";
-});
+  if (btnFormClose) {
+    btnFormClose.addEventListener("click", () => {
+      mobileForm.classList.remove("active");
+      btnFormClose.classList.remove("active");
+      buttonUp.style.display = "block";
+    });
+  }
+}
+
+initFormEvents();
 
 //появление кнопки "ВВЕРХ"
 window.onscroll = function () {
@@ -127,28 +135,22 @@ window.onscroll = function () {
   }
 };
 
-//эффект при клике на инпут
-// Получаем все элементы с классом "communicate__container"
+//эффект при клике на инпут + textarea
 const inputContainers = document.querySelectorAll(".communicate__container");
+const inputField = document.querySelectorAll(".communicate__input");
 
-// Добавляем обработчик события click на каждый из них
 inputContainers.forEach((container) => {
   container.addEventListener("click", () => {
-    // Находим дочерний элемент label внутри контейнера
     const label = container.querySelector("label");
-    // Добавляем класс "active" к label
     label.classList.add("active");
   });
 });
 
-// Получаем элемент с классом "communicate__textarea"
 const textareaContainer = document.querySelector(".communicate__textarea");
 
 if (textareaContainer) {
   textareaContainer.addEventListener("click", () => {
-    // Находим дочерний элемент label внутри контейнера
     const label = textareaContainer.querySelector("label");
-    // Добавляем класс "active" к label
     label.classList.add("active");
   });
 }

@@ -97,10 +97,12 @@ const btnFormClose = document.querySelector(".menu-container__close-form");
 const descForm = document.querySelector(".menu-container__form-wrapper-desc");
 const mobileForm = document.querySelector(".menu-container__form-wrapper");
 const buttonUp = document.querySelector(".button-up");
+const btnAppl = document.querySelector(".menu-container__button");
 
 btnFormOpen.addEventListener("click", () => {
   if (window.innerWidth < 768) {
     mobileForm.classList.add("active");
+    btnAppl.classList.add("active");
   } else {
     descForm.classList.add("active");
   }

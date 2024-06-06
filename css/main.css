@@ -568,6 +568,12 @@ p {
     justify-content: center;
     gap: 16px;
   }
+  .menu-container__button:first-child {
+    gap: 0;
+  }
+  .menu-container__button:first-child.active {
+    gap: 16px;
+  }
 }
 .form-mobile {
   font-family: "Roboto Flex", sans-serif;
@@ -720,6 +726,7 @@ p {
 .menu-container__form-wrapper.active {
   display: flex;
 }
+
 .menu-container__close-form {
   display: none;
   width: 16px;

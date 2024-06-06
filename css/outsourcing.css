@@ -591,7 +591,7 @@ label.active {
 }
 @media (max-width: 1280px) {
   label.active {
-    transform: translateY(-5px);
+    /* transform: translateY(-5px); */
   }
 }
 @media (max-width: 767px) {

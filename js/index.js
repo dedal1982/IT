@@ -38,44 +38,7 @@ function closeMenu() {
   menuBurger.classList.remove("active");
   buttonUp.style.display = "block";
 }
-// const menuBurgerMobile = {
-//   element: document.querySelector(".menu-container__burger-mobile"),
-//   menuMob: document.querySelector(".menu-container__mobile-wrapper"),
-//   menuCloseMobile: document.querySelector(".menu-container__close-mobile"),
-//   init: function () {
-//     this.element.addEventListener("click", () => {
-//       this.menuMob.classList.add("active");
-//       this.element.classList.add("active");
-//       this.menuCloseMobile.classList.add("active");
-//     });
 
-//     this.menuCloseMobile.addEventListener("click", () => {
-//       this.menuMob.classList.remove("active");
-//       this.element.classList.remove("active");
-//       this.menuCloseMobile.classList.remove("active");
-//     });
-//   },
-// };
-
-// const mobileForm = {
-//   btnFormOpen: document.querySelector(".menu-container__button"),
-//   btnFormClose: document.querySelector(".menu-container__close-form"),
-//   form: document.querySelector(".menu-container__form-wrapper"),
-//   init: function () {
-//     this.btnFormOpen.addEventListener("click", () => {
-//       this.form.classList.add("active");
-//       this.btnFormClose.classList.add("active");
-//     });
-
-//     this.btnFormClose.addEventListener("click", () => {
-//       this.form.classList.remove("active");
-//       this.btnFormClose.classList.remove("active");
-//     });
-//   },
-// };
-
-// menuBurgerMobile.init();
-// mobileForm.init();
 const menuBurgerMobile = document.querySelector(
   ".menu-container__burger-mobile"
 );

@@ -521,6 +521,7 @@ p {
   box-shadow: 0px 0px 40px 0px #00000008;
 }
 .button-up {
+  display: none;
   position: fixed;
   right: 16px;
   bottom: 120px;

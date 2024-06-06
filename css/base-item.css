@@ -834,7 +834,45 @@
   }
 }
 @media (max-width: 1024px) {
-  .communicate__wrapper_base;
+  .communicate__wrapper_base h2 {
+    font-size: 40px;
+    line-height: 51.2px;
+  }
+  .communicate__wrapper_base {
+    padding-top: 40px;
+  }
+  .communicate__form_base {
+    margin-top: 40px;
+  }
+  .communicate__container_base {
+    max-width: 960px;
+    height: 64px;
+    padding: 17.5px 24px 17.5px 24px;
+    box-sizing: border-box;
+  }
+  .communicate__icon_base {
+    width: 16px;
+    height: 16px;
+  }
+  .communicate__input_base + label {
+    left: 47px;
+    font-size: 18px;
+    line-height: 28.8px;
+  }
+  .communicate__label-base.active {
+    transform: translate(20px);
+    font-size: 19px;
+  }
+  .communicate__textarea_bade {
+    max-width: 960px;
+    border-radius: 32px;
+    padding: 17px 24px;
+  }
+  .communicate__label-textarea {
+    font-size: 18px;
+    line-height: 28.8px;
+    left: 22px;
+  }
 }
 /*-------------------------------------------------opinion----------------------------------------------------*/
 .opinion {

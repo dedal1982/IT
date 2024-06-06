@@ -555,12 +555,26 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .menu-container__button {
+    position: relative;
+    width: 134px;
+    height: 88px;
+    border-radius: 44px;
+    background: #303030;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+.form-mobile {
   font-family: "Roboto Flex", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 28.8px;
+  color: #ffffff;
 }
 .menu-container__button_desc {
   width: 88px;
@@ -711,8 +725,10 @@ p {
   width: 16px;
   height: 16px;
 }
-.menu-container__close-form.active {
-  display: block;
+@media (max-width: 767px) {
+  .menu-container__close-form.active {
+    display: block;
+  }
 }
 /*----------------------------------------------------------------header----------------------------------------------------------*/
 .header {

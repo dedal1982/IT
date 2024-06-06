@@ -92,13 +92,19 @@ menuCloseMobile.addEventListener("click", () => {
   menuCloseMobile.classList.remove("active");
 });
 
-const btnFormOpen = document.querySelector(".menu-container__button span");
+const btnFormOpen = document.querySelector(".form-mobile");
 const btnFormClose = document.querySelector(".menu-container__close-form");
+const descForm = document.querySelector(".menu-container__form-wrapper-desc");
 const mobileForm = document.querySelector(".menu-container__form-wrapper");
 const buttonUp = document.querySelector(".button-up");
 
 btnFormOpen.addEventListener("click", () => {
-  mobileForm.classList.add("active");
+  if (window.innerWidth < 768) {
+    mobileForm.classList.add("active");
+  } else {
+    descForm.classList.add("active");
+  }
+  // mobileForm.classList.add("active");
   btnFormClose.classList.add("active");
   buttonUp.style.display = "none";
 });

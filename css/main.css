@@ -6,6 +6,7 @@
 }
 body {
   background: #faf9f8;
+  position: relative;
 }
 a {
   text-decoration: none;
@@ -713,10 +714,10 @@ p {
 }
 /*----------------------------------------------мобильная форма--------------------------------------------------*/
 @media (max-width: 767px) {
-  .menu-container__form-wrapper {
+  .menu-form {
     display: none;
     position: absolute;
-    left: -8px;
+    /* left: -8px; */
     bottom: 80px;
     width: 375px;
     height: calc(100dvh - 112px);
@@ -726,9 +727,11 @@ p {
     padding: 16px 16px 32px 16px;
     box-sizing: border-box;
     flex-direction: column;
+    gap: 32px;
   }
-  .menu-container__form-wrapper.active {
+  .menu-form.active {
     display: flex;
+    bottom: 112px;
   }
 
   .menu-container__close-form {
@@ -741,12 +744,12 @@ p {
   .menu-container__close-form.active {
     display: block;
   }
-  .menu-container__form {
+  .menu-form__form {
     display: flex;
     flex-direction: column;
     gap: 8px;
   }
-  .menu-container__container {
+  .menu-form__container {
     position: relative;
     max-width: 343px;
     width: 100%;
@@ -759,13 +762,78 @@ p {
     padding: 24px;
     box-sizing: border-box;
   }
-  .menu-container__icon {
+  .menu-form__icon {
     width: 16px;
     height: 16px;
   }
-  .menu-container__label {
+  .menu-form__label {
     left: 48px;
   }
+  .menu-form__textarea {
+    position: relative;
+    max-width: 343px;
+    width: 100%;
+    height: 256px;
+    max-height: 100%;
+    display: flex;
+    align-items: baseline;
+    background: #f0efed;
+    border-radius: 32px;
+    gap: 8px;
+    padding: 17px 24px;
+    box-sizing: border-box;
+  }
+  .menu-form__textarea textarea {
+    height: 160px;
+  }
+  .menu-form__textarea-label {
+    width: 250px;
+    left: 24px;
+    top: 21px;
+    font-size: 18px;
+    line-height: 28.8px;
+    text-align: start;
+  }
+  .menu-form__item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .menu-form__button {
+    width: 100%;
+    height: 64px;
+    background: #303030;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: #ffffff;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28.8px;
+  }
+  .menu-form__button img {
+    width: 16px;
+    height: 16px;
+  }
+  /* .menu-container__form-btn {
+    width: 100%;
+    height: 88px;
+    border-radius: 44px;
+    background: #303030;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #ffffff;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36.3px;
+    padding-left: 32px;
+    box-sizing: border-box;
+  } */
 }
 /*----------------------------------------------------------------header----------------------------------------------------------*/
 .header {

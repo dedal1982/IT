@@ -64,3 +64,28 @@ window.onscroll = function () {
     button.style.display = "none";
   }
 };
+
+//эффект при клике на инпут
+// Получаем все элементы с классом "communicate__container"
+const inputContainers = document.querySelectorAll(".communicate__container");
+
+// Добавляем обработчик события click на каждый из них
+inputContainers.forEach((container) => {
+  container.addEventListener("click", () => {
+    // Находим дочерний элемент label внутри контейнера
+    const label = container.querySelector("label");
+    // Добавляем класс "active" к label
+    label.classList.add("active");
+  });
+});
+
+// Получаем элемент с классом "communicate__textarea"
+const textareaContainer = document.querySelector(".communicate__textarea");
+
+// Добавляем обработчик события click на него
+textareaContainer.addEventListener("click", () => {
+  // Находим дочерний элемент label внутри контейнера
+  const label = textareaContainer.querySelector("label");
+  // Добавляем класс "active" к label
+  label.classList.add("active");
+});

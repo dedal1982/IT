@@ -14,10 +14,6 @@ videoPreviews.forEach((videoPreview, index) => {
 window.onload = function () {
   window.scrollTo(0, 0);
 };
-// document.addEventListener("DOMContentLoaded", function () {
-//   const textarea = document.querySelector("textarea");
-//   textarea.blur();
-// });
 
 //открытие-закрытие меню
 const menuBurger = document.querySelector(".menu-container__burger");

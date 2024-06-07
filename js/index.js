@@ -15,6 +15,34 @@ window.onload = function () {
   window.scrollTo(0, 0);
 };
 
+// Получаем кнопку
+const button = document.querySelector(".menu-container__button");
+
+// Проверяем размер экрана при загрузке страницы
+checkScreenSize();
+
+// Добавляем обработчик события resize
+window.addEventListener("resize", checkScreenSize);
+
+// Функция для проверки размера экрана
+function checkScreenSize() {
+  // Получаем текущую ширину экрана
+  const screenWidth = window.innerWidth;
+
+  // Если ширина меньше 768px
+  if (screenWidth < 768) {
+    // Удаляем класс menu-container__button-form
+    button.classList.remove("menu-container__button-form");
+    // Добавляем класс menu-container__button-form-mobile
+    button.classList.add("menu-container__button-form-mobile");
+  } else {
+    // Удаляем класс menu-container__button-form-mobile
+    button.classList.remove("menu-container__button-form-mobile");
+    // Добавляем класс menu-container__button-form
+    button.classList.add("menu-container__button-form");
+  }
+}
+
 //открытие-закрытие меню
 const menuBurger = document.querySelector(".menu-container__burger");
 const menuDesc = document.querySelector(".menu-container__button_desc");
@@ -55,7 +83,9 @@ menuCloseMobile.addEventListener("click", () => {
 
 //открытие-закрытие форм заявки
 function initFormEvents() {
-  const btnFormOpen = document.querySelector(".form-mobile");
+  const btnFormOpen = document.querySelector(
+    ".menu-container__button-form-mobile"
+  );
   const btnFormClose = document.querySelector(".menu-container__close-form");
   const mobileForm = document.querySelector(".menu-form");
   const buttonUp = document.querySelector(".button-up");
@@ -101,7 +131,7 @@ window.onscroll = function () {
 
 //эффект при клике на инпут + textarea
 const inputContainers = document.querySelectorAll(
-  ".communicate__container,.menu-form__container,.communicate__textarea,.popup-overlay__textarea"
+  ".communicate__container,.menu-form__container,.communicate__textarea,.popup-overlay__container,.popup-overlay__textarea"
 );
 const inputField = document.querySelectorAll(".menu-input");
 
@@ -123,7 +153,7 @@ if (textareaContainer) {
 
 // открытие - закрытие формы десктоп
 const popupOverlay = document.querySelector(".popup-overlay");
-const popupOpenButton = document.querySelector(".menu-container__button");
+const popupOpenButton = document.querySelector(".menu-container__button-form");
 const popupCloseButton = document.querySelector(".popup-overlay__close");
 
 popupOpenButton.addEventListener("click", () => {

@@ -1755,7 +1755,7 @@ p {
   box-sizing: border-box;
 }
 
-.popup-overlay__form {
+.popup-overlay__wrapper {
   background-color: white;
   padding: 72px 32px 32px 32px;
   width: 650px;

@@ -100,6 +100,9 @@
   gap: 32px;
   box-sizing: border-box;
 }
+.services-block__item:hover {
+  box-shadow: none;
+}
 .services-block__item_one {
   gap: 0;
 }

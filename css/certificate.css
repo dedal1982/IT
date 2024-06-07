@@ -153,6 +153,11 @@
     line-height: 25.6px;
   }
 }
+@media (max-width: 1024px) {
+  .certificate-page__item {
+    width: 308.67px;
+  }
+}
 @media (max-width: 1023px) {
   .certificate-page__item {
     width: 224px;

@@ -598,6 +598,7 @@ label.active {
   .menu-form__label.active {
     transform: translateY(0);
     font-size: 14px;
+    line-height: 20px;
   }
 }
 .communicate__item {

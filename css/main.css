@@ -1785,13 +1785,9 @@ p {
   flex-direction: column;
   gap: 64px;
 }
-.popup-overlay__form {
-  /* display: flex;
-  flex-direction: column;
-  gap: 16px; */
-}
 .popup-overlay__container {
   position: relative;
+  max-width: 880px;
   width: 100%;
   height: 88px;
   background: #f0efed;
@@ -1822,6 +1818,7 @@ p {
 }
 .popup-overlay__textarea {
   position: relative;
+  max-width: 880px;
   width: 100%;
   height: 256px;
   display: flex;
@@ -1839,7 +1836,12 @@ p {
   }
 }
 .popup-overlay__label {
-  left: 35px;
+  left: 30px;
+}
+@media (max-width: 1280px) {
+  .popup-overlay__label {
+    left: 24px;
+  }
 }
 .popup-overlay__item {
   display: flex;

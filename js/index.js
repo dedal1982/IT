@@ -15,34 +15,6 @@ window.onload = function () {
   window.scrollTo(0, 0);
 };
 
-// Получаем кнопку
-const button = document.querySelector(".menu-container__button");
-
-// Проверяем размер экрана при загрузке страницы
-checkScreenSize();
-
-// Добавляем обработчик события resize
-window.addEventListener("resize", checkScreenSize);
-
-// Функция для проверки размера экрана
-function checkScreenSize() {
-  // Получаем текущую ширину экрана
-  const screenWidth = window.innerWidth;
-
-  // Если ширина меньше 768px
-  if (screenWidth < 768) {
-    // Удаляем класс menu-container__button-form
-    button.classList.remove("menu-container__button-form");
-    // Добавляем класс menu-container__button-form-mobile
-    button.classList.add("menu-container__button-form-mobile");
-  } else {
-    // Удаляем класс menu-container__button-form-mobile
-    button.classList.remove("menu-container__button-form-mobile");
-    // Добавляем класс menu-container__button-form
-    button.classList.add("menu-container__button-form");
-  }
-}
-
 //открытие-закрытие меню
 const menuBurger = document.querySelector(".menu-container__burger");
 const menuDesc = document.querySelector(".menu-container__button_desc");
@@ -91,16 +63,13 @@ function initFormEvents() {
 
   if (btnFormOpen) {
     btnFormOpen.addEventListener("click", () => {
-      mobileForm.classList.add("active");
+      mobileForm.classList.toggle("active");
       btnAppl.classList.add("active");
-      buttonUp.style.visibility = "hidden";
       window.scrollTo({
         top: document.body.scrollHeight,
         behavior: "smooth",
       });
-
-      btnFormClose.classList.add("active");
-      buttonUp.style.display = "none";
+      btnFormClose.classList.toggle("active");
     });
   }
 

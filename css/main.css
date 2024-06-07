@@ -550,7 +550,8 @@ p {
   align-items: center;
   justify-content: center;
 }
-.menu-container__button {
+.menu-container__button,
+.menu-container__button-form {
   position: relative;
   width: 134px;
   height: 88px;
@@ -577,6 +578,11 @@ p {
   }
   .menu-container__button:first-child.active {
     gap: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .menu-container__button-form {
+    display: none;
   }
 }
 .form-mobile {
@@ -1739,6 +1745,14 @@ p {
   }
 }
 /*-----------------------------------------форма заявки десктоп-------------------------------------------------*/
+.menu-container__button-form-mobile {
+  display: none;
+}
+@media (max-width: 767px) {
+  .menu-container__button-form-mobile {
+    display: flex;
+  }
+}
 @media (max-width: 767px) {
   .popup-overlay,
   .popup-overlay.active {

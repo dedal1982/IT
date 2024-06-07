@@ -533,6 +533,7 @@ p {
   height: 88px;
   border-radius: 50%;
   background: #303030;
+  z-index: 5;
 }
 @media (max-width: 767px) {
   .button-up {

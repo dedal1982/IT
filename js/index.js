@@ -158,6 +158,9 @@ const popupCloseButton = document.querySelector(".popup-overlay__close");
 
 popupOpenButton.addEventListener("click", () => {
   popupOverlay.style.display = "flex";
+  if (screenWidth < 768) {
+    popupOverlay.style.display = "none";
+  }
 });
 
 popupCloseButton.addEventListener("click", () => {

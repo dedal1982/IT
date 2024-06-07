@@ -55,16 +55,10 @@ menuDesc.addEventListener("mouseleave", closeMenu);
 function openMenu() {
   menuDesc.classList.add("active");
   menuBurger.classList.add("active");
-  if (buttonUp) {
-    buttonUp.style.display = "none";
-  }
 }
 function closeMenu() {
   menuDesc.classList.remove("active");
   menuBurger.classList.remove("active");
-  if (buttonUp) {
-    buttonUp.style.display = "block";
-  }
 }
 
 const menuBurgerMobile = document.querySelector(
@@ -85,28 +79,26 @@ menuCloseMobile.addEventListener("click", () => {
   menuCloseMobile.classList.remove("active");
 });
 
-const btnFormClose = document.querySelector(".menu-container__close-form");
-const mobileForm = document.querySelector(".menu-form");
-const buttonUp = document.querySelector(".button-up");
-const btnAppl = document.querySelector(".menu-container__button");
-
 //открытие-закрытие форм заявки
 function initFormEvents() {
   const btnFormOpen = document.querySelector(
     ".menu-container__button-form-mobile"
   );
+  const btnFormClose = document.querySelector(".menu-container__close-form");
+  const mobileForm = document.querySelector(".menu-form");
+  const buttonUp = document.querySelector(".button-up");
+  const btnAppl = document.querySelector(".menu-container__button");
 
   if (btnFormOpen) {
     btnFormOpen.addEventListener("click", () => {
-      if (window.innerWidth < 768) {
-        mobileForm.classList.add("active");
-        btnAppl.classList.add("active");
-        buttonUp.style.visibility = "hidden";
-        window.scrollTo({
-          top: document.body.scrollHeight,
-          behavior: "smooth",
-        });
-      }
+      mobileForm.classList.add("active");
+      btnAppl.classList.add("active");
+      buttonUp.style.visibility = "hidden";
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth",
+      });
+
       btnFormClose.classList.add("active");
       buttonUp.style.display = "none";
     });
@@ -161,11 +153,13 @@ const popupOverlay = document.querySelector(".popup-overlay");
 const popupOpenButton = document.querySelector(".menu-container__button-form");
 const popupCloseButton = document.querySelector(".popup-overlay__close");
 
-popupOpenButton.addEventListener("click", () => {
-  if (popupOverlay) {
-    popupOverlay.classList.add("active");
-  }
-});
+if (popupOpenButton) {
+  popupOpenButton.addEventListener("click", () => {
+    if (popupOverlay) {
+      popupOverlay.classList.add("active");
+    }
+  });
+}
 
 popupCloseButton.addEventListener("click", () => {
   popupOverlay.classList.remove("active");

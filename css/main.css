@@ -1739,6 +1739,12 @@ p {
   }
 }
 /*-----------------------------------------форма заявки десктоп-------------------------------------------------*/
+@media (max-width: 767px) {
+  .popup-overlay,
+  .popup-overlay.active {
+    display: none !important;
+  }
+}
 .popup-overlay {
   position: fixed;
   top: 0;

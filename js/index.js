@@ -129,10 +129,11 @@ if (popupOpenButton) {
     }
   });
 }
-
-popupCloseButton.addEventListener("click", () => {
-  popupOverlay.classList.remove("active");
-});
+if (popupCloseButton) {
+  popupCloseButton.addEventListener("click", () => {
+    popupOverlay.classList.remove("active");
+  });
+}
 
 // Добавляем проверку ширины экрана
 window.addEventListener("resize", () => {

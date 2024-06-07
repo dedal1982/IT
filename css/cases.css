@@ -133,6 +133,11 @@
     gap: 16px;
   }
 }
+@media (max-width: 1024px) {
+  .projects__item {
+    width: 308.67px;
+  }
+}
 @media (max-width: 1023px) {
   .projects__item {
     width: 224px;

@@ -57,7 +57,6 @@ menuCloseMobile.addEventListener("click", () => {
 function initFormEvents() {
   const btnFormOpen = document.querySelector(".form-mobile");
   const btnFormClose = document.querySelector(".menu-container__close-form");
-  const descForm = document.querySelector(".menu-container__form-wrapper-desc");
   const mobileForm = document.querySelector(".menu-form");
   const buttonUp = document.querySelector(".button-up");
   const btnAppl = document.querySelector(".menu-container__button");
@@ -72,8 +71,6 @@ function initFormEvents() {
           top: document.body.scrollHeight,
           behavior: "smooth",
         });
-      } else {
-        descForm.classList.add("active");
       }
       btnFormClose.classList.add("active");
       buttonUp.style.display = "none";

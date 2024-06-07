@@ -838,12 +838,19 @@ p {
     font-size: 18px;
     line-height: 28.8px;
   }
+  .menu-form__button.menu-form__button_hidden {
+    display: none;
+  }
   .menu-form__button_green {
+    display: none;
     background: #78ce5a;
     padding-left: 24px;
     padding-right: 24px;
     box-sizing: border-box;
     justify-content: space-between;
+  }
+  .menu-form__button_green.menu-form__button_open {
+    display: flex;
   }
   .menu-form__button img {
     width: 16px;

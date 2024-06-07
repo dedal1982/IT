@@ -141,3 +141,16 @@ window.addEventListener("resize", () => {
     popupOverlay.classList.remove("active");
   }
 });
+
+//кнопка отправки мобильной формы,после отправки становится зеленой
+const buttonFormMobile = document.querySelector(".menu-form__button");
+const buttonFormMobileGreen = document.querySelector(
+  ".menu-form__button_green"
+);
+
+if (buttonFormMobile) {
+  buttonFormMobile.addEventListener("click", () => {
+    buttonFormMobile.classList.add("menu-form__button_hidden");
+    buttonFormMobileGreen.classList.add("menu-form__button_open");
+  });
+}

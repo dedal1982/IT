@@ -104,6 +104,10 @@ h5 {
 button {
   border: none;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+button:hover {
+  filter: brightness(80%);
 }
 /*-----link-----*/
 p {
@@ -1644,6 +1648,10 @@ p {
   font-size: 22px;
   line-height: 36.3px;
   margin-left: 32px;
+  transition: 0.3s ease-in-out;
+}
+.difference__button:hover {
+  filter: brightness(80%);
 }
 .difference__button img {
   width: 24px;

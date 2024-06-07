@@ -83,6 +83,10 @@
   align-items: center;
   justify-content: center;
   color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+.mistake__button:hover {
+  filter: brightness(80%);
 }
 @media (max-width: 1280px) {
   .mistake__button {

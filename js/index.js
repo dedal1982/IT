@@ -55,12 +55,16 @@ menuDesc.addEventListener("mouseleave", closeMenu);
 function openMenu() {
   menuDesc.classList.add("active");
   menuBurger.classList.add("active");
-  buttonUp.style.display = "none";
+  if (buttonUp) {
+    buttonUp.style.display = "none";
+  }
 }
 function closeMenu() {
   menuDesc.classList.remove("active");
   menuBurger.classList.remove("active");
-  buttonUp.style.display = "block";
+  if (buttonUp) {
+    buttonUp.style.display = "block";
+  }
 }
 
 const menuBurgerMobile = document.querySelector(
@@ -81,15 +85,16 @@ menuCloseMobile.addEventListener("click", () => {
   menuCloseMobile.classList.remove("active");
 });
 
+const btnFormClose = document.querySelector(".menu-container__close-form");
+const mobileForm = document.querySelector(".menu-form");
+const buttonUp = document.querySelector(".button-up");
+const btnAppl = document.querySelector(".menu-container__button");
+
 //открытие-закрытие форм заявки
 function initFormEvents() {
   const btnFormOpen = document.querySelector(
     ".menu-container__button-form-mobile"
   );
-  const btnFormClose = document.querySelector(".menu-container__close-form");
-  const mobileForm = document.querySelector(".menu-form");
-  const buttonUp = document.querySelector(".button-up");
-  const btnAppl = document.querySelector(".menu-container__button");
 
   if (btnFormOpen) {
     btnFormOpen.addEventListener("click", () => {

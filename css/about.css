@@ -270,12 +270,17 @@
     line-height: 29.7px;
   }
 }
-@media (max-width: 1280px) {
+@media (max-width: 1339px) {
   .qualification__item {
     width: 330.67px;
   }
   .difference__text_about {
     margin-bottom: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .qualification__item {
+    width: 308.67px;
   }
 }
 @media (max-width: 1023px) {

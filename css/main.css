@@ -1754,12 +1754,14 @@ p {
   padding-bottom: 32px;
   box-sizing: border-box;
 }
-
-@media (max-width: 767px) {
+.popup-overlay.active {
+  display: flex;
+}
+/* @media (max-width: 767px) {
   .popup-overlay {
     display: none !important;
   }
-}
+} */
 .popup-overlay__wrapper {
   background-color: white;
   padding: 72px 32px 32px 32px;

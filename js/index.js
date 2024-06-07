@@ -157,12 +157,16 @@ const popupOpenButton = document.querySelector(".menu-container__button-form");
 const popupCloseButton = document.querySelector(".popup-overlay__close");
 
 popupOpenButton.addEventListener("click", () => {
-  popupOverlay.style.display = "flex";
-  if (screenWidth < 768) {
-    popupOverlay.style.display = "none";
-  }
+  popupOverlay.classList.add("active");
 });
 
 popupCloseButton.addEventListener("click", () => {
-  popupOverlay.style.display = "none";
+  popupOverlay.classList.remove("active");
+});
+
+// Добавляем проверку ширины экрана
+window.addEventListener("resize", () => {
+  if (window.innerWidth < 768) {
+    popupOverlay.classList.remove("active");
+  }
 });

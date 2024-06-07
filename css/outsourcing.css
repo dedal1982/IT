@@ -458,6 +458,11 @@
     gap: 8px;
   }
 }
+@media (max-width: 1024px) {
+  .communicate__container {
+    max-width: 100%;
+  }
+}
 .communicate__icon {
   width: 24px;
   height: 24px;
@@ -556,6 +561,11 @@ input:valid + label {
   .communicate__textarea {
     padding: 16px 32px 24px 32px;
     box-sizing: border-box;
+  }
+}
+@media (max-width: 1024px) {
+  .communicate__textarea {
+    max-width: 100%;
   }
 }
 textarea {

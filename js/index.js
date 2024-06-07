@@ -117,7 +117,7 @@ function initFormEvents() {
   }
 }
 
-initFormEvents();
+document.addEventListener("DOMContentLoaded", initFormEvents);
 
 //появление кнопки "ВВЕРХ"
 window.onscroll = function () {
@@ -157,7 +157,9 @@ const popupOpenButton = document.querySelector(".menu-container__button-form");
 const popupCloseButton = document.querySelector(".popup-overlay__close");
 
 popupOpenButton.addEventListener("click", () => {
-  popupOverlay.classList.add("active");
+  if (popupOverlay) {
+    popupOverlay.classList.add("active");
+  }
 });
 
 popupCloseButton.addEventListener("click", () => {

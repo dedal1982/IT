@@ -1787,7 +1787,7 @@ p {
   padding: 72px 32px 32px 32px;
   box-sizing: border-box;
   width: 650px;
-  height: 90dvh;
+  /* height: 90dvh; */
   position: relative;
   border-radius: 44px;
 }

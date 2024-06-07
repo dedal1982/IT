@@ -22,7 +22,7 @@ const menuClose = document.querySelector(".menu-container__close");
 
 menuBurger.addEventListener("click", openMenu);
 menuClose.addEventListener("click", closeMenu);
-menuDesc.addEventListener("mouseleave", closeMenu);
+// menuDesc.addEventListener("mouseleave", closeMenu);
 
 function openMenu() {
   menuDesc.classList.add("active");

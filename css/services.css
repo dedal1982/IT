@@ -141,11 +141,11 @@
     line-height: 28.8px;
   }
 }
-@media (min-width: 769px) and (max-width: 1279px) {
+/* @media (min-width: 769px) and (max-width: 1279px) {
   .services-block__items {
     gap: 30px;
   }
-}
+} */
 @media (max-width: 768px) {
   .services-block__items {
     margin-top: 34px;
@@ -173,7 +173,7 @@
   .services-block__items {
     margin-top: 34px;
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 8px;
   }
   .services-block__item {
     max-width: 100%;

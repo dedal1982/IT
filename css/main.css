@@ -1510,7 +1510,7 @@ p {
     margin-top: 40px;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 768px) {
   .trust__items {
     flex-wrap: wrap;
     margin-top: 32px;

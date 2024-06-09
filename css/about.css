@@ -29,7 +29,7 @@
     width: 504px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1279px) {
   .department__item_about {
     width: 100%;
   }
@@ -280,12 +280,12 @@
 }
 @media (max-width: 1024px) {
   .qualification__item {
-    width: 308.67px;
+    width: 303.67px;
   }
 }
 @media (max-width: 1023px) {
   .qualification__item {
-    width: 344px;
+    width: 361px;
     border-radius: 32px;
     gap: 16px;
   }
@@ -299,6 +299,11 @@
   .difference__text_about {
     max-width: 660px;
     margin-bottom: 34px;
+  }
+}
+@media (max-width: 768px) {
+  .qualification__item {
+    width: 344px;
   }
 }
 @media (max-width: 767px) {

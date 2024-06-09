@@ -1816,6 +1816,7 @@ p {
   position: absolute;
   top: 32px;
   right: 32px;
+  background: transparent;
 }
 .popup-overlay__content {
   width: 100%;

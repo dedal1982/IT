@@ -784,7 +784,6 @@
     margin-bottom: 64px;
   }
   .communicate__container_base {
-    max-width: 752px;
     height: 88px;
     gap: 16px;
     padding: 32px;
@@ -807,7 +806,6 @@
   .communicate__textarea_bade {
     padding: 24px 32px 24px 32px;
     box-sizing: border-box;
-    max-width: 752px;
   }
   .communicate__label-base,
   .communicate__label-textarea {
@@ -849,7 +847,6 @@
     margin-top: 40px;
   }
   .communicate__container_base {
-    max-width: 960px;
     height: 64px;
     padding: 17.5px 24px 17.5px 24px;
     box-sizing: border-box;
@@ -868,7 +865,6 @@
     font-size: 19px;
   }
   .communicate__textarea_bade {
-    max-width: 960px;
     border-radius: 32px;
     padding: 17px 24px;
   }

@@ -970,14 +970,7 @@
     box-sizing: border-box;
   }
 }
-@media (max-width: 1023px) {
-  .opinion__container {
-    padding-left: 32px;
-    padding-right: 0;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-}
+
 @media (max-width: 767px) {
   .opinion__container {
     padding-left: 8px;

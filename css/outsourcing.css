@@ -173,6 +173,9 @@
   grid-template-columns: repeat(3, minmax(auto, 373.33px));
   gap: 16px;
 }
+.department__items_modern {
+  grid-template-columns: repeat(2, minmax(auto, 568px));
+}
 .department__items_support {
   gap: 16px;
 }
@@ -182,11 +185,17 @@
     margin-top: 40px;
     grid-template-columns: repeat(3, minmax(auto, 330.67px));
   }
+  .department__items_modern {
+    grid-template-columns: repeat(2, minmax(auto, 504px));
+  }
 }
 @media (max-width: 768px) {
   .department__items {
     margin-top: 32px;
     grid-template-columns: repeat(3, minmax(auto, 224px));
+  }
+  .department__items_modern {
+    grid-template-columns: repeat(2, minmax(auto, 344px));
   }
 }
 @media (max-width: 767px) {

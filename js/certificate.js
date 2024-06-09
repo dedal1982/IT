@@ -34,6 +34,6 @@ if (projectsContainerElement) {
 }
 
 projectsButtonElement.addEventListener("click", () => {
-  projectsContElemHidden.style.display = "flex";
+  projectsContElemHidden.style.display = "grid";
   projectsButtonElement.style.display = "none";
 });

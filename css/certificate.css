@@ -96,17 +96,12 @@
   width: 100%;
 }
 .certificate-page__items {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 373.33px));
   gap: 16px;
 }
-@media (max-width: 767px) {
-  .certificate-page__items {
-    gap: 8px;
-  }
-}
 .certificate-page__item {
-  width: 373.33px;
+  width: 100%;
   height: 320px;
   display: flex;
   flex-direction: column;
@@ -131,9 +126,27 @@
   width: 80px;
   height: 80px;
 }
+.certificate-page__button {
+  width: 100%;
+  height: 88px;
+  background: #30303012;
+  border-radius: 44px;
+  margin-top: 16px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36.3px;
+  color: #303030;
+}
+.certificate-page__items_hidden {
+  display: none;
+  margin-top: 16px;
+}
 @media (max-width: 1280px) {
+  .certificate-page__items {
+    grid-template-columns: repeat(3, minmax(auto, 330.67px));
+  }
   .certificate-page__item {
-    width: 330.67px;
     border-radius: 32px;
   }
   .certificate-page__author img {
@@ -152,20 +165,23 @@
     font-size: 16px;
     line-height: 25.6px;
   }
-}
-@media (max-width: 1024px) {
-  .certificate-page__item {
-    width: 308.67px;
+  .certificate-page__button {
+    height: 64px;
+    font-size: 18px;
+    line-height: 28.8px;
   }
 }
-@media (max-width: 1023px) {
-  .certificate-page__item {
-    width: 224px;
+@media (max-width: 768px) {
+  .certificate-page__items {
+    grid-template-columns: repeat(3, minmax(auto, 224px));
   }
 }
 @media (max-width: 767px) {
+  .certificate-page__items {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
   .certificate-page__item {
-    width: 100%;
     height: 210px;
     padding: 24px;
     gap: 8px;
@@ -180,31 +196,6 @@
     font-size: 15px;
     line-height: 25px;
   }
-}
-.certificate-page__button {
-  width: 100%;
-  height: 88px;
-  background: #30303012;
-  border-radius: 44px;
-  margin-top: 16px;
-  font-family: "Roboto Flex", sans-serif;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 36.3px;
-  color: #303030;
-}
-@media (max-width: 1280px) {
-  .certificate-page__button {
-    height: 64px;
-    font-size: 18px;
-    line-height: 28.8px;
-  }
-}
-.certificate-page__items_hidden {
-  display: none;
-  margin-top: 16px;
-}
-@media (max-width: 767px) {
   .certificate-page__items_hidden {
     margin-top: 8px;
   }

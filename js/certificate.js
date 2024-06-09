@@ -13,7 +13,7 @@ if (containerElement) {
 }
 
 buttonElement.addEventListener("click", () => {
-  contElemHidden.style.display = "flex";
+  contElemHidden.style.display = "grid";
   buttonElement.style.display = "none";
 });
 

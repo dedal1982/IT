@@ -1129,6 +1129,7 @@ p {
   }
   .footer__wrapper_one {
     padding-top: 32px;
+    max-width: 100%;
   }
   .wrapper_services {
     padding-top: 0;

@@ -12,10 +12,14 @@ if (containerElement) {
   }
 }
 
-buttonElement.addEventListener("click", () => {
-  contElemHidden.style.display = "grid";
-  buttonElement.style.display = "none";
-});
+if (buttonElement) {
+  buttonElement.addEventListener("click", () => {
+    if (contElemHidden) {
+      contElemHidden.style.display = "grid";
+      buttonElement.style.display = "none";
+    }
+  });
+}
 
 const projectsContainerElement = document.querySelector(".projects__items");
 const projectsButtonElement = document.querySelector(
@@ -33,7 +37,11 @@ if (projectsContainerElement) {
   }
 }
 
-projectsButtonElement.addEventListener("click", () => {
-  projectsContElemHidden.style.display = "grid";
-  projectsButtonElement.style.display = "none";
-});
+if (projectsButtonElement) {
+  projectsButtonElement.addEventListener("click", () => {
+    if (projectsContElemHidden) {
+      projectsContElemHidden.style.display = "grid";
+      projectsButtonElement.style.display = "none";
+    }
+  });
+}

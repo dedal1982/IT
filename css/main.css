@@ -1065,6 +1065,7 @@ p {
 }
 @media (max-width: 767px) {
   .hero__item {
+    max-width: 100%;
     padding: 24px;
     box-sizing: border-box;
     flex-direction: row;

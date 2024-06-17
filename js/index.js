@@ -130,10 +130,25 @@ const inputContainers = document.querySelectorAll(
   ".communicate__container,.menu-form__container,.communicate__textarea,.popup-overlay__container,.popup-overlay__textarea"
 );
 const inputField = document.querySelectorAll(".menu-input");
+const inputTextarea = document.querySelectorAll("textarea");
 
 inputContainers.forEach((container) => {
   container.addEventListener("click", () => {
     const label = container.querySelector("label");
+    label.classList.add("active");
+  });
+});
+
+inputField.forEach((input) => {
+  input.addEventListener("focus", () => {
+    const label = input.parentElement.querySelector("label");
+    label.classList.add("active");
+  });
+});
+
+inputTextarea.forEach((textarea) => {
+  textarea.addEventListener("focus", () => {
+    const label = textarea.parentElement.querySelector("label");
     label.classList.add("active");
   });
 });

@@ -1219,6 +1219,10 @@ p {
     padding-right: 24px;
   }
 }
+.department-eng__items {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 373.33px));
+}
 /*----------------------------------------------footer----------------------------------------------*/
 .footer {
   width: 100%;

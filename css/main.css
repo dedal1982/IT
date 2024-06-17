@@ -1223,13 +1223,19 @@ p {
   display: grid;
   grid-template-columns: repeat(3, minmax(auto, 373.33px));
   gap: 16px;
+  margin-top: 64px;
+}
+@media (max-width: 1280px) {
+  .department-eng__items {
+    grid-template-columns: repeat(3, minmax(auto, 330.67px));
+    margin-top: 40px;
+  }
 }
 .department-eng__item {
   border-radius: 44px;
   padding: 32px;
   box-sizing: border-box;
   background: #f0efed;
-  margin-top: 64px;
   display: flex;
   flex-direction: column;
   gap: 16px;

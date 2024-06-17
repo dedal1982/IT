@@ -615,7 +615,7 @@ label.active {
     gap: 16px;
   }
 }
-.communicate__button {
+/* .communicate__button {
   width: 208px;
   height: 88px;
   border-radius: 44px;
@@ -630,7 +630,8 @@ label.active {
   line-height: 36.3px;
   padding-left: 32px;
   box-sizing: border-box;
-}
+} */
+
 @media (max-width: 1280px) {
   .communicate__button {
     width: 167px;
@@ -703,6 +704,9 @@ label.active {
   padding-left: 32px;
   box-sizing: border-box;
 }
+.communicate__button_eng {
+  width: 228px;
+}
 @media (max-width: 1280px) {
   .communicate__button {
     width: 167px;
@@ -711,6 +715,9 @@ label.active {
     line-height: 28.8px;
     padding-left: 24px;
     box-sizing: border-box;
+  }
+  .communicate__button_eng {
+    width: 185px;
   }
   .communicate__button img {
     width: 16px;

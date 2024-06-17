@@ -8,9 +8,9 @@ videoPreviews.forEach((videoPreview, index) => {
     videoPreview.style.display = "none";
     videoImages[index].style.display = "none";
     videoText[index].style.display = "none";
-    videoPlayers[index].play();
   });
 });
+
 window.onload = function () {
   window.scrollTo(0, 0);
 };

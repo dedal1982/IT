@@ -56,20 +56,31 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
+  padding-bottom: 64px;
+  box-sizing: border-box;
 }
 @media (max-width: 1280px) {
   .map__wrapper {
     gap: 48px;
+  }
+  .map__wrapper {
+    padding-bottom: 44px;
   }
 }
 @media (max-width: 1023px) {
   .map__wrapper {
     gap: 40px;
   }
+  .map__wrapper {
+    padding-bottom: 36px;
+  }
 }
 @media (max-width: 767px) {
   .map__wrapper {
     gap: 32px;
+  }
+  .map__wrapper {
+    padding-bottom: 28px;
   }
 }
 .map__buttons {

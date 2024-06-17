@@ -1131,12 +1131,13 @@ p {
 }
 @media (max-width: 768px) {
   .hero__items-eng {
-    margin-top: 32px;
+    margin-top: 40px;
     grid-template-columns: repeat(3, minmax(auto, 224px));
   }
 }
 @media (max-width: 767px) {
   .hero__items-eng {
+    margin-top: 32px;
     grid-template-columns: 1fr;
     gap: 8px;
   }
@@ -1158,7 +1159,12 @@ p {
 @media (max-width: 1280px) {
   .hero__item-eng p {
     font-size: 18px;
-    line-height: 28.8px;
+    line-height: 29px;
+  }
+}
+@media (max-width: 767px) {
+  .hero__item-eng {
+    padding: 24px;
   }
 }
 /*----------------------------------------------footer----------------------------------------------*/

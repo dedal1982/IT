@@ -57,19 +57,19 @@ const menuBurgerMobile = document.querySelector(
 const menuMob = document.querySelector(".menu-container__mobile-wrapper");
 const menuCloseMobile = document.querySelector(".menu-container__close-mobile");
 
-if (menuMobileOpen) {
-  menuMobileOpen.addEventListener("click", () => {
-    menuMob.classList.toggle("active");
-    menuBurgerMobile.classList.add("active");
-    menuCloseMobile.classList.add("active");
-  });
+menuMobileOpen.addEventListener("click", openMobMenu);
+
+function openMobMenu() {
+  menuMob.classList.toggle("active");
+  menuBurgerMobile.classList.toggle("active");
+  menuCloseMobile.classList.toggle("active");
 }
 
-menuCloseMobile.addEventListener("click", () => {
+function closeMobMenu() {
   menuMob.classList.remove("active");
   menuBurgerMobile.classList.remove("active");
   menuCloseMobile.classList.remove("active");
-});
+}
 
 //открытие-закрытие форм заявки
 function initFormEvents() {

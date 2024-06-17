@@ -16,22 +16,39 @@ window.onload = function () {
 };
 
 //открытие-закрытие меню
+const menuDescOpen = document.getElementById("menuDescOpen");
 const menuBurger = document.querySelector(".menu-container__burger");
 const menuDesc = document.querySelector(".menu-container__button_desc");
 const menuClose = document.querySelector(".menu-container__close");
 
-menuBurger.addEventListener("click", openMenu);
+menuDescOpen.addEventListener("click", openMenu);
 menuClose.addEventListener("click", closeMenu);
-// menuDesc.addEventListener("mouseleave", closeMenu);
 
 function openMenu() {
   menuDesc.classList.add("active");
   menuBurger.classList.add("active");
+  menuDescOpen.classList.add("active");
 }
 function closeMenu() {
   menuDesc.classList.remove("active");
   menuBurger.classList.remove("active");
+  menuDescOpen.classList.remove("active");
 }
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeMenu();
+  }
+});
+
+document.addEventListener("click", function (event) {
+  if (
+    !menuDescOpen.contains(event.target) &&
+    menuDescOpen.classList.contains("active")
+  ) {
+    closeMenu();
+  }
+});
 
 const menuBurgerMobile = document.querySelector(
   ".menu-container__burger-mobile"

@@ -1222,6 +1222,25 @@ p {
 .department-eng__items {
   display: grid;
   grid-template-columns: repeat(3, minmax(auto, 373.33px));
+  gap: 16px;
+}
+.department-eng__item {
+  border-radius: 44px;
+  padding: 32px;
+  box-sizing: border-box;
+  background: #f0efed;
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.department-eng__item h3 {
+  font-size: 32px;
+  line-height: 44.16px;
+}
+.department-eng__item p {
+  font-size: 18px;
+  line-height: 29.7px;
 }
 /*----------------------------------------------footer----------------------------------------------*/
 .footer {

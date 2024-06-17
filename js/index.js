@@ -50,17 +50,20 @@ document.addEventListener("click", function (event) {
   }
 });
 
+const menuMobileOpen = document.getElementById("menuMobileOpen");
 const menuBurgerMobile = document.querySelector(
   ".menu-container__burger-mobile"
 );
 const menuMob = document.querySelector(".menu-container__mobile-wrapper");
 const menuCloseMobile = document.querySelector(".menu-container__close-mobile");
 
-menuBurgerMobile.addEventListener("click", () => {
-  menuMob.classList.add("active");
-  menuBurgerMobile.classList.add("active");
-  menuCloseMobile.classList.add("active");
-});
+if (menuMobileOpen) {
+  menuMobileOpen.addEventListener("click", () => {
+    menuMob.classList.toggle("active");
+    menuBurgerMobile.classList.add("active");
+    menuCloseMobile.classList.add("active");
+  });
+}
 
 menuCloseMobile.addEventListener("click", () => {
   menuMob.classList.remove("active");

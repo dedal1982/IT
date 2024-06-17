@@ -605,6 +605,12 @@ p {
 #menuDescOpen.active {
   display: none;
 }
+@media (max-width: 767px) {
+  #menuDescOpen {
+    display: none;
+  }
+}
+
 .menu-container__button_desc.active {
   width: 256px;
   border-radius: 44px;

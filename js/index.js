@@ -65,17 +65,22 @@ function openMobMenu() {
   menuCloseMobile.classList.toggle("active");
 }
 
-function closeMobMenu() {
-  menuMob.classList.remove("active");
-  menuBurgerMobile.classList.remove("active");
-  menuCloseMobile.classList.remove("active");
-}
+document.addEventListener("click", function (event) {
+  if (
+    !menuMob.contains(event.target) &&
+    !menuMobileOpen.contains(event.target)
+  ) {
+    if (menuMob.classList.contains("active")) {
+      menuMob.classList.remove("active");
+      menuBurgerMobile.classList.remove("active");
+      menuCloseMobile.classList.remove("active");
+    }
+  }
+});
 
 //открытие-закрытие форм заявки
 function initFormEvents() {
-  const btnFormOpen = document.querySelector(
-    ".menu-container__button-form-mobile"
-  );
+  const btnFormOpen = document.getElementById("buttonFormMobile");
   const btnFormClose = document.querySelector(".menu-container__close-form");
   const mobileForm = document.querySelector(".menu-form");
   const buttonUp = document.querySelector(".button-up");
@@ -84,21 +89,13 @@ function initFormEvents() {
   if (btnFormOpen) {
     btnFormOpen.addEventListener("click", () => {
       mobileForm.classList.toggle("active");
-      btnAppl.classList.add("active");
+      btnAppl.classList.toggle("active");
+      buttonUp.classList.toggle("active");
       window.scrollTo({
         top: document.body.scrollHeight,
         behavior: "smooth",
       });
       btnFormClose.classList.toggle("active");
-    });
-  }
-
-  if (btnFormClose) {
-    btnFormClose.addEventListener("click", () => {
-      mobileForm.classList.remove("active");
-      btnFormClose.classList.remove("active");
-      buttonUp.style.display = "block";
-      buttonUp.style.visibility = "visible";
     });
   }
 }

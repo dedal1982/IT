@@ -56,8 +56,21 @@ const menuBurgerMobile = document.querySelector(
 );
 const menuMob = document.querySelector(".menu-container__mobile-wrapper");
 const menuCloseMobile = document.querySelector(".menu-container__close-mobile");
+const menuListItem = document.querySelectorAll(
+  ".menu-container__mobile-list li"
+);
 
-menuMobileOpen.addEventListener("click", openMobMenu);
+for (let i = 0; i < menuListItem.length; i++) {
+  menuListItem[i].addEventListener("click", () => {
+    if (menuMob.classList.contains("active")) {
+      menuMob.classList.remove("active");
+    }
+  });
+}
+
+if (menuMobileOpen) {
+  menuMobileOpen.addEventListener("click", openMobMenu);
+}
 
 function openMobMenu() {
   menuMob.classList.toggle("active");

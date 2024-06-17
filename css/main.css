@@ -1231,6 +1231,24 @@ p {
     margin-top: 40px;
   }
 }
+@media (max-width: 1200px) {
+  .department-eng__items {
+    grid-template-columns: repeat(2, minmax(auto, 49%));
+    margin-top: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .department-eng__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .department-eng__items {
+    gap: 8px;
+  }
+}
 .department-eng__item {
   border-radius: 44px;
   padding: 32px;
@@ -1247,6 +1265,40 @@ p {
 .department-eng__item p {
   font-size: 18px;
   line-height: 29.7px;
+}
+
+@media (max-width: 768px) {
+  .department-eng__item {
+    max-width: 344px;
+    gap: 8px;
+  }
+  .department-eng__item:last-child {
+    max-width: 100%;
+    width: 100%;
+  }
+  .department-eng__item h3 {
+    font-size: 24px;
+    line-height: 33.12px;
+  }
+  .department-eng__item p {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+}
+@media (max-width: 767px) {
+  .department-eng__item {
+    max-width: 100%;
+    width: 100%;
+    padding: 24px;
+  }
+  .department-eng__item h3 {
+    font-size: 20px;
+    line-height: 27.6px;
+  }
+  .department-eng__item p {
+    font-size: 15px;
+    line-height: 24px;
+  }
 }
 /*----------------------------------------------footer----------------------------------------------*/
 .footer {

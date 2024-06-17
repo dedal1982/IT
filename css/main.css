@@ -816,9 +816,6 @@ p {
     padding: 17px 24px;
     box-sizing: border-box;
   }
-  .menu-form__textarea textarea {
-    height: 160px;
-  }
   .menu-form__textarea-label {
     width: 250px;
     left: 24px;
@@ -1882,7 +1879,7 @@ p {
   position: relative;
   max-width: 880px;
   width: 100%;
-  height: 256px;
+  min-height: 256px;
   display: flex;
   align-items: baseline;
   background: #f0efed;

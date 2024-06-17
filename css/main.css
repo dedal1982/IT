@@ -516,7 +516,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  right: 16px;
+  right: 0;
   bottom: 16px;
   width: fit-content;
   display: flex;
@@ -546,6 +546,9 @@ p {
     bottom: 105px;
     right: 8px;
     z-index: 5;
+  }
+  .menu-container {
+    right: 16px;
   }
 }
 .button-up__inner {

@@ -599,9 +599,9 @@ label.active {
 @media (max-width: 767px) {
   label.active,
   .menu-form__label.active {
-    transform: translateY(0);
     font-size: 14px;
     line-height: 20px;
+    max-width: 80%;
   }
 }
 .communicate__item {

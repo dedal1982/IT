@@ -131,10 +131,10 @@ input:valid + label {
     line-height: 24px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   input:focus + label,
   input:valid + label {
-    top: 5px;
+    top: 10px;
   }
 }
 .base__inner {

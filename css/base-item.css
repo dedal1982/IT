@@ -937,6 +937,10 @@
   .communicate__text {
     margin-right: auto;
   }
+  .communicate__text_eng {
+    font-size: 18px;
+    line-height: 29.7px;
+  }
   .footer__wrapper_base {
     padding-top: 32px;
   }

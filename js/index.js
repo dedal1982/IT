@@ -200,6 +200,12 @@ if (buttonFormMobile) {
     buttonFormMobileGreen.classList.add("menu-form__button_open");
     setTimeout(() => {
       document.querySelector(".menu-form").classList.remove("active");
+      document
+        .querySelector(".menu-container__close-form")
+        .classList.remove("active");
+      buttonFormMobileGreen.classList.remove("menu-form__button_open");
+      buttonFormMobile.classList.remove("menu-form__button_hidden");
+      document.querySelector(".button-mobile").classList.add("active");
     }, 1000);
   });
 }
@@ -215,19 +221,24 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 //отправка мобильной формы
-// Получаем все инпуты на странице
 const inputs = document.querySelectorAll(".input-mobile");
-// Получаем кнопку отправки
 const submitButton = document.querySelector(".button-mobile");
 
-// Добавляем обработчик события на каждый инпут
+// inputs.forEach((input) => {
+//   input.addEventListener("input", () => {
+//     const allFieldsFilled = Array.from(inputs).every(
+//       (input) => input.value.trim() !== ""
+//     );
+//     submitButton.classList.remove("active");
+//   });
+// });
 inputs.forEach((input) => {
   input.addEventListener("input", () => {
-    // Проверяем, заполнены ли все инпуты
     const allFieldsFilled = Array.from(inputs).every(
       (input) => input.value.trim() !== ""
     );
-    // Управляем состоянием кнопки
-    submitButton.classList.remove("active");
+    if (!allFieldsFilled) {
+      submitButton.classList.remove("active");
+    }
   });
 });

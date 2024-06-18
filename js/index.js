@@ -188,28 +188,6 @@ window.addEventListener("resize", () => {
   }
 });
 
-//кнопка отправки мобильной формы,после отправки становится зеленой
-const buttonFormMobile = document.querySelector(".menu-form__button");
-const buttonFormMobileGreen = document.querySelector(
-  ".menu-form__button_green"
-);
-
-if (buttonFormMobile) {
-  buttonFormMobile.addEventListener("click", () => {
-    buttonFormMobile.classList.add("menu-form__button_hidden");
-    buttonFormMobileGreen.classList.add("menu-form__button_open");
-    setTimeout(() => {
-      document.querySelector(".menu-form").classList.remove("active");
-      document
-        .querySelector(".menu-container__close-form")
-        .classList.remove("active");
-      buttonFormMobileGreen.classList.remove("menu-form__button_open");
-      buttonFormMobile.classList.remove("menu-form__button_hidden");
-      document.querySelector(".button-mobile").classList.add("active");
-    }, 1000);
-  });
-}
-
 //якорь + доскролл до нужного блока
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {

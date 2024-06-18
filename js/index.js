@@ -219,26 +219,3 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
-
-//отправка мобильной формы
-const inputs = document.querySelectorAll(".input-mobile");
-const submitButton = document.querySelector(".button-mobile");
-
-// inputs.forEach((input) => {
-//   input.addEventListener("input", () => {
-//     const allFieldsFilled = Array.from(inputs).every(
-//       (input) => input.value.trim() !== ""
-//     );
-//     submitButton.classList.remove("active");
-//   });
-// });
-inputs.forEach((input) => {
-  input.addEventListener("input", () => {
-    const allFieldsFilled = Array.from(inputs).every(
-      (input) => input.value.trim() !== ""
-    );
-    if (!allFieldsFilled) {
-      submitButton.classList.remove("active");
-    }
-  });
-});

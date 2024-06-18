@@ -73,7 +73,7 @@
     line-height: 28.8px;
   }
 }
-.base__input:focus + label {
+/* .base__input:focus + label {
   transform: translateY(-20px);
   font-size: 17px;
   color: #303030;
@@ -136,7 +136,7 @@ input:valid + label {
   input:valid + label {
     top: 10px;
   }
-}
+} */
 .base__inner {
   position: relative;
   width: 100%;

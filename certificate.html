@@ -29,79 +29,76 @@
         </div>
       </a>
       <!--мобильное ЗАЯВКА форма-->
-      <div class="menu-form">
-        <div class="menu-form__form">
-          <div class="menu-form__container">
-            <img
-              class="menu-form__icon"
-              src="./icons/inp-name.png"
-              alt="иконка"
-            />
-            <input class="menu-input" type="text" id="input" required="" />
-            <label class="menu-form__label" for="input">Ваше имя</label>
-          </div>
-          <div class="menu-form__container">
-            <img
-              class="menu-form__icon"
-              src="./icons/inp-web.png"
-              alt="иконка"
-            />
-            <input class="menu-input" type="text" id="input" required="" />
-            <label class="menu-form__label" for="input"
-              >Сайт или название компании</label
-            >
-          </div>
-          <div class="menu-form__container">
-            <img
-              class="menu-form__icon"
-              src="./icons/inp-mail.png"
-              alt="иконка"
-            />
-            <input class="menu-input" type="text" id="input" required="" />
-            <label class="menu-form__label" for="input"
-              >Электронная почта</label
-            >
-          </div>
-          <div class="menu-form__container">
-            <img
-              class="menu-form__icon"
-              src="./icons/inp-phone.png"
-              alt="иконка"
-            />
-            <input
-              class="menu-input"
-              type="tel"
-              id="input"
-              required=""
-              onkeyup="this.value = this.value.replace(/[^\d]/g,'');"
-            />
-            <label class="menu-form__label" for="input">Номер телефона</label>
-            <img src="./icons/arr-r-m.png" alt="скобка" />
-          </div>
-          <div class="popup-overlay__textarea menu-form__textarea">
-            <textarea autofocus=""></textarea>
-            <label class="menu-form__textarea-label" for="input"
-              >Опишите свою ситуацию и мы обязательно ответим вам</label
-            >
-          </div>
+      <form class="menu-form">
+        <div class="form-group">
+          <label class="label active" for="name">Ваше имя</label>
+          <img src="./icons/inp-name.png" alt="имя" />
+          <input class="input" type="text" id="name" name="name" required="" />
+          <div class="error-message"></div>
         </div>
-        <div class="menu-form__item">
-          <!--кнопка отправить-->
-          <button type="submit" class="menu-form__button">
+        <div class="form-group">
+          <label class="label" for="website">Сайт или название компании</label>
+          <img src="./icons/inp-web.png" alt="сайт" />
+          <input
+            class="input"
+            type="url"
+            id="website"
+            name="website"
+            required=""
+          />
+          <div class="error-message"></div>
+        </div>
+        <div class="form-group">
+          <label class="label" for="email">Электронная почта</label>
+          <img src="./icons/inp-mail.png" alt="почта" />
+          <input
+            class="input"
+            type="email"
+            id="email"
+            name="email"
+            required=""
+          />
+          <div class="error-message"></div>
+        </div>
+        <div class="form-group">
+          <label class="label" for="phone">Номер телефона</label>
+          <img src="./icons/inp-phone.png" alt="телефон" />
+          <input class="input" type="tel" id="phone" name="phone" required="" />
+          <div class="error-message"></div>
+        </div>
+        <div class="form-group-textarea textarea-mobile">
+          <label class="label textarea-label" for="message"
+            >Опишите свою ситуацию и мы обязательно ответим вам</label
+          >
+          <textarea
+            class="textarea"
+            id="message"
+            name="message"
+            required=""
+          ></textarea>
+          <div class="error-message"></div>
+        </div>
+        <div class="communicate__item communicate__item_contact">
+          <button
+            class="communicate__button communicate__button_mobile"
+            type="button"
+          >
             Отправить
             <img src="./icons/arr-btn.png" alt="скобка" />
           </button>
-          <!--зеленая кнопка отправлено-->
-          <button class="menu-form__button menu-form__button_green">
+          <button
+            class="communicate__button menu-form__button_green"
+            type="button"
+          >
             Отправлено
             <img src="./icons/arr-r-mg.png" alt="скобка" />
           </button>
-          <div class="menu-form__text">
+          <div class="communicate__text">
             Даю своё согласие на
             <a href="data-protection.html">обработку персональных данных</a>
           </div>
         </div>
-      </div>
+      </form>
       <!--мобильное меню-->
       <div class="menu-container menu-container_mobile">
         <button class="menu-container__button-form">
@@ -459,66 +456,82 @@
             <img src="./icons/popup-close.png" alt="крестик" />
           </button>
           <div class="popup-overlay__content">
-            <div class="popup-overlay__form">
-              <div class="popup-overlay__container">
-                <img
-                  class="popup-overlay__icon"
-                  src="./icons/inp-name.png"
-                  alt="иконка"
-                />
-                <input class="menu-input" type="text" id="input" required="" />
-                <label for="input">Ваше имя</label>
-              </div>
-              <div class="popup-overlay__container">
-                <img
-                  class="popup-overlay__icon"
-                  src="./icons/inp-web.png"
-                  alt="иконка"
-                />
-                <input class="menu-input" type="text" id="input" required="" />
-                <label for="input">Сайт или название компании</label>
-              </div>
-              <div class="popup-overlay__container">
-                <img
-                  class="popup-overlay__icon"
-                  src="./icons/inp-mail.png"
-                  alt="иконка"
-                />
-                <input class="menu-input" type="text" id="input" required="" />
-                <label for="input">Электронная почта</label>
-              </div>
-              <div class="popup-overlay__container">
-                <img
-                  class="popup-overlay__icon"
-                  src="./icons/inp-phone.png"
-                  alt="иконка"
-                />
+            <form id="contact-form" class="main-form main-form-overlay">
+              <div class="form-group form-group-overlay">
+                <label class="label" for="name">Ваше имя</label>
+                <img src="./icons/inp-name.png" alt="имя" />
                 <input
-                  class="menu-input"
-                  type="tel"
-                  id="input"
-                  required=""
-                  onkeyup="this.value = this.value.replace(/[^\d]/g,'');"
+                  class="input input-overlay"
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
                 />
-                <label for="input">Номер телефона</label>
+                <div class="error-message"></div>
               </div>
-              <div class="popup-overlay__textarea">
-                <textarea></textarea>
-                <label class="popup-overlay__label" for="input"
+              <div class="form-group form-group-overlay">
+                <label class="label" for="website"
+                  >Сайт или название компании</label
+                >
+                <img src="./icons/inp-web.png" alt="сайт" />
+                <input
+                  class="input input-overlay"
+                  type="url"
+                  id="website"
+                  name="website"
+                  required
+                />
+                <div class="error-message"></div>
+              </div>
+              <div class="form-group form-group-overlay">
+                <label class="label" for="email">Электронная почта</label>
+                <img src="./icons/inp-mail.png" alt="почта" />
+                <input
+                  class="input input-overlay"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                />
+                <div class="error-message"></div>
+              </div>
+              <div class="form-group form-group-overlay">
+                <label class="label" for="phone">Номер телефона</label>
+                <img src="./icons/inp-phone.png" alt="телефон" />
+                <input
+                  class="input input-overlay"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                />
+                <div class="error-message"></div>
+              </div>
+              <div class="form-group-textarea textarea-overlay">
+                <label class="label textarea-label" for="message"
                   >Опишите свою ситуацию и мы обязательно ответим вам</label
                 >
+                <textarea
+                  class="textarea"
+                  id="message"
+                  name="message"
+                  required
+                ></textarea>
+                <div class="error-message"></div>
               </div>
-            </div>
-            <div class="popup-overlay__item">
-              <button class="popup-overlay__button" type="submit">
-                Отправить
-                <img src="./icons/arr-btn.png" alt="скобка" />
-              </button>
-              <div class="popup-overlay__text">
-                Даю своё согласие на
-                <a href="data-protection.html">обработку персональных данных</a>
+              <div class="communicate__item communicate__item_contact">
+                <button class="button-overlay" type="submit">
+                  Отправить
+                  <img src="./icons/arr-btn.png" alt="скобка" />
+                </button>
+                <div class="communicate__text">
+                  Даю своё согласие на
+                  <a href="data-protection.html"
+                    >обработку персональных данных</a
+                  >
+                </div>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>

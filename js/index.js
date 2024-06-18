@@ -1,3 +1,4 @@
+//запуск видео
 function showVideo() {
   document.querySelector(".video-text").style.display = "none";
   document.querySelector(".video-img").style.display = "none";
@@ -11,10 +12,6 @@ function showVideo() {
         "&autoplay=1"
     );
 }
-
-// window.onload = function () {
-//   window.scrollTo(0, 0);
-// };
 
 //открытие-закрытие меню
 const menuDescOpen = document.getElementById("menuDescOpen");
@@ -112,6 +109,15 @@ function initFormEvents() {
       btnFormClose.classList.toggle("active");
     });
   }
+  // Добавляем проверку ширины экрана
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      mobileForm.classList.remove("active");
+      btnAppl.classList.remove("active");
+      buttonUp.classList.remove("active");
+      btnFormClose.classList.remove("active");
+    }
+  });
 }
 
 document.addEventListener("DOMContentLoaded", initFormEvents);
@@ -128,40 +134,23 @@ window.onscroll = function () {
 
 //эффект при клике на инпут + textarea
 const inputContainers = document.querySelectorAll(
-  ".communicate__container,.menu-form__container,.communicate__textarea,.popup-overlay__container,.popup-overlay__textarea"
+  ".form-group,.input,.form-group-textarea"
 );
-const inputField = document.querySelectorAll(".menu-input");
-const inputTextarea = document.querySelectorAll("textarea");
+const inputField = document.querySelectorAll(".input,.textarea");
 
 inputContainers.forEach((container) => {
   container.addEventListener("click", () => {
-    const label = container.querySelector("label");
+    const label = container.querySelector(".label");
     label.classList.add("active");
   });
 });
 
 inputField.forEach((input) => {
   input.addEventListener("focus", () => {
-    const label = input.parentElement.querySelector("label");
+    const label = input.parentElement.querySelector(".label");
     label.classList.add("active");
   });
 });
-
-inputTextarea.forEach((textarea) => {
-  textarea.addEventListener("focus", () => {
-    const label = textarea.parentElement.querySelector("label");
-    label.classList.add("active");
-  });
-});
-
-const textareaContainer = document.querySelector(".communicate__textarea");
-
-if (textareaContainer) {
-  textareaContainer.addEventListener("click", () => {
-    const label = textareaContainer.querySelector("label");
-    label.classList.add("active");
-  });
-}
 
 // открытие - закрытие формы десктоп
 const popupOverlay = document.querySelector(".popup-overlay");
@@ -196,4 +185,18 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       behavior: "smooth",
     });
   });
+});
+
+// "отправка" формы
+const sendButton = document.querySelector(".communicate__button");
+const sentButton = document.querySelector(".menu-form__button_green");
+
+sendButton.addEventListener("click", () => {
+  sendButton.style.display = "none";
+  sentButton.style.display = "inline-block";
+
+  setTimeout(() => {
+    const form = sendButton.closest("form");
+    form.submit();
+  }, 3000);
 });

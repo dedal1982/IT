@@ -70,7 +70,13 @@
               src="./icons/inp-phone.png"
               alt="иконка"
             />
-            <input class="menu-input" type="text" id="input" required="" />
+            <input
+              class="menu-input"
+              type="text"
+              id="input"
+              required=""
+              onkeyup="this.value = this.value.replace(/[^\d]/g,'');"
+            />
             <label class="menu-form__label" for="input">Номер телефона</label>
             <img src="./icons/arr-r-m.png" alt="скобка" />
           </div>
@@ -469,7 +475,13 @@
                   src="./icons/inp-phone.png"
                   alt="иконка"
                 />
-                <input class="menu-input" type="text" id="input" required="" />
+                <input
+                  class="menu-input"
+                  type="text"
+                  id="input"
+                  required=""
+                  onkeyup="this.value = this.value.replace(/[^\d]/g,'');"
+                />
                 <label for="input">Номер телефона</label>
               </div>
               <div class="popup-overlay__textarea">

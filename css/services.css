@@ -251,7 +251,7 @@
 }
 @media (max-width: 767px) {
   .protection__image {
-    width: 359px;
+    width: 100%;
     height: 285px;
     background-image: url(../images/protection-4.png);
   }

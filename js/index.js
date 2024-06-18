@@ -12,9 +12,9 @@ function showVideo() {
     );
 }
 
-window.onload = function () {
-  window.scrollTo(0, 0);
-};
+// window.onload = function () {
+//   window.scrollTo(0, 0);
+// };
 
 //открытие-закрытие меню
 const menuDescOpen = document.getElementById("menuDescOpen");
@@ -200,3 +200,12 @@ if (buttonFormMobile) {
     buttonFormMobileGreen.classList.add("menu-form__button_open");
   });
 }
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});

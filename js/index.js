@@ -198,14 +198,36 @@ if (buttonFormMobile) {
   buttonFormMobile.addEventListener("click", () => {
     buttonFormMobile.classList.add("menu-form__button_hidden");
     buttonFormMobileGreen.classList.add("menu-form__button_open");
+    setTimeout(() => {
+      document.querySelector(".menu-form").classList.remove("active");
+    }, 1000);
   });
 }
 
+//якорь + доскролл до нужного блока
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
     document.querySelector(this.getAttribute("href")).scrollIntoView({
       behavior: "smooth",
     });
+  });
+});
+
+//отправка мобильной формы
+// Получаем все инпуты на странице
+const inputs = document.querySelectorAll(".input-mobile");
+// Получаем кнопку отправки
+const submitButton = document.querySelector(".button-mobile");
+
+// Добавляем обработчик события на каждый инпут
+inputs.forEach((input) => {
+  input.addEventListener("input", () => {
+    // Проверяем, заполнены ли все инпуты
+    const allFieldsFilled = Array.from(inputs).every(
+      (input) => input.value.trim() !== ""
+    );
+    // Управляем состоянием кнопки
+    submitButton.classList.remove("active");
   });
 });

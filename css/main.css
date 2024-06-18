@@ -674,6 +674,7 @@ p {
   width: 24px;
   height: 24px;
   background: #303030;
+  cursor: pointer;
 }
 .up-button {
   width: 88px;
@@ -2235,4 +2236,8 @@ p {
     flex-direction: column;
     gap: 16px;
   }
+}
+/************/
+.button-mobile.active {
+  pointer-events: none;
 }

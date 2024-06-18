@@ -1,15 +1,16 @@
-const videoPreviews = document.querySelectorAll(".video-preview");
-const videoPlayers = document.querySelectorAll(".video-player");
-const videoImages = document.querySelectorAll(".video-img");
-const videoText = document.querySelectorAll(".video-text");
-
-videoPreviews.forEach((videoPreview, index) => {
-  videoPreview.addEventListener("click", function () {
-    videoPreview.style.display = "none";
-    videoImages[index].style.display = "none";
-    videoText[index].style.display = "none";
-  });
-});
+function showVideo() {
+  document.querySelector(".video-text").style.display = "none";
+  document.querySelector(".video-img").style.display = "none";
+  document.querySelector(".video-preview").style.display = "none";
+  document.querySelector(".video-player").style.display = "block";
+  document
+    .querySelector(".video-player")
+    .setAttribute(
+      "src",
+      document.querySelector(".video-player").getAttribute("src") +
+        "&autoplay=1"
+    );
+}
 
 window.onload = function () {
   window.scrollTo(0, 0);

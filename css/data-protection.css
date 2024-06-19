@@ -99,7 +99,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 52px;
 }
 @media (max-width: 1280px) {
   .data-page__wrapper {
@@ -127,7 +127,7 @@
   flex-direction: column;
   gap: 32px;
   padding-left: 32px;
-  padding-right: 32px;
+  padding-right: 24px;
   box-sizing: border-box;
   max-width: 920px;
 }
@@ -169,19 +169,21 @@
 .data-page__list {
   display: flex;
   flex-direction: column;
-  list-style-type: disc;
-  gap: 9px;
+  gap: 24px;
   max-width: 864px;
 }
-.data-page__list_decimal {
-  list-style-type: decimal;
+.data-page__list_disc {
+  list-style-type: disc;
+  gap: 9px;
+}
+.data-page__list_disc li {
+  margin-left: 28px;
 }
 .data-page__list li {
   font-family: "Roboto Flex", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 28.8px;
-  margin-left: 28px;
+  line-height: 29px;
 }
 @media (max-width: 767px) {
   .data-page__list li {

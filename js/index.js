@@ -191,15 +191,34 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 const sendButton = document.querySelector(".communicate__button");
 const sentButton = document.querySelector(".menu-form__button_green");
 
-sendButton.addEventListener("click", () => {
-  sendButton.style.display = "none";
-  sentButton.style.display = "inline-block";
+sendButton.addEventListener("click", (event) => {
+  event.preventDefault();
 
-  setTimeout(() => {
-    const form = sendButton.closest("form");
-    form.submit();
-  }, 3000);
+  if (validateForm()) {
+    sendButton.style.display = "none";
+    sentButton.style.display = "inline-block";
+
+    setTimeout(() => {
+      const form = sendButton.closest("form");
+      form.submit();
+    }, 3000);
+  }
 });
+
+function validateForm() {
+  const form = sendButton.closest("form");
+  const inputs = form.querySelectorAll("input[required]");
+  let isValid = true;
+
+  inputs.forEach((input) => {
+    if (!input.value.trim()) {
+      isValid = false;
+      return;
+    }
+  });
+
+  return isValid;
+}
 
 //маска ввода телефона в инпут
 window.addEventListener("DOMContentLoaded", function () {

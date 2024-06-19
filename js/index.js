@@ -138,12 +138,14 @@ const inputContainers = document.querySelectorAll(
 );
 const inputField = document.querySelectorAll(".input,.textarea");
 
-inputContainers.forEach((container) => {
-  container.addEventListener("click", () => {
-    const label = container.querySelector(".label");
-    label.classList.add("active");
+if (inputContainers) {
+  inputContainers.forEach((container) => {
+    container.addEventListener("click", () => {
+      const label = container.querySelector(".label");
+      label.classList.add("active");
+    });
   });
-});
+}
 
 inputField.forEach((input) => {
   input.addEventListener("focus", () => {

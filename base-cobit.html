@@ -529,96 +529,83 @@
               <div class="communicate__top communicate__top_base">
                 <h2>Давайте общаться</h2>
               </div>
-              <div class="communicate__form communicate__form_base">
-                <div class="communicate__container communicate__container_base">
-                  <img
-                    class="communicate__icon communicate__icon_base"
-                    src="./icons/inp-name.png"
-                    alt="иконка"
-                  />
+              <!--форма отправки-->
+              <form id="contact-form" class="main-form">
+                <div class="form-group">
+                  <label class="label" for="name">Ваше имя</label>
+                  <img src="./icons/inp-name.png" alt="имя" />
                   <input
-                    class="menu-input communicate__input_base"
+                    class="input"
                     type="text"
-                    id="input"
+                    id="name"
+                    name="name"
                     required
                   />
-                  <label class="communicate__label-base" for="input"
-                    >Ваше имя</label
-                  >
+                  <div class="error-message"></div>
                 </div>
-                <div class="communicate__container communicate__container_base">
-                  <img
-                    class="communicate__icon communicate__icon_base"
-                    src="./icons/inp-web.png"
-                    alt="иконка"
-                  />
-                  <input
-                    class="menu-input communicate__input_base"
-                    type="text"
-                    id="input"
-                    required
-                  />
-                  <label class="communicate__label-base" for="input"
+                <div class="form-group">
+                  <label class="label" for="website"
                     >Сайт или название компании</label
                   >
-                </div>
-                <div class="communicate__container communicate__container_base">
-                  <img
-                    class="communicate__icon communicate__icon_base"
-                    src="./icons/inp-mail.png"
-                    alt="иконка"
-                  />
+                  <img src="./icons/inp-web.png" alt="сайт" />
                   <input
-                    class="menu-input communicate__input_base"
-                    type="text"
-                    id="input"
+                    class="input"
+                    type="url"
+                    id="website"
+                    name="website"
                     required
                   />
-                  <label class="communicate__label-base" for="input"
-                    >Электронная почта</label
-                  >
+                  <div class="error-message"></div>
                 </div>
-                <div class="communicate__container communicate__container_base">
-                  <img
-                    class="communicate__icon communicate__icon_base"
-                    src="./icons/inp-phone.png"
-                    alt="иконка"
-                  />
+                <div class="form-group">
+                  <label class="label" for="email">Электронная почта</label>
+                  <img src="./icons/inp-mail.png" alt="почта" />
                   <input
-                    class="menu-input communicate__input_base"
+                    class="input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                  <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                  <label class="label" for="phone">Номер телефона</label>
+                  <img src="./icons/inp-phone.png" alt="телефон" />
+                  <input
+                    class="input"
                     type="tel"
-                    id="input"
+                    id="phone"
+                    name="phone"
                     required
-                    onkeyup="this.value = this.value.replace(/[^\d]/g,'');"
                   />
-                  <label class="communicate__label-base" for="input"
-                    >Номер телефона</label
-                  >
+                  <div class="error-message"></div>
                 </div>
-                <div class="communicate__textarea communicate__textarea_bade">
-                  <textarea></textarea>
-                  <label
-                    class="communicate__label communicate__label-textarea"
-                    for="input"
+                <div class="form-group-textarea">
+                  <label class="label textarea-label" for="message"
                     >Опишите свою ситуацию и мы обязательно ответим вам</label
                   >
+                  <textarea
+                    class="textarea"
+                    id="message"
+                    name="message"
+                    required
+                  ></textarea>
+                  <div class="error-message"></div>
                 </div>
-              </div>
-              <div class="communicate__item">
-                <button
-                  class="communicate__button communicate__button_base"
-                  type="submit"
-                >
-                  Отправить
-                  <img src="./icons/arr-btn.png" alt="скобка" />
-                </button>
-                <div class="communicate__text">
-                  Даю своё согласие на
-                  <a href="data-protection.html"
-                    >обработку персональных данных</a
-                  >
+                <div class="communicate__item communicate__item_contact">
+                  <button class="communicate__button" type="submit">
+                    Отправить
+                    <img src="./icons/arr-btn.png" alt="скобка" />
+                  </button>
+                  <div class="communicate__text">
+                    Даю своё согласие на
+                    <a href="data-protection.html"
+                      >обработку персональных данных</a
+                    >
+                  </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </section>

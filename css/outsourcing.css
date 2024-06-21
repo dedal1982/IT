@@ -738,6 +738,7 @@ label.active {
     justify-content: center;
   }
   .menu-form__button_green {
+    width: 100%;
     background: #78ce5a;
     padding-left: 24px;
     padding-right: 24px;

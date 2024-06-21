@@ -239,22 +239,6 @@ document.addEventListener("click", (event) => {
     popupOverlay.classList.remove("active");
   }
 });
-// const popupOverlay = document.querySelector(".popup-overlay");
-// const popupOpenButton = document.querySelector(".menu-container__button-form");
-// const popupCloseButton = document.querySelector(".popup-overlay__close");
-
-// if (popupOpenButton) {
-//   popupOpenButton.addEventListener("click", () => {
-//     if (popupOverlay) {
-//       popupOverlay.classList.add("active");
-//     }
-//   });
-// }
-// if (popupCloseButton) {
-//   popupCloseButton.addEventListener("click", () => {
-//     popupOverlay.classList.remove("active");
-//   });
-// }
 
 // Добавляем проверку ширины экрана
 window.addEventListener("resize", () => {
@@ -272,7 +256,7 @@ sendButton.addEventListener("click", (event) => {
 
   if (validateForm()) {
     sendButton.style.display = "none";
-    sentButton.style.display = "inline-block";
+    sentButton.style.display = "flex";
 
     setTimeout(() => {
       const form = sendButton.closest("form");

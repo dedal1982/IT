@@ -100,6 +100,16 @@ function initFormEvents() {
   if (btnFormOpen) {
     btnFormOpen.addEventListener("click", () => {
       mobileForm.classList.toggle("active");
+      const inputFields = document.querySelectorAll(
+        ".form-group input,.textarea"
+      );
+      inputFields.forEach((input) => {
+        input.value = "";
+      });
+      const labelActive = document.querySelectorAll(".label");
+      labelActive.forEach((label) => {
+        label.classList.remove("active");
+      });
       btnAppl.classList.toggle("active");
       buttonUp.classList.toggle("active");
       window.scrollTo({

@@ -746,11 +746,6 @@ label.active {
   }
 }
 @media (max-width: 375px) {
-  /* .communicate__button {
-    padding-left: 120px;
-    box-sizing: border-box;
-    justify-content: flex-start;
-  } */
   .communicate__button_eng {
     padding-left: 111px;
   }

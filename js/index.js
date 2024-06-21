@@ -154,6 +154,10 @@ if (inputContainers) {
       const label = container.querySelector(".label");
       if (label) {
         label.classList.add("active");
+        const input = container.querySelector("input, textarea");
+        if (input) {
+          input.focus();
+        }
       }
     });
   });
@@ -165,6 +169,28 @@ inputField.forEach((input) => {
     label.classList.add("active");
   });
 });
+// const inputContainers = document.querySelectorAll(
+//   ".form-group,.input,.form-group-textarea"
+// );
+// const inputField = document.querySelectorAll(".input,.textarea");
+
+// if (inputContainers) {
+//   inputContainers.forEach((container) => {
+//     container.addEventListener("click", () => {
+//       const label = container.querySelector(".label");
+//       if (label) {
+//         label.classList.add("active");
+//       }
+//     });
+//   });
+// }
+
+// inputField.forEach((input) => {
+//   input.addEventListener("focus", () => {
+//     const label = input.parentElement.querySelector(".label");
+//     label.classList.add("active");
+//   });
+// });
 
 // открытие - закрытие формы десктоп
 const popupOverlay = document.querySelector(".popup-overlay");
@@ -207,7 +233,8 @@ document.addEventListener("click", (event) => {
   if (
     !event.target.closest(".popup-overlay__wrapper") &&
     !event.target.closest(".menu-container__button-form") &&
-    !event.target.closest(".form-group")
+    !event.target.closest(".form-group") &&
+    !event.target.closest(".form-group-textarea")
   ) {
     popupOverlay.classList.remove("active");
   }

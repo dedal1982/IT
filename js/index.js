@@ -142,7 +142,9 @@ if (inputContainers) {
   inputContainers.forEach((container) => {
     container.addEventListener("click", () => {
       const label = container.querySelector(".label");
-      label.classList.add("active");
+      if (label) {
+        label.classList.add("active");
+      }
     });
   });
 }
@@ -164,13 +166,58 @@ if (popupOpenButton) {
     if (popupOverlay) {
       popupOverlay.classList.add("active");
     }
+    const inputFields = document.querySelectorAll(
+      ".form-group input,.textarea"
+    );
+    inputFields.forEach((input) => {
+      input.value = "";
+    });
+    const labelActive = document.querySelectorAll(".label");
+    labelActive.forEach((label) => {
+      label.classList.remove("active");
+    });
   });
 }
+
 if (popupCloseButton) {
   popupCloseButton.addEventListener("click", () => {
     popupOverlay.classList.remove("active");
   });
 }
+
+// Закрытие формы по нажатию на клавишу Esc
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    popupOverlay.classList.remove("active");
+  }
+});
+
+// Закрытие формы по клику вне формы
+document.addEventListener("click", (event) => {
+  if (
+    !event.target.closest(".popup-overlay__wrapper") &&
+    !event.target.closest(".menu-container__button-form") &&
+    !event.target.closest(".form-group")
+  ) {
+    popupOverlay.classList.remove("active");
+  }
+});
+// const popupOverlay = document.querySelector(".popup-overlay");
+// const popupOpenButton = document.querySelector(".menu-container__button-form");
+// const popupCloseButton = document.querySelector(".popup-overlay__close");
+
+// if (popupOpenButton) {
+//   popupOpenButton.addEventListener("click", () => {
+//     if (popupOverlay) {
+//       popupOverlay.classList.add("active");
+//     }
+//   });
+// }
+// if (popupCloseButton) {
+//   popupCloseButton.addEventListener("click", () => {
+//     popupOverlay.classList.remove("active");
+//   });
+// }
 
 // Добавляем проверку ширины экрана
 window.addEventListener("resize", () => {
@@ -178,16 +225,6 @@ window.addEventListener("resize", () => {
     popupOverlay.classList.remove("active");
   }
 });
-
-//якорь + доскролл до нужного блока
-// document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-//   anchor.addEventListener("click", function (e) {
-//     e.preventDefault();
-//     document.querySelector(this.getAttribute("href")).scrollIntoView({
-//       behavior: "smooth",
-//     });
-//   });
-// });
 
 // "отправка" формы
 const sendButton = document.querySelector(".communicate__button");

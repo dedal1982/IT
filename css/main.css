@@ -531,7 +531,7 @@ p {
 .button-up {
   display: none;
   position: fixed;
-  right: 16px;
+  right: 32px;
   bottom: 120px;
   width: 88px;
   height: 88px;

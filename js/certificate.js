@@ -1,47 +1,44 @@
-const containerElement = document.querySelector(".certificate-page__items");
-const buttonElement = document.querySelector(".certificate-page__button");
-const contElemHidden = document.querySelector(
-  ".certificate-page__items_hidden"
-);
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll(
+    ".projects__item,.certificate-page__item"
+  );
+  const button = document.querySelectorAll(
+    ".certificate-page__button_cases,.certificate-page__button"
+  );
 
-if (containerElement) {
-  if (containerElement.children.length < 12) {
-    buttonElement.style.display = "none";
-  } else {
-    buttonElement.style.display = "block";
+  for (let i = 12; i < items.length; i++) {
+    items[i].style.display = "none";
   }
-}
 
-if (buttonElement) {
-  buttonElement.addEventListener("click", () => {
-    if (contElemHidden) {
-      contElemHidden.style.display = "grid";
-      buttonElement.style.display = "none";
-    }
-  });
-}
-
-const projectsContainerElement = document.querySelector(".projects__items");
-const projectsButtonElement = document.querySelector(
-  ".certificate-page__button_cases"
-);
-const projectsContElemHidden = document.querySelector(
-  ".projects__items_hidden"
-);
-
-if (projectsContainerElement) {
-  if (projectsContainerElement.children.length < 12) {
-    projectsButtonElement.style.display = "none";
-  } else {
-    projectsButtonElement.style.display = "block";
+  if (items.length <= 12) {
+    button.style.display = "none";
   }
-}
-
-if (projectsButtonElement) {
-  projectsButtonElement.addEventListener("click", () => {
-    if (projectsContElemHidden) {
-      projectsContElemHidden.style.display = "grid";
-      projectsButtonElement.style.display = "none";
-    }
+  button.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      for (let i = 12; i < items.length; i++) {
+        items[i].style.display = "flex";
+      }
+      btn.style.display = "none";
+    });
   });
-}
+});
+
+// фильтрация
+const topItems = document.querySelectorAll(".projects__top-item");
+const items = document.querySelectorAll(".projects__item");
+
+topItems.forEach((topItem) => {
+  topItem.addEventListener("click", () => {
+    const dataName = topItem.getAttribute("data-name");
+    items.forEach((item) => {
+      if (item.getAttribute("data-name") !== dataName) {
+        item.style.display = "none";
+      } else {
+        item.style.display = "flex";
+        document.querySelector(
+          ".certificate-page__button_cases"
+        ).style.display = "none";
+      }
+    });
+  });
+});

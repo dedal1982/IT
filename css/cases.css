@@ -100,21 +100,16 @@
   grid-template-columns: repeat(3, minmax(auto, 373.33px));
   gap: 15px 16px;
 }
-.projects__items_hidden {
+/* .projects__items_hidden {
   display: none;
   margin-top: 15px;
-}
+} */
 
 @media (max-width: 1280px) {
   .projects__items {
     grid-template-columns: repeat(3, minmax(auto, 330.67px));
     margin-top: 40px;
     gap: 18px 16px;
-  }
-}
-@media (max-width: 1024px) {
-  .projects__items_hidden {
-    margin-top: 18px;
   }
 }
 @media (max-width: 768px) {
@@ -126,18 +121,12 @@
   .communicate__wrapper_cases {
     padding-top: 34px;
   }
-  .projects__items_hidden {
-    margin-top: 20px;
-  }
 }
 @media (max-width: 767px) {
   .projects__items {
     grid-template-columns: 1fr;
     margin-top: 32px;
     gap: 8px;
-  }
-  .projects__items_hidden {
-    margin-top: 8px;
   }
 }
 .projects__item {

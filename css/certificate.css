@@ -138,10 +138,6 @@
   line-height: 36.3px;
   color: #303030;
 }
-.certificate-page__items_hidden {
-  display: none;
-  margin-top: 16px;
-}
 @media (max-width: 1280px) {
   .certificate-page__items {
     grid-template-columns: repeat(3, minmax(auto, 330.67px));
@@ -195,9 +191,6 @@
   .certificate-page__author p {
     font-size: 15px;
     line-height: 25px;
-  }
-  .certificate-page__items_hidden {
-    margin-top: 8px;
   }
   .certificate-page__button {
     margin-top: 8px;

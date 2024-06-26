@@ -26,6 +26,11 @@
     padding-bottom: 32px;
   }
 }
+@media (max-width: 640px) {
+  .outsourcing__wrapper {
+    align-items: center;
+  }
+}
 .outsourcing__top {
   display: flex;
   flex-direction: column;

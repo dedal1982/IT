@@ -2113,7 +2113,7 @@ p {
   padding: 72px 32px 32px 32px;
   box-sizing: border-box;
   width: 650px;
-  height: 100%;
+  height: auto;
   position: relative;
   border-radius: 44px;
 }

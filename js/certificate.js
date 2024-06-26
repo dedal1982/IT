@@ -27,21 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
 const topItems = document.querySelectorAll(".projects__top-item");
 const items = document.querySelectorAll(".projects__item");
 
-// topItems.forEach((topItem) => {
-//   topItem.addEventListener("click", () => {
-//     const dataName = topItem.getAttribute("data-name");
-//     items.forEach((item) => {
-//       if (item.getAttribute("data-name") !== dataName) {
-//         item.style.display = "none";
-//       } else {
-//         item.style.display = "flex";
-//         document.querySelector(
-//           ".certificate-page__button_cases"
-//         ).style.display = "none";
-//       }
-//     });
-//   });
-// });
 topItems.forEach((topItem) => {
   topItem.addEventListener("click", () => {
     const dataName = topItem.getAttribute("data-name");

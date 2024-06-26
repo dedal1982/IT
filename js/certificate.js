@@ -27,18 +27,46 @@ document.addEventListener("DOMContentLoaded", function () {
 const topItems = document.querySelectorAll(".projects__top-item");
 const items = document.querySelectorAll(".projects__item");
 
+// topItems.forEach((topItem) => {
+//   topItem.addEventListener("click", () => {
+//     const dataName = topItem.getAttribute("data-name");
+//     items.forEach((item) => {
+//       if (item.getAttribute("data-name") !== dataName) {
+//         item.style.display = "none";
+//       } else {
+//         item.style.display = "flex";
+//         document.querySelector(
+//           ".certificate-page__button_cases"
+//         ).style.display = "none";
+//       }
+//     });
+//   });
+// });
 topItems.forEach((topItem) => {
   topItem.addEventListener("click", () => {
     const dataName = topItem.getAttribute("data-name");
-    items.forEach((item) => {
-      if (item.getAttribute("data-name") !== dataName) {
-        item.style.display = "none";
-      } else {
+    if (topItem.classList.contains("active")) {
+      // Если элемент уже активен, сбрасываем фильтр
+      topItem.classList.remove("active");
+      items.forEach((item) => {
         item.style.display = "flex";
-        document.querySelector(
-          ".certificate-page__button_cases"
-        ).style.display = "none";
-      }
-    });
+      });
+      document.querySelector(".certificate-page__button_cases").style.display =
+        "block";
+    } else {
+      // Иначе устанавливаем фильтр
+      topItems.forEach((item) => item.classList.remove("active"));
+      topItem.classList.add("active");
+      items.forEach((item) => {
+        if (item.getAttribute("data-name") !== dataName) {
+          item.style.display = "none";
+        } else {
+          item.style.display = "flex";
+          document.querySelector(
+            ".certificate-page__button_cases"
+          ).style.display = "none";
+        }
+      });
+    }
   });
 });

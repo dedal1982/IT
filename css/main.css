@@ -520,7 +520,6 @@ p {
   bottom: 16px;
   width: fit-content;
   display: flex;
-  padding-left: 8px;
   padding-bottom: 0;
   box-sizing: border-box;
   gap: 16px;
@@ -543,7 +542,7 @@ p {
     width: 64px;
     height: 64px;
     bottom: 105px;
-    right: 8px;
+    right: 16px;
     z-index: 5;
   }
   .menu-container {
@@ -687,7 +686,8 @@ p {
   position: absolute;
   bottom: 80px;
   left: 8px;
-  width: 359px;
+  right: 8px;
+  bottom: 88px;
   height: 536px;
   background: #303030;
   box-shadow: 0px 0px 32px 0px #00000052;
@@ -775,6 +775,9 @@ p {
     bottom: 105px;
     position: absolute;
     z-index: 10;
+    left: 8px;
+    right: 8px;
+    width: auto;
   }
 }
 
@@ -843,13 +846,21 @@ p {
     display: flex;
   }
   .menu-container_mobile {
+    width: 100%;
+    right: 0;
+  }
+  .menu-container__mobile-buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
     padding: 8px;
     box-sizing: border-box;
-    left: 0;
-    width: fit-content;
+    border-radius: 40px;
+    border: 1px solid red;
+    margin-left: 8px;
+    margin-right: 8px;
     background: #ffffff;
-    gap: 8px;
-    margin: 0 auto;
   }
   .menu-container__button {
     width: 175.5px;
@@ -2081,6 +2092,10 @@ p {
 @media (max-width: 767px) {
   #buttonFormMobile {
     display: flex;
+    width: 50%;
+  }
+  #menuMobileOpen {
+    width: 50%;
   }
 }
 @media (max-width: 767px) {

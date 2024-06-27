@@ -690,6 +690,14 @@ label.active {
 .communicate__item_contact {
   margin-top: 46px;
 }
+.communicate__item_overlay {
+  margin-top: 46px;
+}
+@media (max-height: 900px) {
+  .communicate__item_overlay {
+    margin-top: 25px;
+  }
+}
 @media (max-width: 767px) {
   .communicate__item {
     flex-direction: column;

@@ -522,14 +522,14 @@ p {
   display: flex;
   padding-bottom: 0;
   box-sizing: border-box;
-  gap: 16px;
+  gap: 8px;
   border-radius: 32px;
   z-index: 555;
 }
 .button-up {
   display: none;
   position: fixed;
-  right: 32px;
+  right: 24px;
   bottom: 120px;
   width: 88px;
   height: 88px;
@@ -685,8 +685,8 @@ p {
   display: none;
   position: absolute;
   bottom: 80px;
-  left: 8px;
-  right: 8px;
+  left: 16px;
+  right: 16px;
   bottom: 88px;
   height: 536px;
   background: #303030;
@@ -857,7 +857,6 @@ p {
     padding: 8px;
     box-sizing: border-box;
     border-radius: 40px;
-    border: 1px solid red;
     margin-left: 8px;
     margin-right: 8px;
     background: #ffffff;
@@ -2180,4 +2179,13 @@ p {
 .button-overlay img {
   width: 16px;
   height: 16px;
+}
+@media (max-height: 900px) {
+  .popup-overlay__wrapper {
+    padding-top: 50px;
+    border-radius: 32px;
+  }
+  .popup-overlay__close {
+    top: 16px;
+  }
 }

@@ -2153,7 +2153,7 @@ p {
   height: 64px;
   box-shadow: 0px 0px 20px 0px #0000001a inset;
 }
-.textarea-overlay {
+.group-textarea-overlay {
   box-shadow: 0px 0px 20px 0px #0000001a inset;
 }
 .input-overlay {
@@ -2187,5 +2187,14 @@ p {
   }
   .popup-overlay__close {
     top: 16px;
+  }
+  .textarea-overlay {
+    min-height: 120px;
+  }
+  .form-group-textarea {
+    min-height: 170px;
+  }
+  .main-form-overlay {
+    gap: 12px;
   }
 }
